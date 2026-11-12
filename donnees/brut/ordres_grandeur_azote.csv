@@ -1,0 +1,7 @@
+flux,kt_n,groupe,source
+"Engrais azotés épandus (2020-2024)",1906,terre,"FAOSTAT, usage agricole moyen 2020-2024"
+"Azote perdu par les fleuves vers la mer",607,perte,"SDES, flux annuel moyen sur dix ans vers les mers métropolitaines"
+"Azote de nos excréments",300,levier,"Starck, Fardet, Esculier, 2023"
+"Azote des excréments rendu aux cultures",31,levier,"Starck, Fardet, Esculier, 2023"
+"Azote retiré par les moules récoltées",0.67,mer,"Eurostat fish_aq2a 2024 (48 775 t de moules) x 13,7 kg N/t (Taylor et al., 2019)"
+"Azote retiré par les laminaires récoltées",0.29,mer,"65 000 t (Institut Agro) x 4,5 kg N/t frais (Limfjorden : 23 g N et 5,1 kg par mètre de filière)"

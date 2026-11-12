@@ -1,159 +1,160 @@
-<!doctype html>
-<html lang="fr">
-<head>
-<meta charset="utf-8">
-<title>La France et la terre</title>
-<style>
-  @page { size: A4; margin: 16mm 17mm 16mm 17mm; }
-  :root { --papier:#FFFFFF; --encre:#1B2A3A; --bleu:#1F5A8C; --vert:#2E8B57; --gris:#4A5568; }
-  html, body { background: var(--papier); }
-  body { font-family: Calibri, "Segoe UI", Arial, sans-serif; color: var(--encre); font-size: 11pt; line-height: 1.45; margin: 0;
-         -webkit-print-color-adjust: exact; print-color-adjust: exact; }
-  h1 { color: var(--bleu); font-size: 24pt; line-height: 1.15; margin: 0 0 4mm; }
-  .chapeau { color: var(--gris); font-size: 11.5pt; margin-bottom: 6mm; }
-  .auteur { font-size: 9pt; color: var(--gris); margin-bottom: 6mm; }
-  h2 { color: var(--bleu); font-size: 15pt; margin: 7mm 0 3mm; }
-  p { margin: 0 0 3mm; text-align: justify; hyphens: auto; }
-  figure { margin: 3mm 0 5mm; break-inside: avoid; }
-  figure img { width: 100%; max-height: 150mm; object-fit: contain; }
-  blockquote { margin: 0 0 3mm 5mm; padding-left: 4mm; border-left: 2px solid var(--vert); color: var(--gris); font-style: italic; }
-  ul { margin: 0 0 3mm 5mm; padding-left: 4mm; }
-  li { margin-bottom: 1.5mm; }
-  .saut { break-before: page; }
-  .sources { font-size: 8.5pt; color: var(--gris); }
-  .chiffre { color: var(--vert); font-weight: bold; }
-</style>
-</head>
-<body>
-
-<h1>La France et la terre : le plateau, la spécialisation, et ce que l'arbre rapporte</h1>
-<div class="chapeau">La France reste la première puissance agricole de l'Union européenne. Ce travail mesure pourtant, à partir de données
-publiques, un déclin technique installé depuis trente ans ; il montre ensuite qu'une technique ancienne, remise au point par la recherche
-française, produit davantage sur la même surface, et propose de boucler le cycle entre la ville et la terre.</div>
+<!doctype html><html lang="fr"><head><meta charset="utf-8"><title>La France et la terre</title><style>
+@page { size: A4; margin: 16mm 17mm; }
+body { font-family: Calibri, "Segoe UI", Arial, sans-serif; color: #1B2A3A; font-size: 11pt; line-height: 1.45; margin: 0;
+       -webkit-print-color-adjust: exact; print-color-adjust: exact; background: #fff; }
+h1 { color: #1F5A8C; font-size: 23pt; line-height: 1.15; margin: 0 0 3mm; }
+.auteur { font-size: 9pt; color: #4A5568; margin-bottom: 5mm; }
+h2 { color: #1F5A8C; font-size: 15pt; margin: 6mm 0 3mm; }
+p { margin: 0 0 3mm; text-align: justify; hyphens: auto; }
+strong { color: #1B2A3A; }
+figure { margin: 2mm 0 4mm; break-inside: avoid; }
+figure img { width: 100%; max-height: 125mm; object-fit: contain; }
+table { border-collapse: collapse; width: 100%; font-size: 9.5pt; margin: 2mm 0 4mm; break-inside: avoid; }
+th { background: #1F5A8C; color: #fff; text-align: left; padding: 2mm; }
+td { border-bottom: 1px solid #E3E8EE; padding: 2mm; vertical-align: top; }
+ul { margin: 0 0 3mm 5mm; padding-left: 4mm; } li { margin-bottom: 1.5mm; }
+a { color: #1F5A8C; text-decoration: none; }
+.saut { break-before: page; }
+</style></head><body>
+<h1>La France et la terre : produire plus sur le même hectare, et ne plus rien perdre</h1>
 <div class="auteur">Baptiste Leclerc · novembre 2026 · données, code et limites : github.com/leclercbaptiste1085-hash/5-france-terre</div>
-
-<h2>1. Le plateau</h2>
-<p>Le rendement du blé français est passé de 2,9 t/ha au début des années 1960 à 6,6 t/ha au milieu des années 1990, soit un gain de
-<span class="chiffre">0,12 t/ha</span> chaque année pendant trente ans. Depuis, il ne progresse plus : 6,8 t/ha en moyenne sur 2020-2024,
-un gain de <span class="chiffre">0,004 t/ha</span> par an. L'Allemagne et le Royaume-Uni plafonnent aussi, mais un cran au-dessus.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/1_rendement_ble.png"></figure>
-
-<h2 class="saut">2. La disparition et la spécialisation</h2>
-<p>La France comptait <span class="chiffre">1,59 million</span> d'exploitations en 1970 et <span class="chiffre">390 000</span> en 2020 :
-quatre sur cinq ont disparu. Entre 2010 et 2020, les exploitations de grandes cultures ont presque toutes tenu (−3 %), tandis que celles qui
-mêlaient cultures et élevage en perdaient <span class="chiffre">30 %</span>. L'agriculture française se simplifie : moins de fermes, plus
-grandes, consacrées à une seule production.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/2_exploitations.png"></figure>
-<figure class="saut"><img src="file:///C:/portfolio/07-terre/sorties/3_specialisation.png"></figure>
-
-<h2 class="saut">3. La balance</h2>
-<p>Hors boissons alcoolisées, la France exportait en 1993 40 % de produits agricoles et alimentaires de plus qu'elle n'en importait ; en
-2024, ses exportations ne couvrent plus que <span class="chiffre">99 %</span> de ses importations (FAOSTAT). Pour les fruits et légumes,
-le taux de couverture est de <span class="chiffre">50 %</span> : nous en importons deux fois plus que nous n'en vendons. L'Académie
-d'agriculture fait le même constat avec les chiffres des Douanes : un taux de couverture d'environ 140 % au début des années 2000, de 100 %
-en 2025, et le premier déficit agroalimentaire depuis 1978 si l'on compte les produits de la mer.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/4_couverture.png"></figure>
-
-<h2 class="saut">4. L'arbre arraché</h2>
-<p>Depuis 1950, 70 % des haies ont disparu, soit environ 1,4 million de kilomètres (CGAAER, 2023). La perte s'accélère :
-10 400 km par an entre 2006 et 2014, <span class="chiffre">23 571 km</span> par an entre 2017 et 2021, pour environ 3 000 km plantés. Le
-même rapport rappelle ce que la haie apporte à la production : effet brise-vent, rétention des sols, meilleurs rendements laitiers.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/5_haies.png"></figure>
-
-<h2 class="saut">5. Ce que l'arbre rapporte : l'agroforesterie et la complantation</h2>
-<p><b>Une technique ancienne.</b> La complantation consiste à cultiver ensemble, sur la même parcelle, des espèces que l'agriculture moderne
-a séparées. Dans le Sud-Ouest, la joualle associait des rangs de vigne grimpant sur des arbres fruitiers (cerisiers en Gironde, pruniers
-d'Ente en Lot-et-Garonne et en Périgord, abricotiers sur les coteaux du Lot et de la Garonne) à des bandes de céréales, de légumes ou de
-fourrage, assez larges pour le passage d'un attelage. Ces cultures intercalaires ont été remplacées au milieu du XXe siècle par le seul blé,
-puis le remembrement a fait disparaître les dernières joualles.</p>
-<p><b>Une technique mesurée.</b> L'INRA, devenu INRAE, l'a remise au point depuis le milieu des années 1990 sur ses parcelles de
-Restinclières (Hérault) et de Vézénobres (Gard), sous la direction de Christian Dupraz. L'indicateur retenu est la surface équivalente
-(<i>land equivalent ratio</i>) : la surface qu'il faudrait, arbres et cultures séparés, pour produire autant que l'hectare associé. Sur des
-peupliers et des céréales récoltés après 13 à 15 ans, il atteint <span class="chiffre">1,34</span> (mesuré) ; les simulations sur une
-rotation complète de noyers et de blé donnent 1,4 à 1,6. Autrement dit, 100 hectares en agroforesterie produisent autant de grain et de
-bois que 130 à 160 hectares séparés. L'arbre et la céréale n'exploitent pas les mêmes ressources au même endroit ni au même moment : c'est
-un argument de productivité par hectare.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/6_agroforesterie.png"></figure>
-<p class="saut"><b>Un exemple à grande échelle : la dehesa et le porc ibérique.</b> De l'autre côté des Pyrénées, l'agroforesterie n'est
-pas une expérience : la dehesa espagnole et le montado portugais couvrent environ <span class="chiffre">3,5 millions d'hectares</span> de
-prairies plantées de chênes verts et de chênes-lièges. Le même hectare donne de l'herbe, du liège, du bois de chauffe et des glands, que les
-porcs ibériques viennent manger à l'automne ; leurs déjections fertilisent la prairie. Le système ne jette rien. La filière « de bellota »
-est encadrée par un décret de 2014 : au moins 46 kg pris à la glandée, en plus de 60 jours, et pas plus de <span class="chiffre">0,25 à
-1,25 porc par hectare</span> selon la couverture des arbres. Environ 700 000 porcs étaient certifiés par saison au milieu des années 2010.</p>
-<p>Il faut le dire honnêtement : la dehesa produit <b>peu par hectare</b>. Sa rentabilité vient du prix du jambon, pas du volume, et elle ne
-se transpose pas aux plaines céréalières françaises ; c'est là que les essais de l'INRAE sur le blé et le noyer sont plus utiles. Elle montre
-en revanche qu'un système agroforestier peut faire vivre une filière entière, et que l'arbre peut être une ressource de l'exploitation
-plutôt qu'un obstacle au tracteur.</p>
-
-<h2 class="saut">6. Boucler le cycle : rendre à la terre ce que la ville lui prend</h2>
-<p><b>Bâtir pour durer.</b> La Cloaca Maxima, le grand égout de Rome, a été creusée il y a environ 2 500 ans ; elle draine encore le centre
-de la ville. Le Pont du Gard a deux mille ans, le canal du Midi plus de trois siècles, et une grande partie des égouts de Paris date de
-Belgrand, sous le Second Empire. Ces ouvrages durent parce qu'ils ont été conçus pour durer et entretenus.</p>
-<p><b>Mais ne rien jeter.</b> La Cloaca Maxima a aussi un revers, que Victor Hugo relevait en 1862 dans le chapitre des <i>Misérables</i>
-intitulé « La terre appauvrie par la mer » :</p>
-<blockquote>Paris jette par an vingt-cinq millions à l'eau. […] Si notre or est fumier, en revanche, notre fumier est or. […] « Les cloaques
-de Rome, dit Liebig, ont absorbé tout le bien-être du paysan romain. »</blockquote>
-<p>Son remède tenait en une phrase : « amener dans nos villes l'eau pure des champs et renvoyer dans nos champs l'eau riche des villes ».</p>
-<p><b>Paris l'a fait.</b> À la fin du XIXe siècle, les eaux d'égout de Paris ont été envoyées vers les plaines de Gennevilliers, d'Achères,
-de Méry-Pierrelaye et de Carrières-Triel. Vers 1910, <span class="chiffre">plus de 5 000 hectares</span> absorbaient les eaux usées des
-Parisiens et les nourrissaient en retour par une production maraîchère importante (Dufour, <i>Métropolitiques</i>). La station
-d'épuration d'Achères, inaugurée en 1940, a ensuite pris le relais des champs.</p>
-<p class="saut"><b>Aujourd'hui, la France importe ses engrais.</b> Au début des années 1960, elle produisait 120 % de l'azote et 193 % de
-la potasse qu'épandaient ses agriculteurs. En 2020-2024, elle n'en produit plus que <span class="chiffre">18 %</span> pour l'azote,
-<span class="chiffre">9 %</span> pour le phosphate et rien pour la potasse (FAOSTAT) : près de 1,9 million de tonnes d'azote sont importées
-chaque année.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/8_engrais.png"></figure>
-
-<p class="saut"><b>La France rend ses boues à la terre mieux que ses voisins.</b> Il serait faux de dire qu'elle a renoncé : en 2024,
-<span class="chiffre">88 %</span> de ses boues d'épuration sont épandues ou compostées, contre 17 % en Allemagne et aucune aux Pays-Bas ni
-en Suisse, qui les incinèrent (Eurostat). Ses collectivités compostent aussi davantage : 114 kg de déchets municipaux par habitant en 2024,
-contre 60 en 2000, proche de la moyenne européenne (102 kg) mais loin de l'Autriche (174 kg).</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/9_boues.png"></figure>
-
-<p class="saut"><b>Mais l'azote, lui, est perdu.</b> Les boues ne contiennent presque plus d'azote. Celui-ci se trouve à 85 % dans l'urine,
-et les stations d'épuration le renvoient dans l'air sous forme de diazote avant qu'il n'atteigne les boues. D'après le LEESU (École des
-Ponts), sur environ 300 000 tonnes d'azote excrétées chaque année en France, 50 % partent dans l'air, 40 % dans l'eau ou les sols, et
-<span class="chiffre">10 % seulement</span> reviennent aux cultures. On dépense ainsi de l'énergie pour détruire l'azote que l'on importe
-sous forme d'engrais. Tout récupérer remplacerait environ <span class="chiffre">15 %</span> des engrais azotés de synthèse : ce n'est pas
-l'autonomie, mais c'est à peu près ce que la France produit encore elle-même. La technique existe : la collecte séparée de l'urine, étudiée
-en Île-de-France par le programme OCAPI.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/10_azote_excreta.png"></figure>
-
-<h2 class="saut">7. Les industriels</h2>
-<p>Les quatre groupes étudiés transforment ou équipent l'agriculture française, et dégagent des marges faibles : Savencia (fromages) entre
-1,3 % et 1,8 %, Bonduelle (légumes) entre −5,4 % et +0,7 %, Exel Industries (pulvérisateurs) en baisse de 3,9 % à 1,7 %, LDC (volailles)
-entre 3,9 % et 5,0 %. Vilmorin, l'un des premiers semenciers mondiaux, a quant à lui quitté la Bourse en 2023 après l'offre de sa maison
-mère, la coopérative Limagrain.</p>
-<figure><img src="file:///C:/portfolio/07-terre/sorties/7_entreprises_marge.png"></figure>
-
-<h2>Ouverture : le déclin technique, et le rebond</h2>
-<p>La mer, le fleuve, puis la terre : trois domaines où la France disposait d'un avantage, et où elle a cessé de progresser. Dans chaque
-cas, la solution existe et elle est souvent française, qu'il s'agisse de GTT pour les cuves des méthaniers ou de l'INRAE pour
-l'agroforesterie. Ce qui manque n'est pas le savoir, mais sa mise en œuvre. Ce sera l'objet du travail suivant.</p>
-
+<p>Ce projet ne cherche pas à dresser l'inventaire d'un déclin, mais à chiffrer des solutions techniques. Il part de deux
+constats : le rendement du blé ne progresse plus depuis trente ans, et la France importe désormais l'essentiel de ses
+engrais. Il examine ensuite trois leviers, avec leurs ordres de grandeur et leurs limites : l'agroforesterie, qui produit
+davantage sur la même surface ; la récupération de l'azote que nos villes détruisent ; et la culture de la mer, qui prolonge
+la terre sans engrais.</p>
+<h2>1. Le constat, en deux chiffres</h2>
+<p><strong>Le rendement plafonne.</strong> Le blé français a gagné 0,12 t/ha chaque année entre le début des années 1960 et le milieu des
+années 1990, passant de 2,9 à 6,6 t/ha. Depuis, il ne progresse plus : 6,8 t/ha en moyenne sur 2020-2024, soit 0,004 t/ha
+de gain par an (FAOSTAT). On ne produira plus davantage en intensifiant la même technique.</p>
+<figure><img alt="Rendement du blé" src="file:///C:/portfolio/07-terre/sorties/1_rendement_ble.png" /></figure>
+<p><strong>Les engrais viennent d'ailleurs.</strong> Au début des années 1960, la France produisait 120 % de l'azote et 193 % de la potasse
+qu'épandaient ses agriculteurs. En 2020-2024, elle ne produit plus que 18 % de l'azote, 9 % du phosphate et aucune potasse ;
+environ 1,9 million de tonnes d'azote sont épandues chaque année (FAOSTAT). Tout gain de rendement obtenu par les engrais
+est donc un gain importé.</p>
+<figure><img alt="Engrais" src="file:///C:/portfolio/07-terre/sorties/8_engrais.png" /></figure>
+<h2 class="saut">2. Premier levier : l'agroforesterie, ou produire plus sur le même hectare</h2>
+<p><strong>Le principe.</strong> L'arbre et la culture n'exploitent pas les mêmes ressources au même endroit ni au même moment. La céréale
+d'hiver pousse avant que le noyer ne prenne ses feuilles ; les racines de l'arbre descendent sous celles de la culture. Sur
+40 ans, d'après les simulations de l'INRAE, une parcelle de noyers et de blé intercepte 1,39 fois la lumière et valorise
+1,55 fois l'eau d'une parcelle spécialisée.</p>
+<p><strong>Le gain mesuré.</strong> L'indicateur est la surface équivalente (<em>land equivalent ratio</em>, LER) : la surface qu'il faudrait,
+arbres et cultures séparés, pour produire autant que l'hectare associé. Sur les parcelles de l'INRAE dirigées par Christian
+Dupraz, il atteint <strong>1,34 mesuré</strong> (peupliers et céréales récoltés après 13 à 15 ans, Vézénobres, Gard) et <strong>1,4 à 1,6
+simulé</strong> sur une rotation complète de noyers et de blé (Restinclières, Hérault). Cent hectares en agroforesterie produisent
+autant de grain et de bois que 130 à 160 hectares séparés.</p>
+<figure><img alt="Agroforesterie" src="file:///C:/portfolio/07-terre/sorties/6_agroforesterie.png" /></figure>
+<p><strong>Les paramètres techniques.</strong> Les parcelles de l'INRAE comptent 80 noyers par hectare (Restinclières, 45 ha de céréales,
+colza et pois) ou 140 peupliers par hectare, contre 200 en peupleraie pure (Vézénobres). Les rangées sont espacées pour
+laisser passer les machines. Le bois n'est récolté qu'au bout de 15 à 50 ans selon l'essence : c'est un capital qui
+mûrit, et non un revenu annuel.</p>
+<p><strong>Le réseau profond.</strong> Les racines des arbres descendent sous la zone exploitée par la culture et y interceptent les
+nitrates qui, sinon, gagneraient la nappe puis les fleuves. L'INRAE modélise cet effet de « filet de sécurité » (projet
+METAGROFORESTRY) ; aucune mesure chiffrée publique n'en donne encore l'ampleur à l'échelle d'une parcelle française.</p>
+<p><strong>Ce qui existait déjà : la complantation.</strong> Dans le Sud-Ouest, la joualle associait des rangs de vigne grimpant sur des
+arbres fruitiers (cerisiers en Gironde, pruniers d'Ente en Lot-et-Garonne, abricotiers sur les coteaux du Lot et de la
+Garonne) à des bandes de céréales, de légumes ou de fourrage. Ces cultures intercalaires ont été remplacées au milieu du XXe
+siècle par le seul blé, puis le remembrement a fait disparaître les dernières joualles.</p>
+<p><strong>Ce qui marche ailleurs à grande échelle : la dehesa.</strong> En Espagne et au Portugal, environ 3,5 millions d'hectares de
+prairies plantées de chênes donnent sur le même sol de l'herbe, du liège, du bois et des glands, que les porcs ibériques
+viennent manger à l'automne ; leurs déjections fertilisent la prairie, et rien ne s'y perd. La filière « de bellota » est
+encadrée par un décret de 2014 : au moins 46 kg pris à la glandée, en plus de 60 jours, et 0,25 à 1,25 porc par hectare au
+plus selon la couverture des arbres. Environ 700 000 porcs étaient certifiés par saison au milieu des années 2010. La dehesa
+produit peu par hectare et vit du prix du jambon : elle ne se transpose pas aux plaines céréalières, mais elle prouve qu'un
+système agroforestier peut faire vivre une filière entière.</p>
+<h2 class="saut">3. Deuxième levier : récupérer l'azote que la ville détruit</h2>
+<p><strong>L'idée est ancienne.</strong> Victor Hugo l'écrivait en 1862 dans le chapitre des <em>Misérables</em> intitulé « La terre appauvrie par
+la mer » : « Si notre or est fumier, en revanche, notre fumier est or. » Citant le chimiste Liebig, il ajoutait que « les
+cloaques de Rome ont absorbé tout le bien-être du paysan romain ». La Cloaca Maxima a bien duré 2 500 ans, mais elle jetait
+au Tibre ce que la campagne avait produit. Paris a appliqué le remède d'Hugo : vers 1910, plus de 5 000 hectares de
+maraîchages à Gennevilliers, Achères, Méry-Pierrelaye et Carrières-Triel étaient arrosés par les eaux d'égout de la ville
+(Dufour, <em>Métropolitiques</em>).</p>
+<p><strong>Les boues sont déjà rendues au sol.</strong> La France épand ou composte 88 % de ses boues d'épuration, contre 17 % en Allemagne
+et aucune aux Pays-Bas ni en Suisse, qui les incinèrent (Eurostat, 2024). Sur ce point, elle fait mieux que ses voisins.</p>
+<figure><img alt="Boues" src="file:///C:/portfolio/07-terre/sorties/9_boues.png" /></figure>
+<p><strong>Mais l'azote est perdu en route.</strong> Il se trouve à 85 % dans l'urine, et les stations d'épuration le renvoient dans l'air
+sous forme de diazote avant qu'il n'atteigne les boues. Sur environ 300 000 tonnes d'azote excrétées chaque année en France,
+50 % partent dans l'air, 40 % dans l'eau ou les sols, et 10 % seulement reviennent aux cultures (Starck, Fardet et Esculier,
+LEESU, 2023). On dépense de l'énergie pour détruire un azote que l'on importe par ailleurs sous forme d'engrais.</p>
+<figure><img alt="Azote" src="file:///C:/portfolio/07-terre/sorties/10_azote_excreta.png" /></figure>
+<p><strong>La solution technique : séparer l'urine à la source.</strong> Collectée à part (toilettes à séparation, réseaux dédiés dans les
+immeubles neufs), l'urine donne un engrais azoté aux propriétés proches des engrais de synthèse ; le programme OCAPI l'étudie
+en Île-de-France. Tout récupérer remplacerait environ 15 % des engrais azotés de synthèse, soit à peu près ce que la France
+produit encore elle-même. Ce n'est pas l'autonomie, mais c'est une deuxième usine d'engrais, déjà construite, qui s'appelle
+une ville.</p>
+<h2 class="saut">4. Troisième levier : cultiver la mer, sans engrais</h2>
+<p><strong>Ce que la mer peut faire.</strong> Moules, huîtres et algues sont les seules productions alimentaires qui ne demandent ni engrais
+ni nourriture : elles se nourrissent de ce que l'eau contient déjà. Chaque tonne de moules récoltée retire 13,7 kg d'azote
+de la mer (Taylor et al., 2019) ; chaque tonne d'algues fraîches, environ 4,5 kg (essais danois du Limfjorden). Les algues
+reviennent ensuite à la terre : le goémon a fertilisé les champs bretons pendant des siècles, et l'on en tire aujourd'hui
+des biostimulants. La France récolte environ 65 000 tonnes de laminaires par an et produit près de 49 000 tonnes de moules
+(Eurostat, 2024), quand la Norvège élève neuf fois plus de poissons et coquillages que nous (projet précédent).</p>
+<p><strong>Ce qu'elle ne peut pas faire.</strong> Les fleuves français portent chaque année environ 607 000 tonnes d'azote vers la mer
+(SDES). Les moules et les laminaires récoltées en retirent environ 1 000 tonnes, soit 0,16 %. Pour en capter seulement 10 %,
+il faudrait multiplier par plus de soixante la production actuelle. La mer cultivée est un complément, utile pour assainir
+une baie saturée ou pour produire des protéines sans engrais ; elle n'est pas l'exutoire des pertes de la terre. Le levier,
+c'est de garder l'azote à terre : par les racines des arbres, et par la récupération de l'urine.</p>
+<figure><img alt="Ordres de grandeur" src="file:///C:/portfolio/07-terre/sorties/11_ordres_grandeur_azote.png" /></figure>
+<h2 class="saut">5. Ce que cela donne ensemble</h2>
+<table>
+<thead>
+<tr>
+<th>Levier</th>
+<th>Gain chiffré</th>
+<th>Délai</th>
+<th>Limite principale</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Agroforesterie</td>
+<td>1,3 à 1,6 fois la production d'un hectare spécialisé</td>
+<td>15 à 50 ans pour le bois</td>
+<td>peu de mesures en vraie grandeur</td>
+</tr>
+<tr>
+<td>Séparation de l'urine</td>
+<td>jusqu'à 15 % des engrais azotés de synthèse</td>
+<td>dès les constructions neuves</td>
+<td>réseaux à créer, logistique de collecte</td>
+</tr>
+<tr>
+<td>Mer cultivée</td>
+<td>protéines sans engrais ; 1 000 t d'azote retirées</td>
+<td>immédiat</td>
+<td>ordre de grandeur sans rapport avec les pertes</td>
+</tr>
+</tbody>
+</table>
+<p>La mer, le fleuve, puis la terre : dans chaque domaine, le savoir existe et il est souvent français, qu'il s'agisse de GTT
+pour les cuves des méthaniers, de l'INRAE pour l'agroforesterie ou du LEESU pour l'azote. Ce qui manque n'est pas la
+technique, mais sa mise en œuvre. Ce sera l'objet du projet suivant.</p>
 <h2 class="saut">Limites</h2>
 <ul>
-  <li><b>Le plateau du blé a plusieurs causes</b> (choix variétaux, réduction des intrants, aléas de récolte) ; ce travail le constate, il ne les départage pas.</li>
-  <li><b>Le LER mesuré l'a été sur peu de parcelles</b> : 1,34 provient d'un essai de peupliers, 1,4 à 1,6 sont des simulations. Le revenu du bois n'arrive qu'à la coupe, 15 à 50 ans après la plantation.</li>
-  <li><b>FAOSTAT et les Douanes ne mesurent pas le même périmètre</b> : FAOSTAT exclut les produits de la mer ; les niveaux diffèrent, la tendance est la même.</li>
-  <li><b>Les champs d'épandage ont aussi laissé des sols pollués</b> : les eaux mêlaient rejets domestiques et industriels, et les plaines d'Achères et de Pierrelaye sont aujourd'hui chargées en plomb (suivi de l'ARS Île-de-France). Rendre à la terre suppose de séparer à la source ce qui la nourrit de ce qui l'empoisonne.</li>
-  <li><b>Le recyclage ne couvrirait qu'une partie des besoins</b> : environ 15 % des engrais azotés de synthèse (LEESU, bilan 2015-2020, part recyclée estimée entre 5 et 15 %). Le chiffre parfois cité d'un recyclage de 50 % de l'azote parisien vers 1904 n'a pas pu être vérifié à la source ; il n'est pas repris. L'usage agricole d'engrais publié par la FAO étant irrégulier entre 2003 et 2014, seules les périodes 1961-1965 et 2020-2024 sont comparées.</li>
-  <li><b>La dehesa est mal mesurée</b> : sa surface varie de 0,5 à plus de 3,5 millions d'hectares selon la définition ; le chiffre de 700 000 porcs date d'une saison du milieu des années 2010.</li>
-  <li><b>Quatre exercices seulement pour les industriels</b>, décalés entre eux (clôture fin juin pour Bonduelle, fin septembre pour Exel, fin février pour LDC, fin décembre pour Savencia) ; résultat net total retenu.</li>
-  <li><b>La complantation historique n'est pas chiffrée</b> : aucune statistique nationale ne mesure l'étendue passée des joualles.</li>
+<li><strong>Le plateau du blé a plusieurs causes</strong> (choix variétaux, réduction des intrants, aléas de récolte) ; ce projet le
+  constate, il ne les départage pas.</li>
+<li><strong>Le LER mesuré l'a été sur peu de parcelles</strong> : 1,34 provient d'un essai de peupliers ; 1,4 à 1,6 sont simulés.</li>
+<li><strong>L'usage agricole d'engrais publié par la FAO est irrégulier entre 2003 et 2014</strong> ; seules les périodes 1961-1965 et
+  2020-2024 sont comparées.</li>
+<li><strong>Le bilan de l'azote des excréments</strong> porte sur 2015-2020, avec une part recyclée estimée entre 5 et 15 %. Le chiffre
+  parfois cité d'un recyclage de 50 % de l'azote parisien vers 1904 n'a pas pu être vérifié à la source ; il n'est pas repris.</li>
+<li><strong>Les champs d'épandage ont laissé des sols pollués</strong> au plomb, parce que les eaux mêlaient rejets domestiques et
+  industriels (suivi de l'ARS Île-de-France). La séparation à la source répond aussi à ce problème.</li>
+<li><strong>Les coefficients marins sont des ordres de grandeur</strong> : 13,7 kg d'azote par tonne de moules (essais danois), 4,5 kg par
+  tonne d'algues (laminaire sucrée cultivée, appliquée ici aux laminaires sauvages). Le flux des fleuves est une moyenne
+  décennale publiée par le SDES. L'effet des huîtres n'est pas compté.</li>
+<li><strong>La dehesa est mal mesurée</strong> : sa surface varie de 0,5 à plus de 3,5 millions d'hectares selon la définition ; le chiffre
+  de 700 000 porcs date d'une saison du milieu des années 2010.</li>
+<li><strong>La complantation historique n'est pas chiffrée</strong> : aucune statistique ne mesure l'étendue passée des joualles.</li>
 </ul>
-
-<h2>Sources</h2>
-<div class="sources">
-FAOSTAT : production, échanges et engrais (fichiers en masse « Europe »). INSEE, <i>Nombre d'exploitations</i>, d'après les recensements
-agricoles d'Agreste. Académie d'agriculture de France, T. Pouch, <i>Le commerce extérieur agroalimentaire français</i>, révisée en août 2026.
-CGAAER, <i>La haie, levier de la planification écologique</i>, rapport n° 22114, avril 2023. INRAE, <i>Agroforesterie et
-agrivoltaïsme</i> ; C. Dupraz, texte du concours agro-véto 2023 ; Dupraz et al., résultats de Restinclières et Vézénobres. Joualles :
-Wikipédia ; Les Vergers retrouvés du Comminges. V. Hugo, <i>Les Misérables</i>, t. V, l. II, ch. 1, 1862 (Wikisource). É. Dufour,
-<i>La persistance des champs d'épandage d'eaux usées de l'agglomération parisienne</i>, <i>Métropolitiques</i>. ARS Île-de-France,
-<i>Les plaines d'épandage</i>. Eurostat : env_ww_spd (boues), env_wasmun (compostage). T. Starck, T. Fardet, F. Esculier,
-<i>Fate of nitrogen in French human excreta</i>, 2023. Real Decreto 4/2014 (BOE) ; Agronews Castilla y León, juillet 2017. Comptes des entreprises : Boursorama (Bonduelle, Exel Industries, LDC, Savencia).
-</div>
-
-</body>
-</html>
+<h2 class="saut">Annexe : le contexte en graphiques</h2>
+<p>Ces graphiques complètent le constat sans en être le cœur.</p>
+<ul>
+<li>Exploitations : 1,59 million en 1970, 390 000 en 2020 ; entre 2010 et 2020, −30 % pour la polyculture-élevage contre −3 %
+  pour les grandes cultures (Agreste).</li>
+<li>Balance agricole hors vins et spiritueux : taux de couverture de 140 % en 1993, 99 % en 2024 ; fruits et légumes, 50 %
+  (FAOSTAT).</li>
+<li>Haies : 70 % disparues depuis 1950 ; perte nette de 23 571 km par an entre 2017 et 2021, pour 3 000 km plantés (CGAAER).</li>
+<li>Industriels de l'aval (Bonduelle, Exel Industries, LDC, Savencia) : marges nettes de −5 % à +5 % (comptes publiés).</li>
+</ul>
+</body></html>

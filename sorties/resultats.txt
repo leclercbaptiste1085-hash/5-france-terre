@@ -17,3 +17,4 @@ Engrais, Potasse, 1961-1965 : production 1779 kt, importations 40 kt, usage 920 
 Engrais, Potasse, 2020-2024 : production 0 kt, importations 491 kt, usage 403 kt, production / usage 0 % 
 Boues rendues au sol : DE 17 %, FR 88 %, NL 0 % 
 Azote des excréments : Perdu dans l'air (épuration) 50 % (160 kt) ; Perdu dans l'eau et les sols 40 % (124 kt) ; Rendu aux cultures 10 % (31 kt) 
+Mer cultivée : 0.96 kt N retirées, soit 0.16 % des 607 kt perdues par les fleuves ; x63 pour en capter 10 % 

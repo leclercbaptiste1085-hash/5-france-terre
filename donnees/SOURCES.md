@@ -29,3 +29,7 @@
 - `brut/starck_azote_excreta.csv` : Starck, Fardet, Esculier, arXiv 2310.06880, 2023, figure 1 et texte p. 9
   (160 ktN air, 124 ktN eau et sols, 31 ktN cultures ; moyenne 2015-2020) (brut/starck_2023_azote_excreta.pdf).
 - Dehesa : Real Decreto 4/2014, art. 6 et annexe (BOE-A-2014-318) ; Agronews Castilla y León, 5 juillet 2017.
+- `brut/ordres_grandeur_azote.csv` : synthèse (sources par ligne dans le fichier). Moules : Eurostat fish_aq2a 2024
+  (MUS 45 787 t + MSM 2 988 t, brut/eurostat_aquaculture_fr.json) x 13,7 kg N/t (Taylor et al., 2019) ; laminaires :
+  65 000 t x 4,5 kg N/t frais (23 g N et 5,1 kg de biomasse par mètre de filière, Limfjorden) ; fleuves : SDES
+  (brut/sdes_flux_azote_mer.pdf, 607 000 t, moyenne sur dix ans).

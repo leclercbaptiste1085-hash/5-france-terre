@@ -296,4 +296,30 @@ g10 <- ggplot(az, aes(part, destination)) +
   theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
 enregistrer(g10, "10_azote_excreta.png", h = 3.8)
 
+# ---------------------------------------------------------------------------
+# 11. Ordres de grandeur : l'azote en jeu chaque année, et ce que chaque levier peut capter
+#     Échelle logarithmique : les flux vont de 0,3 à 1 900 milliers de tonnes.
+# ---------------------------------------------------------------------------
+og <- lire("ordres_grandeur_azote.csv") |> mutate(flux = factor(flux, levels = rev(flux)))
+mer <- sum(og$kt_n[og$groupe == "mer"]); fleuves <- og$kt_n[og$groupe == "perte"]
+note("Mer cultivée : %.2f kt N retirées, soit %.2f %% des %d kt perdues par les fleuves ; x%.0f pour en capter 10 %%",
+     mer, 100 * mer / fleuves, fleuves, 0.1 * fleuves / mer)
+
+g11 <- ggplot(og, aes(kt_n * 1000, flux)) +
+  geom_segment(aes(x = 100, xend = kt_n * 1000, yend = flux, colour = groupe), linewidth = 9) +
+  geom_text(aes(label = paste(label_number(big.mark = " ", accuracy = 10)(kt_n * 1000), "t")),
+            hjust = -0.12, family = "Calibri", colour = encre, size = 3.8) +
+  scale_colour_manual(values = c(terre = "#7A8CA3", perte = bleu, levier = vert, mer = "#5FA8A0")) +
+  scale_x_log10(labels = label_number(big.mark = " "), breaks = 10^(2:6), limits = c(100, 1.5e7),
+                expand = expansion(mult = c(0, 0))) +
+  labs(title = "La mer cultivée ne peut pas absorber ce que la terre perd :
+le levier est à terre",
+       subtitle = "Azote en jeu chaque année en France, en tonnes (échelle logarithmique : chaque graduation vaut 10 fois la précédente)",
+       x = NULL, y = NULL,
+       caption = paste("Sources : FAOSTAT ; SDES (flux des fleuves) ; Starck, Fardet et Esculier, 2023 ; Eurostat fish_aq2a (moules 2024)",
+                       "et Taylor et al., 2019 (13,7 kg N par tonne) ;
+laminaires : 65 000 t récoltées (Institut Agro) et 4,5 kg N par tonne fraîche (essais danois du Limfjorden). Ordres de grandeur, non additifs.")) +
+  theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
+enregistrer(g11, "11_ordres_grandeur_azote.png", l = 9, h = 4.6)
+
 close(res)
