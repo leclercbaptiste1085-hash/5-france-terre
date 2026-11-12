@@ -318,7 +318,7 @@ le levier est à terre",
        x = NULL, y = NULL,
        caption = paste("Sources : FAOSTAT ; SDES (flux des fleuves) ; Starck, Fardet et Esculier, 2023 ; Eurostat fish_aq2a (moules 2024)",
                        "et Taylor et al., 2019 (13,7 kg N par tonne) ;
-laminaires : 65 000 t récoltées (Institut Agro) et 4,5 kg N par tonne fraîche (essais danois du Limfjorden). Ordres de grandeur, non additifs.")) +
+laminaires : 65 000 t récoltées (Institut Agro) et 4,5 kg N par tonne fraîche (essais danois de laminaire sucrée). Ordres de grandeur, non additifs.")) +
   theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
 enregistrer(g11, "11_ordres_grandeur_azote.png", l = 9, h = 4.6)
 

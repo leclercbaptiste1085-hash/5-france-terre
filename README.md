@@ -23,9 +23,9 @@ est donc un gain importé.
 
 ## 2. Premier levier : l'agroforesterie, ou produire plus sur le même hectare
 
-**Le principe.** L'arbre et la culture n'exploitent pas les mêmes ressources au même endroit ni au même moment. La céréale
-d'hiver pousse avant que le noyer ne prenne ses feuilles ; les racines de l'arbre descendent sous celles de la culture. Sur
-40 ans, d'après les simulations de l'INRAE, une parcelle de noyers et de blé intercepte 1,39 fois la lumière et valorise
+**Le principe.** L'arbre et la culture n'exploitent pas les mêmes ressources au même endroit ni au même moment. Comme
+l'explique Christian Dupraz, la céréale d'hiver assèche le sol de surface au printemps, ce qui oblige l'arbre à s'enraciner
+plus profond, sous la culture. Sur 40 ans, d'après les simulations de l'INRAE, une parcelle de noyers et de blé intercepte 1,39 fois la lumière et valorise
 1,55 fois l'eau d'une parcelle spécialisée.
 
 **Le gain mesuré.** L'indicateur est la surface équivalente (*land equivalent ratio*, LER) : la surface qu'il faudrait,
@@ -75,7 +75,7 @@ et aucune aux Pays-Bas ni en Suisse, qui les incinèrent (Eurostat, 2024). Sur c
 **Mais l'azote est perdu en route.** Il se trouve à 85 % dans l'urine, et les stations d'épuration le renvoient dans l'air
 sous forme de diazote avant qu'il n'atteigne les boues. Sur environ 300 000 tonnes d'azote excrétées chaque année en France,
 50 % partent dans l'air, 40 % dans l'eau ou les sols, et 10 % seulement reviennent aux cultures (Starck, Fardet et Esculier,
-LEESU, 2023). On dépense de l'énergie pour détruire un azote que l'on importe par ailleurs sous forme d'engrais.
+LEESU, 2023, prépublication). On dépense de l'énergie pour détruire un azote que l'on importe par ailleurs sous forme d'engrais.
 
 ![Azote](sorties/10_azote_excreta.png)
 
@@ -88,8 +88,8 @@ une ville.
 ## 4. Troisième levier : cultiver la mer, sans engrais
 
 **Ce que la mer peut faire.** Moules, huîtres et algues sont les seules productions alimentaires qui ne demandent ni engrais
-ni nourriture : elles se nourrissent de ce que l'eau contient déjà. Chaque tonne de moules récoltée retire 13,7 kg d'azote
-de la mer (Taylor et al., 2019) ; chaque tonne d'algues fraîches, environ 4,5 kg (essais danois du Limfjorden). Les algues
+ni nourriture : elles se nourrissent de ce que l'eau contient déjà. Chaque tonne de moules récoltée retire environ 13,7 kg d'azote
+de la mer (Taylor et al., 2019) ; chaque tonne d'algues fraîches, environ 4,5 kg (essais danois de laminaire sucrée). Les algues
 reviennent ensuite à la terre : le goémon a fertilisé les champs bretons pendant des siècles, et l'on en tire aujourd'hui
 des biostimulants. La France récolte environ 65 000 tonnes de laminaires par an et produit près de 49 000 tonnes de moules
 (Eurostat, 2024), quand la Norvège élève neuf fois plus de poissons et coquillages que nous (projet précédent).
@@ -125,8 +125,12 @@ technique, mais sa mise en œuvre. Ce sera l'objet du projet suivant.
   parfois cité d'un recyclage de 50 % de l'azote parisien vers 1904 n'a pas pu être vérifié à la source ; il n'est pas repris.
 - **Les champs d'épandage ont laissé des sols pollués** au plomb, parce que les eaux mêlaient rejets domestiques et
   industriels (suivi de l'ARS Île-de-France). La séparation à la source répond aussi à ce problème.
-- **Les coefficients marins sont des ordres de grandeur** : 13,7 kg d'azote par tonne de moules (essais danois), 4,5 kg par
-  tonne d'algues (laminaire sucrée cultivée, appliquée ici aux laminaires sauvages). Le flux des fleuves est une moyenne
+- **Les coefficients marins sont des ordres de grandeur.** 13,7 kg d'azote par tonne vient de moules danoises dites « de
+  compensation », récoltées jeunes ; les moules de bouchot françaises peuvent s'en écarter. 4,5 kg par tonne d'algues vient
+  de deux essais danois de laminaire sucrée cultivée (environ 23 g d'azote pour 5,1 kg de biomasse par mètre de filière ;
+  5 à 7 g pour 1,1 à 1,5 kg dans un essai antérieur), connus par leurs résumés, et appliqué ici aux laminaires sauvages.
+- **Le bilan de l'azote des excréments est une prépublication** (arXiv, 2023), sans publication connue dans une revue à
+  comité de lecture ; ses auteurs (LEESU, École des Ponts) sont toutefois les spécialistes français du sujet. Le flux des fleuves est une moyenne
   décennale publiée par le SDES. L'effet des huîtres n'est pas compté.
 - **La dehesa est mal mesurée** : sa surface varie de 0,5 à plus de 3,5 millions d'hectares selon la définition ; le chiffre
   de 700 000 porcs date d'une saison du milieu des années 2010.
@@ -179,8 +183,9 @@ dans `sorties/`. Packages R : dplyr, tidyr, ggplot2, scales. Le détail des sour
   [fish_aq2a](https://ec.europa.eu/eurostat/databrowser/view/fish_aq2a/default/table) (aquaculture).
 - T. Starck, T. Fardet, F. Esculier, [*Fate of nitrogen in French human excreta*](https://arxiv.org/abs/2310.06880), 2023.
 - SDES, [flux d'azote des fleuves vers la mer](https://www.statistiques.developpement-durable.gouv.fr/flux-la-mer-trop-dazote-mais-moins-de-phosphore).
-- M. Taylor, C. Saurel, P. Nielsen, J. K. Petersen, [*Production characteristics and optimization of mitigation mussel culture*](https://www.frontiersin.org/articles/10.3389/fmars.2019.00698), *Frontiers in Marine Science*, 2019.
-- Laminaire sucrée au Danemark : [*Commercial scale cultivation of Saccharina latissima in Denmark*](https://www.sciencedirect.com/science/article/pii/S2211926426002456).
+- D. Taylor, C. Saurel, P. Nielsen, J. K. Petersen, [*Production Characteristics and Optimization of Mitigation Mussel Culture*](https://www.frontiersin.org/articles/10.3389/fmars.2019.00698), *Frontiers in Marine Science*, 2019.
+- Laminaire sucrée au Danemark : [*Commercial scale cultivation of Saccharina latissima in Denmark*](https://www.sciencedirect.com/science/article/pii/S2211926426002456) ;
+  [*Commercial cultivation and bioremediation potential of sugar kelp in Danish waters*](https://link.springer.com/article/10.1007/s10811-014-0519-8), 2015 (résumés).
 - Récolte de laminaires : [Institut Agro](https://halieutique.institut-agro.fr/files/fichiers/pdf/5897.pdf) ;
   [préfecture de Bretagne](https://www.prefectures-regions.gouv.fr/bretagne/irecontenu/telechargement/132451/972128/file/Note%20de%20pr%C3%A9sentation%20D%C3%A9lib%C3%A9ration%20ALGUES%20MESURES%20TECHNIQUES.pdf).
 - Annexe : [INSEE](https://www.insee.fr/fr/statistiques/7728861) ; [CGAAER](https://agriculture.gouv.fr/telecharger/136479) ;
