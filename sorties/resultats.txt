@@ -9,3 +9,9 @@ Exel Industries : CA 977 -> 983 M€ (2022-2025), marge nette 2.9 % -> 1.7 %
 Bonduelle : CA 2406 -> 2186 M€ (2023-2026), marge nette 0.6 % -> 0.7 % 
 LDC : CA 5846 -> 7283 M€ (2023-2026), marge nette 3.9 % -> 4.5 % 
 Savencia : CA 6551 -> 6957 M€ (2022-2025), marge nette 1.3 % -> 1.3 % 
+Engrais, Azote, 1961-1965 : production 916 kt, importations 30 kt, usage 766 kt, production / usage 120 % 
+Engrais, Azote, 2020-2024 : production 343 kt, importations 1888 kt, usage 1906 kt, production / usage 18 % 
+Engrais, Phosphate, 1961-1965 : production 1011 kt, importations 265 kt, usage 1135 kt, production / usage 89 % 
+Engrais, Phosphate, 2020-2024 : production 34 kt, importations 407 kt, usage 354 kt, production / usage 9 % 
+Engrais, Potasse, 1961-1965 : production 1779 kt, importations 40 kt, usage 920 kt, production / usage 193 % 
+Engrais, Potasse, 2020-2024 : production 0 kt, importations 491 kt, usage 403 kt, production / usage 0 % 

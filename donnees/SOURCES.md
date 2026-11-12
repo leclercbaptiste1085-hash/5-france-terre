@@ -20,3 +20,7 @@
 - Balance agroalimentaire (Douanes, Agreste) : Académie d'agriculture, fiche 10.02.Q06 révisée en août 2026
   (brut/academie_agriculture_commerce_ext.pdf).
 - Joualles : brut/wikipedia_joualle.txt et brut/vergers_comminges_joualles.html.
+- `brut/fao_engrais_france.csv` (tonnes d'éléments nutritifs) : FAOSTAT Inputs_FertilizersNutrient_E_Europe
+  (version de juillet 2026), extrait par extraire_fao.py.
+- Hugo, « La terre appauvrie par la mer » : brut/hugo_miserables_t5_l2_ch1.html (Wikisource, texte validé, éd. 1890).
+- Champs d'épandage de Paris : É. Dufour, Métropolitiques (brut/dufour_metropolitiques_epandage.pdf).

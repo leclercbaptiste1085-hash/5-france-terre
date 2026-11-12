@@ -4,7 +4,8 @@ La France reste la première puissance agricole de l'Union européenne. Ce proje
 publiques, un déclin technique installé depuis trente ans : des rendements qui ne progressent plus, des exploitations
 qui disparaissent et se spécialisent, une balance commerciale qui ne tient plus que par le vin. Il montre ensuite qu'une
 technique ancienne, remise au point par la recherche française, produit davantage sur la même surface : l'agroforesterie,
-héritière de la complantation.
+héritière de la complantation. Il propose enfin de boucler le cycle entre la ville et la terre : bâtir pour durer, et ne
+rien jeter.
 
 ![Rendement du blé](sorties/1_rendement_ble.png)
 
@@ -62,6 +63,34 @@ productivité par hectare.
 
 ![Agroforesterie](sorties/6_agroforesterie.png)
 
+## Boucler le cycle : rendre à la terre ce que la ville lui prend
+
+**Bâtir pour durer.** La Cloaca Maxima, le grand égout de Rome, a été creusée il y a environ 2 500 ans ; elle draine
+encore le centre de la ville. Le Pont du Gard a deux mille ans, le canal du Midi plus de trois siècles, et une grande
+partie des égouts de Paris date de Belgrand, sous le Second Empire. Ces ouvrages durent parce qu'ils ont été conçus pour
+durer et entretenus ; le réseau Freycinet, laissé à l'abandon (projet précédent), montre l'inverse.
+
+**Mais ne rien jeter.** La Cloaca Maxima a aussi un revers, que Victor Hugo relevait dès 1862, dans le chapitre des
+*Misérables* intitulé « La terre appauvrie par la mer » : « Paris jette par an vingt-cinq millions à l'eau. […] Si notre
+or est fumier, en revanche, notre fumier est or. » Citant le chimiste Liebig, il ajoutait : « Les cloaques de Rome ont
+absorbé tout le bien-être du paysan romain. » Son remède tenait en une phrase : « amener dans nos villes l'eau pure des
+champs et renvoyer dans nos champs l'eau riche des villes ».
+
+**Paris l'a fait.** À la fin du XIXe siècle, les eaux d'égout de Paris ont été envoyées vers les plaines de Gennevilliers,
+d'Achères, de Méry-Pierrelaye et de Carrières-Triel. Vers 1910, plus de 5 000 hectares absorbaient les eaux usées des
+Parisiens et les nourrissaient en retour par une production maraîchère importante ; avec l'usage agricole des ordures
+ménagères, le recyclage de l'azote et du phosphore du système alimentaire parisien atteignait alors son maximum (Dufour,
+*Métropolitiques*, d'après Esculier et Barles). La station d'épuration d'Achères, inaugurée en 1940, a ensuite remplacé
+les champs : on a cessé de rendre à la terre.
+
+**Aujourd'hui, la France importe ce qu'elle jetait.** Au début des années 1960, elle produisait 120 % de l'azote et
+193 % de la potasse qu'épandaient ses agriculteurs. En 2020-2024, elle n'en produit plus que 18 % pour l'azote, 9 % pour
+le phosphate et rien pour la potasse (FAOSTAT) : près de 1,9 million de tonnes d'azote sont importées chaque année. Les
+éléments nutritifs que contiennent les eaux usées et les biodéchets des villes sont, eux, toujours traités comme des
+déchets.
+
+![Engrais](sorties/8_engrais.png)
+
 ## Ouverture : le déclin technique, et le rebond
 
 La mer, le fleuve, puis la terre : trois domaines où la France disposait d'un avantage, et où elle a cessé de progresser.
@@ -83,6 +112,14 @@ suivant.
   eux : fin juin pour Bonduelle, fin septembre pour Exel, fin février pour LDC, fin décembre pour Savencia. Le résultat
   retenu est le résultat net total, le résultat part du groupe de Bonduelle n'étant pas publié sur les deux derniers
   exercices.
+- **Les champs d'épandage ont aussi laissé des sols pollués.** Les eaux de Paris mêlaient rejets domestiques et
+  industriels ; les plaines d'Achères et de Pierrelaye sont aujourd'hui chargées en plomb et en métaux lourds, et font
+  l'objet d'un suivi sanitaire (ARS Île-de-France). Rendre à la terre suppose donc de séparer à la source ce qui la nourrit
+  de ce qui l'empoisonne.
+- **Le recyclage ne couvre pas tous les besoins.** Les eaux usées et les biodéchets ne remplaceraient qu'une partie des
+  engrais importés ; ce projet n'en chiffre pas la part, faute de source publique consolidée.
+- **L'usage agricole d'engrais publié par la FAO est irrégulier entre 2003 et 2014** ; le graphique ne compare que
+  1961-1965 et 2020-2024.
 - **La complantation historique n'est pas chiffrée.** Aucune statistique nationale ne mesure l'étendue passée des joualles ;
   la section s'appuie sur des sources descriptives.
 
@@ -112,6 +149,10 @@ figure dans `donnees/SOURCES.md`.
   Dupraz et al., résultats de Restinclières et Vézénobres repris par la [Mission bocage](https://www.parc-loire-anjou-touraine.fr/sites/default/files/2020-04/journees-techniques-agroforesterie-definition-et-perspectives-mission-bocage.pdf).
 - Joualles : [Wikipédia](https://fr.wikipedia.org/wiki/Joualle) ;
   [Les Vergers retrouvés du Comminges](https://www.les-vergers-retrouves-du-comminges.org/histoire/joualles-et-hautains/).
+- V. Hugo, *Les Misérables*, tome V, livre II, chapitre 1, [« La terre appauvrie par la mer »](https://fr.wikisource.org/wiki/Les_Mis%C3%A9rables/Tome_5/Livre_2/01), 1862.
+- É. Dufour, [*La persistance des champs d'épandage d'eaux usées de l'agglomération parisienne*](https://metropolitiques.eu/IMG/pdf/dufour.pdf), *Métropolitiques*.
+- ARS Île-de-France, [*Les plaines d'épandage : contrôle et suivi sanitaire*](https://www.iledefrance.ars.sante.fr/les-plaines-depandage-controle-et-suivi-sanitaire-par-lagence).
+- FAOSTAT, [engrais par élément nutritif](https://www.fao.org/faostat/fr/#data/RFN).
 - Comptes des entreprises : [Boursorama](https://www.boursorama.com) (Bonduelle, Exel Industries, LDC, Savencia).
 
 ## Graphiques

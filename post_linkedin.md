@@ -14,6 +14,8 @@ Ce que montrent les chiffres :
 
 5️⃣ Pourtant, l'INRAE mesure depuis trente ans ce que l'on gagne à remettre l'arbre dans le champ. Sur ses parcelles de l'Hérault et du Gard, 100 hectares d'arbres et de cultures mêlés produisent autant de grain et de bois que 134 hectares séparés (valeur mesurée), et jusqu'à 160 hectares selon les simulations. L'arbre et la céréale ne puisent pas la lumière et l'eau au même endroit ni au même moment : c'est un gain de productivité, pas une concession.
 
+6️⃣ Reste à boucler le cycle. En 1862, Victor Hugo écrivait dans Les Misérables : « Si notre or est fumier, en revanche, notre fumier est or. » Paris l'a fait : vers 1910, plus de 5 000 hectares de maraîchages étaient arrosés par ses eaux d'égout, et nourrissaient la ville en retour. On y a renoncé ; aujourd'hui, la France ne produit plus que 18 % de l'azote et 9 % du phosphate qu'épandent ses agriculteurs, et plus du tout de potasse (FAOSTAT). Il faut bâtir comme les Romains, dont le grand égout fonctionne depuis 2 500 ans, mais sans jeter ce que la terre nous a donné.
+
 La mer, le fleuve, puis la terre : chaque fois, le savoir existe, et il est souvent français. Ce qui manque, c'est sa mise en œuvre. Ce sera le fil de mon prochain travail : le déclin technique de la France, et les conditions d'un rebond.
 
 Données, code et limites :

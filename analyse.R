@@ -217,4 +217,39 @@ g7 <- ggplot(ent, aes(exercice, marge)) +
                        "fin février (LDC : 2026 = mars 2025 - février 2026), fin décembre (Savencia)."))
 enregistrer(g7, "7_entreprises_marge.png", l = 10, h = 4.8)
 
+# ---------------------------------------------------------------------------
+# 8. Les engrais : production nationale rapportée à l'usage agricole, début et fin de série
+#    Au-dessus de 100 %, la France produit plus d'engrais qu'elle n'en épand.
+#    L'usage agricole publié par la FAO est irrégulier entre 2003 et 2014 (creux sans rapport avec
+#    les surfaces) : on compare donc deux périodes stables, 1961-1965 et 2020-2024.
+# ---------------------------------------------------------------------------
+eng <- lire("fao_engrais_france.csv") |>
+  mutate(periode = case_when(annee <= 1965 ~ "1961-1965", annee >= 2020 ~ "2020-2024")) |>
+  filter(!is.na(periode)) |>
+  group_by(element, periode, poste) |> summarise(t = mean(tonnes), .groups = "drop") |>
+  pivot_wider(names_from = poste, values_from = t) |>
+  mutate(taux = production / usage, element = factor(element, levels = c("Potasse", "Azote", "Phosphate")))
+for (i in seq_len(nrow(eng))) with(eng[i, ],
+  note("Engrais, %s, %s : production %.0f kt, importations %.0f kt, usage %.0f kt, production / usage %.0f %%",
+       element, periode, production / 1000, importations / 1000, usage / 1000, 100 * taux))
+
+g8 <- ggplot(eng, aes(element, taux, fill = periode)) +
+  geom_hline(yintercept = 1, colour = encre, linewidth = 0.4, linetype = "dashed") +
+  geom_col(position = position_dodge(width = 0.7), width = 0.62) +
+  geom_text(aes(label = percent(taux, accuracy = 1, suffix = " %")), position = position_dodge(width = 0.7),
+            vjust = -0.5, family = "Calibri", colour = encre, size = 3.8) +
+  annotate("text", x = 1.5, y = 1.06, label = "Production = besoins", hjust = 0.5,
+           family = "Calibri", colour = "#4A5568", size = 3.3) +
+  scale_fill_manual(values = c(`1961-1965` = bleu, `2020-2024` = vert)) +
+  scale_y_continuous(labels = label_percent(suffix = " %"), expand = expansion(mult = c(0, 0.1))) +
+  labs(title = "En 1961, la France produisait ses engrais ;
+elle importe aujourd'hui presque tout",
+       subtitle = "Production nationale d'engrais rapportée à l'usage agricole (éléments nutritifs, moyennes sur 5 ans)",
+       x = NULL, y = NULL, fill = NULL,
+       caption = paste("Source : FAOSTAT, Inputs_FertilizersNutrient (N, P2O5, K2O). Bleu : 1961-1965 ; vert : 2020-2024.",
+                       "
+Les années intermédiaires ne sont pas tracées : l'usage agricole publié y est irrégulier.")) +
+  theme(legend.position = "top", legend.justification = "left", legend.text = element_text(colour = "#4A5568"))
+enregistrer(g8, "8_engrais.png")
+
 close(res)

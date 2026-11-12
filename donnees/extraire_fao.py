@@ -2,6 +2,7 @@
 # Fichiers à télécharger dans brut/fao/ :
 #   https://bulks-faostat.fao.org/production/Production_Crops_Livestock_E_Europe.zip
 #   https://bulks-faostat.fao.org/production/Trade_CropsLivestock_E_Europe.zip
+#   https://bulks-faostat.fao.org/production/Inputs_FertilizersNutrient_E_Europe.zip (enregistré sous engrais.zip)
 # Lancer depuis donnees/ : python extraire_fao.py
 import csv, collections, zipfile
 
@@ -41,4 +42,14 @@ with open("brut/fao_commerce_france.csv", "w", newline="", encoding="utf-8") as 
         v = [d.get((k, e, a)) for k in ("agri", "alcool", "fl") for e in ("Ex", "Im")]
         if None not in v:
             w.writerow([a] + [round(x) for x in v])
+# 3. Engrais de la France (tonnes d'éléments nutritifs N, P2O5, K2O) : production, importations, usage agricole
+ELEM = {"Nutrient nitrogen N (total)": "Azote", "Nutrient phosphate P2O5 (total)": "Phosphate",
+        "Nutrient potash K2O (total)": "Potasse"}
+POSTE = {"Production": "production", "Import quantity": "importations", "Agricultural Use": "usage"}
+with open("brut/fao_engrais_france.csv", "w", newline="", encoding="utf-8") as f:
+    w = csv.writer(f); w.writerow(["element", "poste", "annee", "tonnes"])
+    for row, ans in lignes("engrais.zip", "Inputs_FertilizersNutrient_E_Europe_NOFLAG.csv"):
+        # ce fichier n'a pas de colonne CPC : Item en 4, Element en 6
+        if row[2] == "France" and row[4] in ELEM and row[6] in POSTE:
+            w.writerows([ELEM[row[4]], POSTE[row[6]], a, float(row[i])] for i, a in ans if row[i])
 print("ok")
