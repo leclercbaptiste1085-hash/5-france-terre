@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "k_fleuves",
+  "position": {
+    "x": 1061,
+    "y": 340,
+    "z": 3400,
+    "height": 110,
+    "width": 195,
+    "tabOrder": 3400
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Résultats"
+                    }
+                  },
+                  "Property": "Part des pertes fluviales captées"
+                }
+              },
+              "queryRef": "Résultats.Part des pertes fluviales captées",
+              "nativeQueryRef": "Part des pertes fluviales captées"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {},
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

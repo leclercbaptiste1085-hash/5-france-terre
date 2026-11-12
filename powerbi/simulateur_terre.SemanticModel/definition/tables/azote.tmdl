@@ -1,0 +1,41 @@
+table azote
+	lineageTag: 7e652b32-8070-417e-8b34-5e627ebcc3b7
+
+	column 'flux'
+		dataType: string
+		lineageTag: 505b314b-6fa0-4f16-87a4-5569c534ee8b
+		summarizeBy: none
+		sourceColumn: flux
+
+	column 'kt_n'
+		dataType: double
+		lineageTag: 76305198-658e-4fe0-867b-080a9cad2d35
+		summarizeBy: sum
+		sourceColumn: kt_n
+
+	column 'groupe'
+		dataType: string
+		lineageTag: 62c4e45a-4ea4-4799-931b-8cad422d87d4
+		summarizeBy: none
+		sourceColumn: groupe
+
+	column 'source'
+		dataType: string
+		lineageTag: 690e1d8a-2510-410e-9b65-23a26f222aab
+		summarizeBy: none
+		sourceColumn: source
+
+	partition azote = m
+		mode: import
+		source =
+				let
+				    Source = Csv.Document(File.Contents(Dossier & "ordres_grandeur_azote.csv"), [Delimiter = ",", Columns = 4, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Entetes = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Types = Table.TransformColumnTypes(Entetes, {{"flux", type text}, {"kt_n", type number}, {"groupe", type text}, {"source", type text}}, "en-US")
+				in
+				    Types
+
+	measure 'Azote (t)' = SUM ( azote[kt_n] ) * 1000
+		formatString: #,0
+		lineageTag: df3654d5-2c5a-4a1c-84fe-5dbd74708853
+

@@ -1,0 +1,53 @@
+table Résultats
+	lineageTag: 1755cea7-7776-4c00-9e03-dc6968484635
+
+	measure 'Hectares équivalents gagnés' = [Hectares en agroforesterie (valeur)] * ( [Gain de surface retenu (valeur)] - 1 )
+		formatString: #,0
+		displayFolder: Agroforesterie
+		lineageTag: 42a8ec25-cae6-41cb-b586-3f468f78da1c
+
+	measure 'Part de la surface agricole convertie' = DIVIDE ( [Hectares en agroforesterie (valeur)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Surface agricole utile de la France" ) )
+		formatString: 0.0%
+		displayFolder: Agroforesterie
+		lineageTag: 9fe5f4c0-cbbe-40ac-b6a0-6aca7790259f
+
+	measure 'Azote récupéré par l''urine (t)' = LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Azote de nos excréments" ) * LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Part de cet azote dans l'urine" ) * [Part de l'urine récupérée (valeur)]
+		formatString: #,0
+		displayFolder: Azote
+		lineageTag: 42928f05-f809-41c1-b271-1c91aab4b22d
+
+	measure 'Part des engrais azotés remplacée' = DIVIDE ( [Azote récupéré par l'urine (t)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Engrais azotés épandus" ) )
+		formatString: 0.0%
+		displayFolder: Azote
+		lineageTag: af21fe81-11b3-4789-8c59-1feedaf2be93
+
+	measure 'Urine récupérée / production française d''engrais' = DIVIDE ( [Azote récupéré par l'urine (t)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Production française d'engrais azotés" ) )
+		formatString: 0%
+		displayFolder: Azote
+		lineageTag: f71b2edf-23c8-480c-9cb8-ed5bfd56c906
+
+	measure 'Azote retiré par les moules (t)' = [Production de moules (t) (valeur)] * LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Azote retiré par tonne de moules" ) / 1000
+		formatString: #,0
+		displayFolder: Mer
+		lineageTag: 38fab8f6-798e-4e8a-bf45-97827a66cfa5
+
+	measure 'Part des pertes fluviales captées' = DIVIDE ( [Azote retiré par les moules (t)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Azote perdu par les fleuves vers la mer" ) )
+		formatString: 0.00%
+		displayFolder: Mer
+		lineageTag: 4d30b153-2e1c-418d-bf62-c33489874217
+
+	measure 'Moules / production 2024' = DIVIDE ( [Production de moules (t) (valeur)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Production française de moules 2024" ) )
+		formatString: 0.0
+		displayFolder: Mer
+		lineageTag: 005341c1-43a7-47e0-ac36-51b9618935ea
+
+	column 'Clé'
+		dataType: int64
+		lineageTag: 39f31017-7e77-4d4c-a3c8-5c5388e620ca
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition Résultats = calculated
+		mode: import
+		source = { 1 }
+

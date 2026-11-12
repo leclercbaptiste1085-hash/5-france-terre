@@ -1,0 +1,11 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/gitIntegration/platformProperties/2.0.0/schema.json",
+  "metadata": {
+    "type": "Report",
+    "displayName": "simulateur_terre"
+  },
+  "config": {
+    "version": "2.0",
+    "logicalId": "84d9b6c8-2c60-4218-8d4b-3e602474bbab"
+  }
+}

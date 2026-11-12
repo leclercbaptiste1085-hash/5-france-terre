@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "k_engrais",
+  "position": {
+    "x": 645,
+    "y": 340,
+    "z": 2400,
+    "height": 110,
+    "width": 195,
+    "tabOrder": 2400
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Résultats"
+                    }
+                  },
+                  "Property": "Part des engrais azotés remplacée"
+                }
+              },
+              "queryRef": "Résultats.Part des engrais azotés remplacée",
+              "nativeQueryRef": "Part des engrais azotés remplacée"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {},
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

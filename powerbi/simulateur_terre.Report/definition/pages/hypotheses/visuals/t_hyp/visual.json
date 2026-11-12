@@ -1,0 +1,80 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "t_hyp",
+  "position": {
+    "x": 24,
+    "y": 92,
+    "z": 2000,
+    "height": 600,
+    "width": 1230,
+    "tabOrder": 2000
+  },
+  "visual": {
+    "visualType": "tableEx",
+    "query": {
+      "queryState": {
+        "Values": {
+          "projections": [
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hypothèses"
+                    }
+                  },
+                  "Property": "Hypothèse"
+                }
+              },
+              "queryRef": "Hypothèses.Hypothèse",
+              "nativeQueryRef": "Hypothèse"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hypothèses"
+                    }
+                  },
+                  "Property": "Valeur"
+                }
+              },
+              "queryRef": "Hypothèses.Valeur",
+              "nativeQueryRef": "Valeur"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hypothèses"
+                    }
+                  },
+                  "Property": "Unité"
+                }
+              },
+              "queryRef": "Hypothèses.Unité",
+              "nativeQueryRef": "Unité"
+            },
+            {
+              "field": {
+                "Column": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Hypothèses"
+                    }
+                  },
+                  "Property": "Source"
+                }
+              },
+              "queryRef": "Hypothèses.Source",
+              "nativeQueryRef": "Source"
+            }
+          ]
+        }
+      }
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

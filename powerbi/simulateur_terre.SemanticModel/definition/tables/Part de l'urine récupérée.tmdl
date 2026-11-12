@@ -1,0 +1,18 @@
+table 'Part de l''urine récupérée'
+	lineageTag: 2e63013a-650c-45fc-b378-7fcb82f6f6c7
+
+	measure 'Part de l''urine récupérée (valeur)' = SELECTEDVALUE ( 'Part de l''urine récupérée'[Part de l'urine récupérée], 0.2 )
+		formatString: 0%
+		lineageTag: 408cb288-2f72-4b89-8d01-2891f904f365
+
+	column 'Part de l''urine récupérée'
+		dataType: double
+		formatString: 0%
+		lineageTag: 92dd10b7-9cbb-4682-a0c8-52bbb94a7d49
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition 'Part de l''urine récupérée' = calculated
+		mode: import
+		source = GENERATESERIES ( 0, 1, 0.05 )
+

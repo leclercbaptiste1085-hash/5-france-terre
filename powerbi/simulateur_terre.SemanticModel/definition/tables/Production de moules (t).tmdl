@@ -1,0 +1,18 @@
+table 'Production de moules (t)'
+	lineageTag: bb4b44eb-c7fe-460b-bfed-e6a5b862884b
+
+	measure 'Production de moules (t) (valeur)' = SELECTEDVALUE ( 'Production de moules (t)'[Production de moules (t)], 50000 )
+		formatString: #,0
+		lineageTag: 69b34d56-362e-4531-865e-468cc077e11e
+
+	column 'Production de moules (t)'
+		dataType: double
+		formatString: #,0
+		lineageTag: 0127e561-a7a9-4702-a391-77b8692ea3f6
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition 'Production de moules (t)' = calculated
+		mode: import
+		source = GENERATESERIES ( 0, 1000000, 10000 )
+

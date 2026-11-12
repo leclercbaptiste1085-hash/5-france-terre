@@ -1,0 +1,32 @@
+{
+  "name": "Terre",
+  "dataColors": [
+    "#1F5A8C",
+    "#2E8B57",
+    "#7A8CA3",
+    "#5FA8A0",
+    "#B8C7D6",
+    "#1B2A3A"
+  ],
+  "foreground": "#1B2A3A",
+  "background": "#FFFFFF",
+  "tableAccent": "#1F5A8C",
+  "textClasses": {
+    "label": {
+      "fontFace": "Calibri",
+      "color": "#1B2A3A"
+    },
+    "callout": {
+      "fontFace": "Calibri",
+      "color": "#1B2A3A"
+    },
+    "title": {
+      "fontFace": "Calibri",
+      "color": "#1B2A3A"
+    },
+    "header": {
+      "fontFace": "Calibri",
+      "color": "#1B2A3A"
+    }
+  }
+}

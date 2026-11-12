@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "k_prod",
+  "position": {
+    "x": 440,
+    "y": 460,
+    "z": 2500,
+    "height": 110,
+    "width": 400,
+    "tabOrder": 2500
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Résultats"
+                    }
+                  },
+                  "Property": "Urine récupérée / production française d'engrais"
+                }
+              },
+              "queryRef": "Résultats.Urine récupérée / production française d'engrais",
+              "nativeQueryRef": "Urine récupérée / production française d'engrais"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {},
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

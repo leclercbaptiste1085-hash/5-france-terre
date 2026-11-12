@@ -1,0 +1,18 @@
+table 'Hectares en agroforesterie'
+	lineageTag: 11cc06ce-dc02-446e-baf9-6799e5f1317d
+
+	measure 'Hectares en agroforesterie (valeur)' = SELECTEDVALUE ( 'Hectares en agroforesterie'[Hectares en agroforesterie], 500000 )
+		formatString: #,0
+		lineageTag: 6b856248-f195-4d95-954f-60e00bc9cbb7
+
+	column 'Hectares en agroforesterie'
+		dataType: double
+		formatString: #,0
+		lineageTag: 7c00af30-b8ba-477e-91e1-5d92e5151bb4
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition 'Hectares en agroforesterie' = calculated
+		mode: import
+		source = GENERATESERIES ( 0, 3000000, 100000 )
+

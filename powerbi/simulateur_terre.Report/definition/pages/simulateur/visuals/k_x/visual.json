@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "k_x",
+  "position": {
+    "x": 856,
+    "y": 460,
+    "z": 3500,
+    "height": 110,
+    "width": 400,
+    "tabOrder": 3500
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Résultats"
+                    }
+                  },
+                  "Property": "Moules / production 2024"
+                }
+              },
+              "queryRef": "Résultats.Moules / production 2024",
+              "nativeQueryRef": "Moules / production 2024"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {},
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}
