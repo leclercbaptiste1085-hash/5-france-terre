@@ -291,7 +291,7 @@ g10 <- ggplot(az, aes(part, destination)) +
   labs(title = "Pourtant, 90 % de l'azote de nos excréments est perdu",
        subtitle = "Devenir de l'azote excrété en France, moyenne 2015-2020 (milliers de tonnes d'azote par an)",
        x = NULL, y = NULL,
-       caption = paste("Source : Starck, Fardet et Esculier (LEESU), Fate of nitrogen in French human excreta, 2023 (arXiv 2310.06880).",
+       caption = paste("Source : Starck, Fardet et Esculier (LEESU), Fate of nitrogen in French human excreta, 2023 (prépublication arXiv 2310.06880).",
                        "\nL'azote est surtout dans l'urine (85 %) ; les stations d'épuration le renvoient dans l'air par dénitrification avant qu'il n'atteigne les boues.")) +
   theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
 enregistrer(g10, "10_azote_excreta.png", h = 3.8)
