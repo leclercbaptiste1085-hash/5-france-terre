@@ -24,3 +24,8 @@
   (version de juillet 2026), extrait par extraire_fao.py.
 - Hugo, « La terre appauvrie par la mer » : brut/hugo_miserables_t5_l2_ch1.html (Wikisource, texte validé, éd. 1890).
 - Champs d'épandage de Paris : É. Dufour, Métropolitiques (brut/dufour_metropolitiques_epandage.pdf).
+- `brut/eurostat_boues_pays.csv`, `brut/eurostat_compostage.csv` : Eurostat env_ww_spd et env_wasmun (JSON dans brut/),
+  extraits par extraire_eurostat.py.
+- `brut/starck_azote_excreta.csv` : Starck, Fardet, Esculier, arXiv 2310.06880, 2023, figure 1 et texte p. 9
+  (160 ktN air, 124 ktN eau et sols, 31 ktN cultures ; moyenne 2015-2020) (brut/starck_2023_azote_excreta.pdf).
+- Dehesa : Real Decreto 4/2014, art. 6 et annexe (BOE-A-2014-318) ; Agronews Castilla y León, 5 juillet 2017.

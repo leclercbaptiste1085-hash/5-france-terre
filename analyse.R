@@ -242,14 +242,58 @@ g8 <- ggplot(eng, aes(element, taux, fill = periode)) +
            family = "Calibri", colour = "#4A5568", size = 3.3) +
   scale_fill_manual(values = c(`1961-1965` = bleu, `2020-2024` = vert)) +
   scale_y_continuous(labels = label_percent(suffix = " %"), expand = expansion(mult = c(0, 0.1))) +
-  labs(title = "En 1961, la France produisait ses engrais ;
-elle importe aujourd'hui presque tout",
+  labs(title = "En 1961, la France produisait ses engrais ;\nelle importe aujourd'hui presque tout",
        subtitle = "Production nationale d'engrais rapportée à l'usage agricole (éléments nutritifs, moyennes sur 5 ans)",
        x = NULL, y = NULL, fill = NULL,
        caption = paste("Source : FAOSTAT, Inputs_FertilizersNutrient (N, P2O5, K2O). Bleu : 1961-1965 ; vert : 2020-2024.",
-                       "
-Les années intermédiaires ne sont pas tracées : l'usage agricole publié y est irrégulier.")) +
+                       "\nLes années intermédiaires ne sont pas tracées : l'usage agricole publié y est irrégulier.")) +
   theme(legend.position = "top", legend.justification = "left", legend.text = element_text(colour = "#4A5568"))
 enregistrer(g8, "8_engrais.png")
+
+# ---------------------------------------------------------------------------
+# 9. Les boues d'épuration : part rendue au sol (épandage direct + compost), par pays
+#    Seuls les pays dont la donnée date de 2019 ou après sont retenus.
+# ---------------------------------------------------------------------------
+noms <- c(FR = "France", DE = "Allemagne", NL = "Pays-Bas", BE = "Belgique", AT = "Autriche", ES = "Espagne",
+          IE = "Irlande", PL = "Pologne", SE = "Suède", DK = "Danemark", CH = "Suisse")
+boues <- lire("eurostat_boues_pays.csv") |>
+  filter(annee >= 2019, pays %in% names(noms)) |>
+  mutate(sol = (agriculture + compost) / total_kt, nom = paste0(noms[pays], " (", annee, ")"),
+         nom = reorder(nom, sol))
+with(filter(boues, pays %in% c("FR", "DE", "NL")),
+     note("Boues rendues au sol : %s", paste(sprintf("%s %.0f %%", pays, 100 * sol), collapse = ", ")))
+
+g9 <- ggplot(boues, aes(sol, nom)) +
+  geom_col(aes(fill = pays == "FR"), width = 0.65) +
+  geom_text(aes(label = percent(sol, accuracy = 1, suffix = " %")), hjust = -0.15, family = "Calibri", colour = encre, size = 3.6) +
+  scale_fill_manual(values = c(`TRUE` = vert, `FALSE` = bleu)) +
+  scale_x_continuous(labels = label_percent(suffix = " %"), limits = c(0, 1.12), breaks = seq(0, 1, 0.25),
+                     expand = expansion(mult = c(0, 0))) +
+  labs(title = "La France rend ses boues d'épuration à la terre\nbien plus que ses voisins",
+       subtitle = "Part des boues d'épuration urbaines épandues sur les champs ou compostées",
+       x = NULL, y = NULL,
+       caption = "Source : Eurostat, env_ww_spd (stations urbaines ; dernière année disponible, indiquée entre parenthèses). Le reste est surtout incinéré.") +
+  theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
+enregistrer(g9, "9_boues.png")
+
+# ---------------------------------------------------------------------------
+# 10. Mais l'azote ne suit pas : devenir de l'azote des excréments en France (moyenne 2015-2020)
+# ---------------------------------------------------------------------------
+az <- lire("starck_azote_excreta.csv") |> mutate(destination = factor(destination, levels = rev(destination)))
+note("Azote des excréments : %s", paste(sprintf("%s %.0f %% (%d kt)", az$destination, 100 * az$part, az$kt_n), collapse = " ; "))
+
+g10 <- ggplot(az, aes(part, destination)) +
+  geom_col(aes(fill = grepl("^Rendu", destination)), width = 0.6) +
+  geom_text(aes(label = sprintf("%s  (%d kt)", percent(part, accuracy = 1, suffix = " %"), kt_n)),
+            hjust = -0.1, family = "Calibri", colour = encre, size = 3.9) +
+  scale_fill_manual(values = c(`TRUE` = vert, `FALSE` = bleu)) +
+  scale_x_continuous(labels = label_percent(suffix = " %"), limits = c(0, 0.72), expand = expansion(mult = c(0, 0))) +
+  labs(title = "Pourtant, 90 % de l'azote de nos excréments est perdu",
+       subtitle = "Devenir de l'azote excrété en France, moyenne 2015-2020 (milliers de tonnes d'azote par an)",
+       x = NULL, y = NULL,
+       caption = paste("Source : Starck, Fardet et Esculier (LEESU), Fate of nitrogen in French human excreta, 2023 (arXiv 2310.06880).",
+                       "\nL'azote est surtout dans l'urine (85 %) ; les stations d'épuration le renvoient dans l'air par dénitrification avant qu'il n'atteigne les boues.")) +
+  theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
+enregistrer(g10, "10_azote_excreta.png", h = 3.8)
 
 close(res)

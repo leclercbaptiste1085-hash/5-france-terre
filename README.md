@@ -5,7 +5,7 @@ publiques, un déclin technique installé depuis trente ans : des rendements qui
 qui disparaissent et se spécialisent, une balance commerciale qui ne tient plus que par le vin. Il montre ensuite qu'une
 technique ancienne, remise au point par la recherche française, produit davantage sur la même surface : l'agroforesterie,
 héritière de la complantation. Il propose enfin de boucler le cycle entre la ville et la terre : bâtir pour durer, et ne
-rien jeter.
+rien jeter, à commencer par l'azote que nos stations d'épuration détruisent pendant que nous importons nos engrais.
 
 ![Rendement du blé](sorties/1_rendement_ble.png)
 
@@ -63,6 +63,20 @@ productivité par hectare.
 
 ![Agroforesterie](sorties/6_agroforesterie.png)
 
+**Un exemple à grande échelle : la dehesa et le porc ibérique.** De l'autre côté des Pyrénées, l'agroforesterie n'est
+pas une expérience : la dehesa espagnole et le montado portugais couvrent environ 3,5 millions d'hectares de prairies
+plantées de chênes verts et de chênes-lièges. Le même hectare donne de l'herbe, du liège, du bois de chauffe et des
+glands, que les porcs ibériques viennent manger à l'automne ; leurs déjections fertilisent la prairie. Le système ne
+jette rien. La filière « de bellota » est encadrée par un décret de 2014 : au moins 46 kg pris à la glandée, en plus de
+60 jours, et pas plus de 0,25 à 1,25 porc par hectare selon la couverture des arbres. Environ 700 000 porcs étaient
+certifiés par saison au milieu des années 2010, un niveau que la profession jugeait alors proche du plafond.
+
+Il faut le dire honnêtement : la dehesa produit **peu par hectare**. Sa rentabilité vient du prix du jambon, pas du
+volume, et elle ne se transpose pas aux plaines céréalières françaises ; c'est là que les essais de l'INRAE sur le blé
+et le noyer sont plus utiles. Elle montre en revanche qu'un système agroforestier peut faire vivre une filière entière,
+avec un produit qui se vend dans le monde, et que l'arbre peut être une ressource de l'exploitation plutôt qu'un obstacle
+au tracteur.
+
 ## Boucler le cycle : rendre à la terre ce que la ville lui prend
 
 **Bâtir pour durer.** La Cloaca Maxima, le grand égout de Rome, a été creusée il y a environ 2 500 ans ; elle draine
@@ -80,16 +94,31 @@ champs et renvoyer dans nos champs l'eau riche des villes ».
 d'Achères, de Méry-Pierrelaye et de Carrières-Triel. Vers 1910, plus de 5 000 hectares absorbaient les eaux usées des
 Parisiens et les nourrissaient en retour par une production maraîchère importante ; avec l'usage agricole des ordures
 ménagères, le recyclage de l'azote et du phosphore du système alimentaire parisien atteignait alors son maximum (Dufour,
-*Métropolitiques*, d'après Esculier et Barles). La station d'épuration d'Achères, inaugurée en 1940, a ensuite remplacé
-les champs : on a cessé de rendre à la terre.
+*Métropolitiques*, d'après Esculier et Barles). La station d'épuration d'Achères, inaugurée en 1940, a ensuite pris le
+relais des champs.
 
-**Aujourd'hui, la France importe ce qu'elle jetait.** Au début des années 1960, elle produisait 120 % de l'azote et
-193 % de la potasse qu'épandaient ses agriculteurs. En 2020-2024, elle n'en produit plus que 18 % pour l'azote, 9 % pour
-le phosphate et rien pour la potasse (FAOSTAT) : près de 1,9 million de tonnes d'azote sont importées chaque année. Les
-éléments nutritifs que contiennent les eaux usées et les biodéchets des villes sont, eux, toujours traités comme des
-déchets.
+**Aujourd'hui, la France importe ses engrais.** Au début des années 1960, elle produisait 120 % de l'azote et 193 % de
+la potasse qu'épandaient ses agriculteurs. En 2020-2024, elle n'en produit plus que 18 % pour l'azote, 9 % pour le
+phosphate et rien pour la potasse (FAOSTAT) : près de 1,9 million de tonnes d'azote sont importées chaque année.
 
 ![Engrais](sorties/8_engrais.png)
+
+**La France rend ses boues à la terre mieux que ses voisins.** Il serait faux de dire qu'elle a renoncé : en 2024, 88 %
+de ses boues d'épuration sont épandues ou compostées, contre 17 % en Allemagne et aucune aux Pays-Bas ni en Suisse, qui
+les incinèrent (Eurostat). Ses collectivités compostent aussi davantage qu'avant : 114 kg de déchets municipaux par
+habitant en 2024, contre 60 en 2000, un niveau proche de la moyenne européenne (102 kg) mais loin de l'Autriche (174 kg).
+
+![Boues](sorties/9_boues.png)
+
+**Mais l'azote, lui, est perdu.** Les boues ne contiennent presque plus d'azote. Celui-ci se trouve à 85 % dans l'urine,
+et les stations d'épuration le renvoient dans l'air sous forme de diazote avant qu'il n'atteigne les boues. Résultat,
+d'après le LEESU (École des Ponts) : sur environ 300 000 tonnes d'azote excrétées chaque année en France, 50 % partent
+dans l'air, 40 % dans l'eau ou les sols, et 10 % seulement reviennent aux cultures. On dépense ainsi de l'énergie pour
+détruire l'azote que l'on importe sous forme d'engrais. Tout récupérer remplacerait environ 15 % des engrais azotés de
+synthèse : ce n'est pas l'autonomie, mais c'est à peu près ce que la France produit encore elle-même. La technique
+existe : la collecte séparée de l'urine, étudiée en Île-de-France par le programme OCAPI.
+
+![Azote](sorties/10_azote_excreta.png)
 
 ## Ouverture : le déclin technique, et le rebond
 
@@ -116,8 +145,12 @@ suivant.
   industriels ; les plaines d'Achères et de Pierrelaye sont aujourd'hui chargées en plomb et en métaux lourds, et font
   l'objet d'un suivi sanitaire (ARS Île-de-France). Rendre à la terre suppose donc de séparer à la source ce qui la nourrit
   de ce qui l'empoisonne.
-- **Le recyclage ne couvre pas tous les besoins.** Les eaux usées et les biodéchets ne remplaceraient qu'une partie des
-  engrais importés ; ce projet n'en chiffre pas la part, faute de source publique consolidée.
+- **Le recyclage ne couvre pas tous les besoins.** Récupérer tout l'azote des excréments remplacerait environ 15 % des
+  engrais azotés de synthèse (LEESU) ; le bilan du LEESU porte sur 2015-2020 et comporte une incertitude de 5 à 15 % sur
+  la part recyclée. Le chiffre parfois cité d'un recyclage de 50 % de l'azote parisien vers 1904 n'a pas pu être vérifié
+  à la source (site du programme OCAPI hors ligne) ; il n'est pas repris.
+- **La dehesa est mal mesurée.** Sa surface varie de 0,5 à plus de 3,5 millions d'hectares selon la définition retenue ;
+  le chiffre de 700 000 porcs « de bellota » date d'une saison du milieu des années 2010 (Agronews, juillet 2017).
 - **L'usage agricole d'engrais publié par la FAO est irrégulier entre 2003 et 2014** ; le graphique ne compare que
   1961-1965 et 2020-2024.
 - **La complantation historique n'est pas chiffrée.** Aucune statistique nationale ne mesure l'étendue passée des joualles ;
@@ -153,6 +186,12 @@ figure dans `donnees/SOURCES.md`.
 - É. Dufour, [*La persistance des champs d'épandage d'eaux usées de l'agglomération parisienne*](https://metropolitiques.eu/IMG/pdf/dufour.pdf), *Métropolitiques*.
 - ARS Île-de-France, [*Les plaines d'épandage : contrôle et suivi sanitaire*](https://www.iledefrance.ars.sante.fr/les-plaines-depandage-controle-et-suivi-sanitaire-par-lagence).
 - FAOSTAT, [engrais par élément nutritif](https://www.fao.org/faostat/fr/#data/RFN).
+- Eurostat : boues d'épuration [env_ww_spd](https://ec.europa.eu/eurostat/databrowser/view/env_ww_spd/default/table),
+  déchets municipaux compostés [env_wasmun](https://ec.europa.eu/eurostat/databrowser/view/env_wasmun/default/table).
+- T. Starck, T. Fardet, F. Esculier (LEESU), [*Fate of nitrogen in French human excreta*](https://arxiv.org/abs/2310.06880), 2023.
+- Dehesa : [Real Decreto 4/2014](https://www.boe.es/buscar/act.php?id=BOE-A-2014-318) (norme de qualité de l'ibérique) ;
+  [Agronews Castilla y León](https://www.agronewscastillayleon.com/en-la-ultima-montanera-se-certificaron-703000-cochinos-ibericos-de-bellota), juillet 2017 ;
+  surface : projet PRODEHESA-MONTADO, cité par [Cuadernos Geográficos](https://revistaseug.ugr.es/index.php/cuadgeo/article/download/8641/9681).
 - Comptes des entreprises : [Boursorama](https://www.boursorama.com) (Bonduelle, Exel Industries, LDC, Savencia).
 
 ## Graphiques
