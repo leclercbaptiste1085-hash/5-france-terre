@@ -1,81 +1,81 @@
 table Résultats
-	lineageTag: bfd75319-03cc-4f87-aa0e-a043ec4db30b
+	lineageTag: d266ad22-4536-450d-a343-f933ad07a518
 
 	measure 'H engrais' = 2000000
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: 7ec414d6-2e59-4d56-a4d0-343901faada5
+		lineageTag: cde8579e-493a-4f72-af38-4bfa5308877f
 
 	measure 'H effluents' = 597500
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: 051fd28c-e5ef-4d79-bd3f-ea8c5e76c409
+		lineageTag: f892d58e-7cf3-4413-aa7e-c26a6de7ce26
 
 	measure 'H légumineuses' = 40
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: fa1e988a-4b46-46ac-a7a3-c80d43a05a79
+		lineageTag: f0f0e5f5-c346-4d6f-bb8c-d5c58c4c83b2
 
 	measure 'H excrétions' = 300000
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: f00c8961-6638-4e26-8b7c-c4fd774660cf
+		lineageTag: d1b8c48b-0962-4516-bfbb-f33ff7f2433e
 
 	measure 'H part urine' = 0.85
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: 849c2737-5e68-4d95-a097-b655c508e2fd
+		lineageTag: 490253af-ad11-44bc-8539-7aaf4ab71625
 
 	measure 'H algues' = 4.5
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: d1d29710-f042-4965-b903-a84fcffc504b
+		lineageTag: f594f29d-1a31-4860-a665-05e7fe8a86ae
 
 	measure 'H gain surface' = 1.34
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: 88edd191-da04-40d4-94c1-999bab021d78
+		lineageTag: 6b857f55-a799-4396-8b68-e0050744966e
 
 	measure 'H SAU' = 26700000
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: b1a388ed-b88b-4aa8-968f-5fdad43e50dd
+		lineageTag: d6c5b593-8ca4-4d37-935e-850df5ebf06a
 
 	measure 'Azote des effluents (t)' = [H effluents] * [Part des effluents d'élevage mieux utilisés (valeur)]
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: 6b87fd00-5220-476f-89b7-5e2c27e043d7
+		lineageTag: 4576de7b-d022-44ce-a139-bb2aef307e14
 
 	measure 'Azote des légumineuses (t)' = [Hectares de légumineuses en plus (valeur)] * [H légumineuses] / 1000
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: 4c7809cb-7dfa-4988-9233-cff1f460378b
+		lineageTag: 68ab18ba-4808-4e52-8133-e34e32261fcc
 
 	measure 'Azote de l''urine (t)' = [H excrétions] * [H part urine] * [Part de l'urine collectée (valeur)]
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: 89c1343e-8217-499b-a873-7f557a0a2e46
+		lineageTag: 30382573-75da-4d5f-b363-f79fab31b71a
 
 	measure 'Azote des algues (t)' = [Algues cultivées (t par an) (valeur)] * [H algues] / 1000
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: ad7eaa9f-9a07-440b-b9d6-a7d68edc8485
+		lineageTag: ce57fc23-6146-4345-b247-26703de0b862
 
 	measure 'Azote apporté (t)' = SWITCH ( SELECTEDVALUE ( Leviers[Ordre] ), 1, [Azote des effluents (t)], 2, [Azote des légumineuses (t)], 3, [Azote de l'urine (t)], 4, [Azote des algues (t)], [Azote des effluents (t)] + [Azote des légumineuses (t)] + [Azote de l'urine (t)] + [Azote des algues (t)] )
 		formatString: #,0
-		lineageTag: c3cd1c90-22af-4559-8984-a571dfaa5c57
+		lineageTag: 38844d6f-23af-406d-a34d-0982f5df3ae8
 
 	measure 'Engrais azotés remplacés' = DIVIDE ( [Azote apporté (t)], [H engrais] )
 		formatString: 0%
-		lineageTag: 73fb9b8b-3ee0-4220-9825-8d4f7eb0a756
+		lineageTag: 7df97618-e165-4c45-9581-0247d9b5b9d9
 
 	measure 'Hectares de production gagnés' = [Hectares en agroforesterie (valeur)] * ( [H gain surface] - 1 )
 		formatString: #,0
-		lineageTag: 2688e58a-d619-4dbd-87fc-e425f2c4c381
+		lineageTag: 47cb4e34-cd10-4b0c-9598-0f0b55b6fb6c
 
 	column 'Clé'
 		dataType: int64
-		lineageTag: 72b7ceaa-5f51-4ac3-9e5e-438dd49541fc
+		lineageTag: dde165c4-cf24-49c9-8f49-81981a661f18
 		summarizeBy: none
 		sourceColumn: [Value]
 

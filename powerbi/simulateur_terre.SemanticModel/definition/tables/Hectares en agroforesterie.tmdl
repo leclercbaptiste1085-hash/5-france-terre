@@ -1,16 +1,20 @@
 table 'Hectares en agroforesterie'
-	lineageTag: b084ed34-c90b-4a84-96cf-63a048899117
+	lineageTag: a63181b0-2c5b-4dd7-90b1-0ddbf106da9d
 
 	measure 'Hectares en agroforesterie (valeur)' = SELECTEDVALUE ( 'Hectares en agroforesterie'[Hectares en agroforesterie], 500000 )
 		formatString: #,0
-		lineageTag: 0b5ab953-4b3e-48f6-812e-5439e2823751
+		lineageTag: 16486107-0b42-4513-a575-1c8117c2a1c9
 
 	column 'Hectares en agroforesterie'
 		dataType: double
 		formatString: #,0
-		lineageTag: 9153f134-0915-4ae9-9bef-4925fa81d1f6
+		lineageTag: 5cf2495e-6a12-41da-b56c-b1b5c7ae08ce
 		summarizeBy: none
 		sourceColumn: [Value]
+		extendedProperty ParameterMetadata =
+				{
+				  "version": 0
+				}
 
 	partition 'Hectares en agroforesterie' = calculated
 		mode: import
