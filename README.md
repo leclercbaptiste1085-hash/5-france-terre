@@ -2,9 +2,10 @@
 
 Ce projet ne cherche pas à dresser l'inventaire d'un déclin, mais à chiffrer des solutions techniques. Il part de deux
 constats : le rendement du blé ne progresse plus depuis trente ans, et la France importe désormais l'essentiel de ses
-engrais. Il examine ensuite trois leviers, avec leurs ordres de grandeur et leurs limites : l'agroforesterie, qui produit
-davantage sur la même surface ; la récupération de l'azote que nos villes détruisent ; et la culture de la mer, qui prolonge
-la terre sans engrais.
+engrais. Il examine ensuite trois leviers en détail, avec leurs ordres de grandeur et leurs limites : l'agroforesterie, qui
+produit davantage sur la même surface ; la récupération de l'azote que nos villes détruisent ; et la culture de la mer, qui
+prolonge la terre sans engrais. Il passe enfin en revue d'autres leviers, souvent plus gros : les effluents d'élevage, les
+légumineuses, les cultures intermédiaires et le phosphore des boues.
 
 ## 1. Le constat, en deux chiffres
 
@@ -15,9 +16,10 @@ de gain par an (FAOSTAT). On ne produira plus davantage en intensifiant la même
 ![Rendement du blé](sorties/1_rendement_ble.png)
 
 **Les engrais viennent d'ailleurs.** Au début des années 1960, la France produisait 120 % de l'azote et 193 % de la potasse
-qu'épandaient ses agriculteurs. En 2020-2024, elle ne produit plus que 18 % de l'azote, 9 % du phosphate et aucune potasse ;
-environ 1,9 million de tonnes d'azote sont épandues chaque année (FAOSTAT). Tout gain de rendement obtenu par les engrais
-est donc un gain importé.
+qu'épandaient ses agriculteurs. Aujourd'hui, elle ne produit plus que 9 % du phosphate et aucune potasse ; pour l'azote,
+la part produite en France est de 18 % selon FAOSTAT et d'environ 35 % selon FranceAgriMer (800 000 t produites pour
+2 millions de tonnes consommées), la série de la FAO présentant une rupture vers 2012. Dans les deux cas, l'essentiel est
+importé : tout gain de rendement obtenu par les engrais est un gain importé.
 
 ![Engrais](sorties/8_engrais.png)
 
@@ -81,8 +83,8 @@ LEESU, 2023, prépublication). On dépense de l'énergie pour détruire un azote
 
 **La solution technique : séparer l'urine à la source.** Collectée à part (toilettes à séparation, réseaux dédiés dans les
 immeubles neufs), l'urine donne un engrais azoté aux propriétés proches des engrais de synthèse ; le programme OCAPI l'étudie
-en Île-de-France. Tout récupérer remplacerait environ 15 % des engrais azotés de synthèse, soit à peu près ce que la France
-produit encore elle-même. Ce n'est pas l'autonomie, mais c'est une deuxième usine d'engrais, déjà construite, qui s'appelle
+en Île-de-France. Tout récupérer remplacerait environ 15 % des engrais azotés de synthèse (12 % des besoins en azote total selon
+FranceAgriMer). Ce n'est pas l'autonomie, mais c'est une deuxième usine d'engrais, déjà construite, qui s'appelle
 une ville.
 
 ## 4. Troisième levier : cultiver la mer, sans engrais
@@ -102,13 +104,55 @@ c'est de garder l'azote à terre : par les racines des arbres, et par la récup�
 
 ![Ordres de grandeur](sorties/11_ordres_grandeur_azote.png)
 
-## 5. Ce que cela donne ensemble
+## 5. D'autres leviers, souvent plus gros que l'urine
+
+L'azote de nos excréments n'est pas le seul gisement, ni le plus important. D'autres leviers, moins connus du grand public,
+pèsent autant ou davantage.
+
+**Les effluents d'élevage : le premier gisement, mal réparti.** La France produit et collecte 108 millions de tonnes de
+fumier et de lisier, dont 80 % sont épandus. Ils contiennent 597 500 tonnes d'azote, de quoi couvrir 31 % des besoins
+actuels en engrais azotés minéraux (FranceAgriMer, juin 2025). Tout cet azote n'est pas disponible pour la plante : 20 à
+30 % pour un fumier, 60 à 80 % pour un lisier, et une part se perd dans l'air à l'épandage. La difficulté est surtout
+logistique : l'étude ne tient pas compte de la distance entre les élevages et les terres qui manquent d'azote. C'est là
+que la spécialisation des exploitations pèse : entre 2010 et 2020, la France a perdu 30 % de ses fermes de
+polyculture-élevage (annexe), celles qui épandaient sur leurs champs le fumier de leurs bêtes. Rapprocher l'élevage des
+cultures, entre exploitations voisines ou par des plateformes de traitement des effluents, est un levier technique autant
+qu'économique.
+
+**Les légumineuses : l'azote pris dans l'air, gratuitement.** Pois, féverole, luzerne et trèfle hébergent dans leurs racines
+des bactéries qui fixent l'azote de l'air : 60 à 70 % de l'azote du pois en vient, environ 75 % pour la féverole, 90 % pour
+la luzerne et le trèfle. Elles n'ont donc pas besoin d'engrais azoté, et en laissent au sol pour la culture suivante : un
+blé semé après un pois demande 20 à 60 kg d'azote de moins par hectare (DRAAF Grand Est, d'après Terres Inovia). C'est la
+technique qui a porté la révolution agricole du XVIIIe siècle, quand le trèfle a remplacé la jachère dans les assolements.
+
+**Les cultures intermédiaires : un filet entre deux récoltes.** Semée entre la moisson et le semis suivant, une culture
+« piège à nitrates » (moutarde, ray-grass, phacélie) absorbe l'azote resté dans le sol avant que les pluies d'hiver ne
+l'emportent. L'INRA relève une baisse de la concentration en nitrate des eaux de drainage généralement supérieure à 50 %,
+et souvent à 75 % en climat pluvieux. La technique a ses conditions : après un maïs grain récolté en octobre, elle n'a
+presque aucun effet (moins de 10 %), faute de temps pour pousser (INRA, juin 2012). Retenu à la parcelle, cet azote ne part
+pas vers les fleuves, puis vers la mer.
+
+**Le phosphore des boues : ce que la Suisse et l'Allemagne imposent.** Le phosphore est la ressource la plus critique : la
+France ne produit que 9 % du phosphate qu'épandent ses agriculteurs. La Suisse impose depuis le 1er janvier 2026 de
+récupérer le phosphore des boues d'épuration, des farines animales et des poudres d'os ; l'Allemagne l'imposera à partir de
+2029, notamment à partir des cendres de boues incinérées. Je n'ai pas trouvé d'obligation équivalente en France, où
+l'épandage direct des boues en restitue déjà une partie aux sols.
+
+**Les biodéchets.** Depuis le 1er janvier 2024, le tri à la source des biodéchets est obligatoire en France, ménages compris ;
+le compost et le digestat qui en sont issus reviennent aux sols. Les collectivités françaises compostaient 114 kg de déchets
+municipaux par habitant en 2024, contre 60 en 2000, et 174 en Autriche (Eurostat).
+
+## 6. Ce que cela donne ensemble
 
 | Levier | Gain chiffré | Délai | Limite principale |
 |---|---|---|---|
 | Agroforesterie | 1,3 à 1,6 fois la production d'un hectare spécialisé | 15 à 50 ans pour le bois | peu de mesures en vraie grandeur |
 | Séparation de l'urine | jusqu'à 15 % des engrais azotés de synthèse | dès les constructions neuves | réseaux à créer, logistique de collecte |
 | Mer cultivée | protéines sans engrais ; 1 000 t d'azote retirées | immédiat | ordre de grandeur sans rapport avec les pertes |
+| Effluents d'élevage | 597 500 t d'azote, 31 % des besoins en engrais minéraux | immédiat | distance entre élevages et cultures |
+| Légumineuses | 20 à 60 kg d'azote en moins par hectare sur le blé suivant | une rotation | débouchés et rendements à sécuriser |
+| Cultures intermédiaires | nitrate des eaux de drainage réduit de plus de 50 % | une saison | inefficaces après un maïs grain |
+| Phosphore des boues | ressource importée à plus de 90 % | 2026 en Suisse, 2029 en Allemagne | procédés encore coûteux |
 
 La mer, le fleuve, puis la terre : dans chaque domaine, le savoir existe et il est souvent français, qu'il s'agisse de GTT
 pour les cuves des méthaniers, de l'INRAE pour l'agroforesterie ou du LEESU pour l'azote. Ce qui manque n'est pas la
@@ -134,6 +178,13 @@ technique, mais sa mise en œuvre. Ce sera l'objet du projet suivant.
   décennale publiée par le SDES. L'effet des huîtres n'est pas compté.
 - **La dehesa est mal mesurée** : sa surface varie de 0,5 à plus de 3,5 millions d'hectares selon la définition ; le chiffre
   de 700 000 porcs date d'une saison du milieu des années 2010.
+- **Production française d'engrais azotés : deux sources discordantes.** FAOSTAT donne 343 000 t (moyenne 2020-2024),
+  FranceAgriMer 800 000 t (2025) ; la série FAO présente une rupture vers 2012. Le graphique des engrais repose sur FAOSTAT ;
+  la potasse (0 %) et le phosphate (9 %) ne sont pas en cause.
+- **Les leviers ne s'additionnent pas.** Effluents, urine, légumineuses et cultures intermédiaires portent sur des flux
+  d'azote qui se recouvrent en partie ; leurs gains ne peuvent pas être sommés.
+- **Le chiffre des effluents d'élevage (31 %) est en azote total**, pas en azote disponible pour la plante ; il provient de
+  l'étude FranceAgriMer de juin 2025, citée par *Réussir* (juillet 2025), que je n'ai pas lue en entier.
 - **La complantation historique n'est pas chiffrée** : aucune statistique ne mesure l'étendue passée des joualles.
 
 ## Annexe : le contexte en graphiques
@@ -188,6 +239,12 @@ dans `sorties/`. Packages R : dplyr, tidyr, ggplot2, scales. Le détail des sour
   [*Commercial cultivation and bioremediation potential of sugar kelp in Danish waters*](https://link.springer.com/article/10.1007/s10811-014-0519-8), 2015 (résumés).
 - Récolte de laminaires : [Institut Agro](https://halieutique.institut-agro.fr/files/fichiers/pdf/5897.pdf) ;
   [préfecture de Bretagne](https://www.prefectures-regions.gouv.fr/bretagne/irecontenu/telechargement/132451/972128/file/Note%20de%20pr%C3%A9sentation%20D%C3%A9lib%C3%A9ration%20ALGUES%20MESURES%20TECHNIQUES.pdf).
+- FranceAgriMer, *Ressources en biomasse : quel potentiel de substitution des engrais de synthèse ?*, juin 2025, cité par
+  [*Réussir*](https://www.reussir.fr/grandes-cultures/fertilisation-azotee-la-france-peut-elle-remplacer-les-engrais-mineraux-par-la-biomasse-organique), 9 juillet 2025.
+- Légumineuses : DRAAF Grand Est, [*Fixer de l'azote par les légumineuses*](https://draaf.grand-est.agriculture.gouv.fr/IMG/pdf/gazote_2-202104-fixer_de_l_azote_par_les_legumineuses.pdf), 2021.
+- INRA, [*Réduire les fuites de nitrate au moyen de cultures intermédiaires*](https://reseau-eau.educagri.fr/files/fichierRessource1_Etude_CIPAN-8pages_juin12.pdf), synthèse, juin 2012.
+- Phosphore : OFEV (Suisse), [rapport explicatif sur l'ordonnance sur les déchets](https://www.bafu.admin.ch/dam/fr/sd-web/UP9nWLKjlIUr/Rapport%2Bexplicatif%2Bconcernant%2Bla%2Bmodification%2Bde%2Bl%E2%80%99ordonnance%2Bsur%2Bles%2Bd%C3%A9chets%2BOLED.pdf) ;
+  [ville de Stuttgart](https://www.stuttgart.de/fr/pressemitteilungen/2024/maerz/gemeinsamer-schritt-zur-nachhaltigen-phosphorrueckgewinnung-aus-klaerschlammasche-im-suedwesten), mars 2024.
 - Annexe : [INSEE](https://www.insee.fr/fr/statistiques/7728861) ; [CGAAER](https://agriculture.gouv.fr/telecharger/136479) ;
   [Académie d'agriculture](https://academie-agriculture.fr/sites/default/files/publications/encyclopedie/commerce_exterieur_agroalimentaire.pdf) ;
   [Boursorama](https://www.boursorama.com).
