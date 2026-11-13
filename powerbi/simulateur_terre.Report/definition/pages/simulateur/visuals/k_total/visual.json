@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "k_total",
   "position": {
-    "x": 24,
-    "y": 492,
-    "z": 5100,
+    "x": 716,
+    "y": 92,
+    "z": 2100,
     "height": 110,
-    "width": 296,
-    "tabOrder": 5100
+    "width": 260,
+    "tabOrder": 2100
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Résultats"
                     }
                   },
-                  "Property": "Azote total des leviers (t)"
+                  "Property": "Azote apporté (t)"
                 }
               },
-              "queryRef": "Résultats.Azote total des leviers (t)",
-              "nativeQueryRef": "Azote total des leviers (t)"
+              "queryRef": "Résultats.Azote apporté (t)",
+              "nativeQueryRef": "Azote apporté (t)"
             }
           ]
         }

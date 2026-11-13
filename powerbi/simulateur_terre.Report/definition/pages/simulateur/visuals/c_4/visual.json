@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "c_ler",
+  "name": "c_4",
   "position": {
     "x": 24,
-    "y": 224,
-    "z": 1300,
+    "y": 496,
+    "z": 1240,
     "height": 90,
-    "width": 296,
-    "tabOrder": 1300
+    "width": 380,
+    "tabOrder": 1240
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Gain de surface retenu"
+                      "Entity": "Algues cultivées (t par an)"
                     }
                   },
-                  "Property": "Gain de surface retenu"
+                  "Property": "Algues cultivées (t par an)"
                 }
               },
-              "queryRef": "Gain de surface retenu.Gain de surface retenu",
-              "nativeQueryRef": "Gain de surface retenu",
+              "queryRef": "Algues cultivées (t par an).Algues cultivées (t par an)",
+              "nativeQueryRef": "Algues cultivées (t par an)",
               "active": true
             }
           ]

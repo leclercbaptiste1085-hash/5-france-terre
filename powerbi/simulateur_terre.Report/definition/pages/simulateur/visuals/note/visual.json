@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "note",
   "position": {
-    "x": 24,
-    "y": 620,
-    "z": 6000,
-    "height": 80,
-    "width": 1230,
-    "tabOrder": 6000
+    "x": 440,
+    "y": 610,
+    "z": 4000,
+    "height": 90,
+    "width": 816,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "textbox",
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'À lire'"
+                  "Value": "'Comment lire'"
                 }
               }
             },
@@ -109,7 +109,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Gain de surface : 1,34 mesuré (INRAE), 1,4 à 1,6 simulé. L''urine porte 85 % de l''azote excrété. Effluents : 597 500 t d''azote total (FranceAgriMer). Légumineuses : 40 kg d''azote économisés par hectare (20 à 60). Une tonne de moules retire environ 13,7 kg d''azote.'"
+                  "Value": "'Les trois premiers leviers remplacent des engrais (en tonnes d''azote). L''agroforesterie, elle, augmente la production : la carte de droite donne les hectares qu''il faudrait en plus, sans arbres, pour produire autant (gain mesuré : 1,34). Les leviers se recouvrent en partie : le total est un ordre de grandeur.'"
                 }
               }
             },

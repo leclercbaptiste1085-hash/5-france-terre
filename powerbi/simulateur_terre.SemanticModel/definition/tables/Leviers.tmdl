@@ -1,0 +1,19 @@
+table Leviers
+	lineageTag: ebf5b0d4-a9f5-434f-bc03-27652a5118c9
+
+	column 'Ordre'
+		dataType: int64
+		lineageTag: f3f5c6f4-611e-491b-a0dd-3637d64ea58c
+		summarizeBy: none
+		sourceColumn: [Ordre]
+
+	column 'Levier'
+		dataType: string
+		lineageTag: cda5fcfb-4c92-4fb7-bf0d-1dbec3949ce8
+		summarizeBy: none
+		sourceColumn: [Levier]
+
+	partition Leviers = calculated
+		mode: import
+		source = SELECTCOLUMNS ( GENERATESERIES ( 1, 4, 1 ), "Ordre", [Value], "Levier", SWITCH ( [Value], 1, "Effluents d'élevage", 2, "Légumineuses", 3, "Urine collectée", 4, "Algues cultivées" ) )
+

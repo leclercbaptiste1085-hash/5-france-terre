@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "c_ha",
+  "name": "c_2",
   "position": {
     "x": 24,
-    "y": 130,
-    "z": 1200,
+    "y": 312,
+    "z": 1220,
     "height": 90,
-    "width": 296,
-    "tabOrder": 1200
+    "width": 380,
+    "tabOrder": 1220
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Hectares en agroforesterie"
+                      "Entity": "Part des effluents d'élevage mieux utilisés"
                     }
                   },
-                  "Property": "Hectares en agroforesterie"
+                  "Property": "Part des effluents d'élevage mieux utilisés"
                 }
               },
-              "queryRef": "Hectares en agroforesterie.Hectares en agroforesterie",
-              "nativeQueryRef": "Hectares en agroforesterie",
+              "queryRef": "Part des effluents d'élevage mieux utilisés.Part des effluents d'élevage mieux utilisés",
+              "nativeQueryRef": "Part des effluents d'élevage mieux utilisés",
               "active": true
             }
           ]

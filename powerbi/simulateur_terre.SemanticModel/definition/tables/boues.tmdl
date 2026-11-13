@@ -1,51 +1,51 @@
 table boues
-	lineageTag: c60d6381-743b-4a02-9af7-91c097014cbc
+	lineageTag: 9acc62bd-823e-4617-bdba-8a96821450cd
 
 	column 'pays'
 		dataType: string
-		lineageTag: 3754f72e-6e6f-497d-ada5-f71cfbd5ff3d
+		lineageTag: 19e2135c-845a-4d91-ab79-fec937e75805
 		summarizeBy: none
 		sourceColumn: pays
 
 	column 'annee'
 		dataType: double
-		lineageTag: 2621a49d-11e5-4e47-9ebd-613985c2754d
+		lineageTag: 1257f7f1-cc63-4b55-a6ce-2fcafc36fb7f
 		summarizeBy: sum
 		sourceColumn: annee
 
 	column 'total_kt'
 		dataType: double
-		lineageTag: cfad40d1-32b5-45ff-aecd-11ac3a0c4372
+		lineageTag: 445d34b3-6457-4e58-8fb7-bfbf21a57caf
 		summarizeBy: sum
 		sourceColumn: total_kt
 
 	column 'agriculture'
 		dataType: double
-		lineageTag: 3e4164b3-d4cb-4422-a0fa-ce4f4ea8ebac
+		lineageTag: 16ce15fb-5f4b-4662-8787-e36397f2d36c
 		summarizeBy: sum
 		sourceColumn: agriculture
 
 	column 'compost'
 		dataType: double
-		lineageTag: bdc81200-9ac6-4381-9cac-ffd825846563
+		lineageTag: b0b31785-0e2e-4bd4-95e2-e5a14a2c4827
 		summarizeBy: sum
 		sourceColumn: compost
 
 	column 'incineration'
 		dataType: double
-		lineageTag: 50677dbe-1c41-4704-bdb8-e6aa1ba4eb4a
+		lineageTag: cd26050b-e94b-4e9d-ba23-8d9b6ba4ab4d
 		summarizeBy: sum
 		sourceColumn: incineration
 
 	column 'decharge'
 		dataType: double
-		lineageTag: 02d9ef1f-8254-44a8-a2ab-d6bbc4488e41
+		lineageTag: b0820175-3f41-4169-8e9e-b1368988a650
 		summarizeBy: sum
 		sourceColumn: decharge
 
 	column 'autre'
 		dataType: double
-		lineageTag: 190f0952-a932-4eb2-8fd1-a39319167a60
+		lineageTag: 2ee028b9-54d7-4e15-9d6f-910190e8d575
 		summarizeBy: sum
 		sourceColumn: autre
 
@@ -61,5 +61,5 @@ table boues
 
 	measure 'Part des boues rendue au sol' = DIVIDE ( SUM ( boues[agriculture] ) + SUM ( boues[compost] ), SUM ( boues[total_kt] ) )
 		formatString: 0%
-		lineageTag: fe6bce45-5a06-468a-92cc-e9ccfe1f5e66
+		lineageTag: e70ddd77-e03d-48a8-8fa4-39bcb3c7339e
 

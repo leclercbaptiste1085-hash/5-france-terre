@@ -1,27 +1,27 @@
 table azote
-	lineageTag: 76610a32-4b8e-4b76-8470-8f018caf8158
+	lineageTag: 6f631f5a-4b31-43e9-8f4f-57c4560b78ca
 
 	column 'flux'
 		dataType: string
-		lineageTag: 594600e7-4877-416d-a1f8-c4d0039164dc
+		lineageTag: 32064d28-ea13-4ea2-8f5f-41c82f9ded33
 		summarizeBy: none
 		sourceColumn: flux
 
 	column 'kt_n'
 		dataType: double
-		lineageTag: 15eb7283-225a-40ef-8309-34d5d611238c
+		lineageTag: 11a7f789-c844-4286-9587-350720ac7313
 		summarizeBy: sum
 		sourceColumn: kt_n
 
 	column 'groupe'
 		dataType: string
-		lineageTag: ada5eaff-b68f-4dd9-bd96-9513d7f93e28
+		lineageTag: e95c06e9-02da-4fae-924d-62db40a6caff
 		summarizeBy: none
 		sourceColumn: groupe
 
 	column 'source'
 		dataType: string
-		lineageTag: 15dff872-f066-4eb2-84e6-4be7cf4950f0
+		lineageTag: c941de00-76bd-4a1c-bbf0-416c8ff2627e
 		summarizeBy: none
 		sourceColumn: source
 
@@ -37,5 +37,5 @@ table azote
 
 	measure 'Azote (t)' = SUM ( azote[kt_n] ) * 1000
 		formatString: #,0
-		lineageTag: c79cdb7a-5a17-47c5-901e-f5bd2e152c65
+		lineageTag: ce057904-e4dc-410a-8da0-e467b028e464
 

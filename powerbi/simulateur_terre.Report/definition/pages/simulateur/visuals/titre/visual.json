@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Produire plus sur le même hectare, et ne plus rien perdre'"
+                  "Value": "'Combien d''engrais azotés importés pourrait-on remplacer ?'"
                 }
               }
             },
@@ -109,7 +109,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Réglez les leviers : les résultats se recalculent à partir des hypothèses sourcées (page Hypothèses)'"
+                  "Value": "'Chaque curseur règle un levier. Les barres montrent l''azote qu''il apporterait, à comparer aux 2 millions de tonnes d''engrais azotés consommées chaque année.'"
                 }
               }
             },

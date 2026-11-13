@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "bloc_agro",
+  "name": "bloc_curseurs",
   "position": {
     "x": 24,
     "y": 88,
     "z": 1100,
-    "height": 40,
-    "width": 296,
+    "height": 36,
+    "width": 380,
     "tabOrder": 1100
   },
   "visual": {
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'1. Agroforesterie'"
+                  "Value": "'Réglez les leviers'"
                 }
               }
             },

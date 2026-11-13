@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "k_ha",
   "position": {
-    "x": 24,
-    "y": 330,
-    "z": 1400,
+    "x": 992,
+    "y": 92,
+    "z": 2200,
     "height": 110,
-    "width": 143,
-    "tabOrder": 1400
+    "width": 264,
+    "tabOrder": 2200
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Résultats"
                     }
                   },
-                  "Property": "Hectares équivalents gagnés"
+                  "Property": "Hectares de production gagnés"
                 }
               },
-              "queryRef": "Résultats.Hectares équivalents gagnés",
-              "nativeQueryRef": "Hectares équivalents gagnés"
+              "queryRef": "Résultats.Hectares de production gagnés",
+              "nativeQueryRef": "Hectares de production gagnés"
             }
           ]
         }

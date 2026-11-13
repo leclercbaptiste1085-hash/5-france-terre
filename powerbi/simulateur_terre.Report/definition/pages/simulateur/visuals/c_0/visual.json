@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "c_leg",
+  "name": "c_0",
   "position": {
-    "x": 648,
-    "y": 224,
-    "z": 3300,
+    "x": 24,
+    "y": 128,
+    "z": 1200,
     "height": 90,
-    "width": 296,
-    "tabOrder": 3300
+    "width": 380,
+    "tabOrder": 1200
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Hectares de légumineuses en plus"
+                      "Entity": "Hectares en agroforesterie"
                     }
                   },
-                  "Property": "Hectares de légumineuses en plus"
+                  "Property": "Hectares en agroforesterie"
                 }
               },
-              "queryRef": "Hectares de légumineuses en plus.Hectares de légumineuses en plus",
-              "nativeQueryRef": "Hectares de légumineuses en plus",
+              "queryRef": "Hectares en agroforesterie.Hectares en agroforesterie",
+              "nativeQueryRef": "Hectares en agroforesterie",
               "active": true
             }
           ]

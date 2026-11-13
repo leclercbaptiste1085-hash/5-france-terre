@@ -1,0 +1,18 @@
+table 'Algues cultivées (t par an)'
+	lineageTag: d099beac-ace9-4f04-9ea9-d50e7c5ca01a
+
+	measure 'Algues cultivées (t par an) (valeur)' = SELECTEDVALUE ( 'Algues cultivées (t par an)'[Algues cultivées (t par an)], 100000 )
+		formatString: #,0
+		lineageTag: 3ae4206c-e39d-46fd-8336-d1d4253d2311
+
+	column 'Algues cultivées (t par an)'
+		dataType: double
+		formatString: #,0
+		lineageTag: dc23f4f1-4247-427d-9839-47438bc9d750
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition 'Algues cultivées (t par an)' = calculated
+		mode: import
+		source = GENERATESERIES ( 0, 2000000, 50000 )
+

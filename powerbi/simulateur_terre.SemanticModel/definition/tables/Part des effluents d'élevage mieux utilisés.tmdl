@@ -1,0 +1,18 @@
+table 'Part des effluents d''élevage mieux utilisés'
+	lineageTag: a4ae6df6-9791-4878-93a1-7702db2d5681
+
+	measure 'Part des effluents d''élevage mieux utilisés (valeur)' = SELECTEDVALUE ( 'Part des effluents d''élevage mieux utilisés'[Part des effluents d'élevage mieux utilisés], 0.1 )
+		formatString: 0%
+		lineageTag: f3b6689f-47b3-498d-9da7-9ca25e60ef6a
+
+	column 'Part des effluents d''élevage mieux utilisés'
+		dataType: double
+		formatString: 0%
+		lineageTag: 592aadb2-9efa-4cc7-8a2b-82c0cece67eb
+		summarizeBy: none
+		sourceColumn: [Value]
+
+	partition 'Part des effluents d''élevage mieux utilisés' = calculated
+		mode: import
+		source = GENERATESERIES ( 0, 1, 0.05 )
+

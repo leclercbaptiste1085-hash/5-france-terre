@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "c_urine",
+  "name": "c_1",
   "position": {
-    "x": 336,
-    "y": 130,
-    "z": 2200,
+    "x": 24,
+    "y": 220,
+    "z": 1210,
     "height": 90,
-    "width": 296,
-    "tabOrder": 2200
+    "width": 380,
+    "tabOrder": 1210
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Part de l'urine récupérée"
+                      "Entity": "Part de l'urine collectée"
                     }
                   },
-                  "Property": "Part de l'urine récupérée"
+                  "Property": "Part de l'urine collectée"
                 }
               },
-              "queryRef": "Part de l'urine récupérée.Part de l'urine récupérée",
-              "nativeQueryRef": "Part de l'urine récupérée",
+              "queryRef": "Part de l'urine collectée.Part de l'urine collectée",
+              "nativeQueryRef": "Part de l'urine collectée",
               "active": true
             }
           ]

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "c_moules",
+  "name": "c_3",
   "position": {
-    "x": 960,
-    "y": 130,
-    "z": 4200,
+    "x": 24,
+    "y": 404,
+    "z": 1230,
     "height": 90,
-    "width": 296,
-    "tabOrder": 4200
+    "width": 380,
+    "tabOrder": 1230
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Production de moules (t)"
+                      "Entity": "Hectares de légumineuses en plus"
                     }
                   },
-                  "Property": "Production de moules (t)"
+                  "Property": "Hectares de légumineuses en plus"
                 }
               },
-              "queryRef": "Production de moules (t).Production de moules (t)",
-              "nativeQueryRef": "Production de moules (t)",
+              "queryRef": "Hectares de légumineuses en plus.Hectares de légumineuses en plus",
+              "nativeQueryRef": "Hectares de légumineuses en plus",
               "active": true
             }
           ]
