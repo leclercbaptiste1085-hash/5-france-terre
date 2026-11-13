@@ -1,0 +1,48 @@
+{
+  "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
+  "name": "k_urine",
+  "position": {
+    "x": 336,
+    "y": 330,
+    "z": 2300,
+    "height": 110,
+    "width": 296,
+    "tabOrder": 2300
+  },
+  "visual": {
+    "visualType": "cardVisual",
+    "query": {
+      "queryState": {
+        "Data": {
+          "projections": [
+            {
+              "field": {
+                "Measure": {
+                  "Expression": {
+                    "SourceRef": {
+                      "Entity": "Résultats"
+                    }
+                  },
+                  "Property": "Azote de l'urine récupéré (t)"
+                }
+              },
+              "queryRef": "Résultats.Azote de l'urine récupéré (t)",
+              "nativeQueryRef": "Azote de l'urine récupéré (t)"
+            }
+          ]
+        }
+      }
+    },
+    "objects": {
+      "value": [
+        {
+          "properties": {},
+          "selector": {
+            "id": "default"
+          }
+        }
+      ]
+    },
+    "drillFilterOtherVisuals": true
+  }
+}

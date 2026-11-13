@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "c_moules",
   "position": {
-    "x": 856,
-    "y": 136,
-    "z": 3200,
+    "x": 960,
+    "y": 130,
+    "z": 4200,
     "height": 90,
-    "width": 400,
-    "tabOrder": 3200
+    "width": 296,
+    "tabOrder": 4200
   },
   "visual": {
     "visualType": "slicer",

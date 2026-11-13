@@ -1,0 +1,13 @@
+hypothese,valeur,unite,source
+Engrais azotés de synthèse consommés,2000000,t N / an,"FranceAgriMer, juin 2025"
+Production française d'engrais azotés,800000,t N / an,"FranceAgriMer, juin 2025 (FAOSTAT : 343 000)"
+Azote de nos excréments,300000,t N / an,"Starck, Fardet, Esculier (LEESU), 2023, prépublication"
+Part de cet azote dans l'urine,0.85,,"Starck, Fardet, Esculier, 2023"
+Azote des effluents d'élevage,597500,t N / an,"FranceAgriMer, juin 2025 (azote total)"
+Azote économisé par hectare de légumineuse (milieu de fourchette),40,kg N / ha,"DRAAF Grand Est, d'après Terres Inovia : 20 à 60"
+Azote perdu par les fleuves vers la mer,607000,t N / an,"SDES, moyenne sur dix ans"
+Azote retiré par tonne de moules,13.7,kg N / t,"Taylor et al., 2019 (moules danoises récoltées jeunes)"
+Production française de moules 2024,48775,t,Eurostat fish_aq2a
+Surface agricole utile de la France,26700000,ha,"Agreste, ordre de grandeur"
+Gain de surface mesuré (peupliers et céréales),1.34,,"Dupraz et al., INRA, Vézénobres"
+Gain de surface simulé (noyers et blé),1.6,,"Dupraz, INRAE, Restinclières (valeur haute)"

@@ -1,14 +1,14 @@
 table 'Production de moules (t)'
-	lineageTag: bb4b44eb-c7fe-460b-bfed-e6a5b862884b
+	lineageTag: 44898ee6-491f-4932-a4a2-1a06e9b96a71
 
 	measure 'Production de moules (t) (valeur)' = SELECTEDVALUE ( 'Production de moules (t)'[Production de moules (t)], 50000 )
 		formatString: #,0
-		lineageTag: 69b34d56-362e-4531-865e-468cc077e11e
+		lineageTag: caddf40d-0827-4da7-b6d5-4f2653e36b5c
 
 	column 'Production de moules (t)'
 		dataType: double
 		formatString: #,0
-		lineageTag: 0127e561-a7a9-4702-a391-77b8692ea3f6
+		lineageTag: fc15af45-5973-49a2-b088-2860720547dd
 		summarizeBy: none
 		sourceColumn: [Value]
 

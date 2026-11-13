@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "bloc_mer",
   "position": {
-    "x": 856,
-    "y": 92,
-    "z": 3100,
+    "x": 960,
+    "y": 88,
+    "z": 4100,
     "height": 40,
-    "width": 400,
-    "tabOrder": 3100
+    "width": 296,
+    "tabOrder": 4100
   },
   "visual": {
     "visualType": "textbox",
@@ -68,7 +68,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'3. Mer cultivée'"
+                  "Value": "'4. Mer cultivée'"
                 }
               }
             },

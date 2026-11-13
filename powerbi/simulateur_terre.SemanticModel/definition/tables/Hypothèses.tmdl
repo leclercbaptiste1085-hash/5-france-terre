@@ -1,32 +1,37 @@
 table Hypothèses
-	lineageTag: 360bbdf7-9b10-440d-a4fc-d490072c341e
+	lineageTag: 9594cce8-e489-464d-a4fd-48f71c767306
 
-	column 'Hypothèse'
+	column 'hypothese'
 		dataType: string
-		lineageTag: 690756dd-2ab1-4176-90ee-a9da79ec6f40
+		lineageTag: fab00d4d-ba33-4e43-aebc-82692de5aa1c
 		summarizeBy: none
-		sourceColumn: [Hypothèse]
+		sourceColumn: hypothese
 
-	column 'Valeur'
+	column 'valeur'
 		dataType: double
-		formatString: #,0.##
-		lineageTag: d0a99965-3aff-4192-a0d7-ec67c5738ca0
-		summarizeBy: none
-		sourceColumn: [Valeur]
+		lineageTag: f79e7739-0fe4-42b6-89da-8431a5b9ec46
+		summarizeBy: sum
+		sourceColumn: valeur
 
-	column 'Unité'
+	column 'unite'
 		dataType: string
-		lineageTag: 094b27e2-7909-433d-8506-db36bb3639a4
+		lineageTag: a6a818df-1d3b-479b-bc6a-a51e7e9110a9
 		summarizeBy: none
-		sourceColumn: [Unité]
+		sourceColumn: unite
 
-	column 'Source'
+	column 'source'
 		dataType: string
-		lineageTag: f13303bc-7c64-4a15-8ade-f625fc03a903
+		lineageTag: 4c594951-29b7-4790-a698-17411b1faf1d
 		summarizeBy: none
-		sourceColumn: [Source]
+		sourceColumn: source
 
-	partition Hypothèses = calculated
+	partition Hypothèses = m
 		mode: import
-		source = DATATABLE ( "Hypothèse", STRING, "Valeur", DOUBLE, "Unité", STRING, "Source", STRING, { { "Engrais azotés épandus", 1906000, "t N / an", "FAOSTAT, moyenne 2020-2024" }, { "Production française d'engrais azotés", 343000, "t N / an", "FAOSTAT, moyenne 2020-2024" }, { "Azote de nos excréments", 300000, "t N / an", "Starck, Fardet, Esculier (LEESU), 2023, prépublication" }, { "Part de cet azote dans l'urine", 0.85, "", "Starck, Fardet, Esculier, 2023" }, { "Azote des excréments déjà rendu aux cultures", 31000, "t N / an", "Starck, Fardet, Esculier, 2023" }, { "Azote perdu par les fleuves vers la mer", 607000, "t N / an", "SDES, moyenne sur dix ans" }, { "Azote retiré par tonne de moules", 13.7, "kg N / t", "Taylor et al., 2019 (moules danoises récoltées jeunes)" }, { "Production française de moules 2024", 48775, "t", "Eurostat fish_aq2a" }, { "Surface agricole utile de la France", 26700000, "ha", "Agreste, ordre de grandeur" }, { "Gain de surface mesuré (peupliers et céréales)", 1.34, "", "Dupraz et al., INRA, Vézénobres" }, { "Gain de surface simulé (noyers et blé)", 1.6, "", "Dupraz, INRAE, Restinclières (valeur haute)" } } )
+		source =
+				let
+				    Source = Csv.Document(File.Contents(Dossier & "hypotheses_simulateur.csv"), [Delimiter = ",", Columns = 4, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
+				    Entetes = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
+				    Types = Table.TransformColumnTypes(Entetes, {{"hypothese", type text}, {"valeur", type number}, {"unite", type text}, {"source", type text}}, "en-US")
+				in
+				    Types
 

@@ -1,12 +1,12 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "bloc_azote",
+  "name": "bloc_urine",
   "position": {
-    "x": 440,
-    "y": 92,
+    "x": 336,
+    "y": 88,
     "z": 2100,
     "height": 40,
-    "width": 400,
+    "width": 296,
     "tabOrder": 2100
   },
   "visual": {

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "k_fleuves",
   "position": {
-    "x": 1061,
-    "y": 340,
-    "z": 3400,
+    "x": 1113,
+    "y": 330,
+    "z": 4400,
     "height": 110,
-    "width": 195,
-    "tabOrder": 3400
+    "width": 143,
+    "tabOrder": 4400
   },
   "visual": {
     "visualType": "cardVisual",

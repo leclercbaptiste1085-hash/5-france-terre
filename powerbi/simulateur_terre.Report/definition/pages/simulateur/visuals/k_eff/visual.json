@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "k_n",
+  "name": "k_eff",
   "position": {
-    "x": 440,
-    "y": 340,
-    "z": 2300,
+    "x": 648,
+    "y": 330,
+    "z": 3400,
     "height": 110,
-    "width": 195,
-    "tabOrder": 2300
+    "width": 143,
+    "tabOrder": 3400
   },
   "visual": {
     "visualType": "cardVisual",
@@ -23,11 +23,11 @@
                       "Entity": "Résultats"
                     }
                   },
-                  "Property": "Azote récupéré par l'urine (t)"
+                  "Property": "Azote des effluents mieux valorisé (t)"
                 }
               },
-              "queryRef": "Résultats.Azote récupéré par l'urine (t)",
-              "nativeQueryRef": "Azote récupéré par l'urine (t)"
+              "queryRef": "Résultats.Azote des effluents mieux valorisé (t)",
+              "nativeQueryRef": "Azote des effluents mieux valorisé (t)"
             }
           ]
         }

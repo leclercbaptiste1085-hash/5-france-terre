@@ -1,49 +1,114 @@
 table Résultats
-	lineageTag: 1755cea7-7776-4c00-9e03-dc6968484635
+	lineageTag: b3aa53a0-0615-428e-85d7-4abc501eb8b1
+
+	measure 'H engrais' = 2000000
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: 816d1c56-9c1c-4e15-a88a-c8a1120b0faa
+
+	measure 'H production engrais' = 800000
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: b479a1f3-2993-4871-8089-99c6fd91047f
+
+	measure 'H excrétions' = 300000
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: 318f27cf-524d-4b71-a761-8e6361f58ca6
+
+	measure 'H part urine' = 0.85
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: d57ad8ed-fa05-4b41-b42d-5e1b09875a26
+
+	measure 'H effluents' = 597500
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: d95bb406-f100-4940-aeac-dd715525ef12
+
+	measure 'H légumineuses' = 40
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: 3fbf5b1f-a156-40e8-ad75-3c81c6cff620
+
+	measure 'H fleuves' = 607000
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: 1e390337-91a1-4b23-a9d7-18ef9299ee67
+
+	measure 'H moules N' = 13.7
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: 9c32f75f-dafc-4e8e-b144-7e081d53b168
+
+	measure 'H moules 2024' = 48775
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: 1a9d15e0-9a38-4c3f-8005-466ab1297d12
+
+	measure 'H SAU' = 26700000
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: b1543b71-452a-484d-9979-2650f7d3003d
 
 	measure 'Hectares équivalents gagnés' = [Hectares en agroforesterie (valeur)] * ( [Gain de surface retenu (valeur)] - 1 )
 		formatString: #,0
 		displayFolder: Agroforesterie
-		lineageTag: 42a8ec25-cae6-41cb-b586-3f468f78da1c
+		lineageTag: 1218d44c-4d74-4682-ab10-9cdc65ce9d61
 
-	measure 'Part de la surface agricole convertie' = DIVIDE ( [Hectares en agroforesterie (valeur)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Surface agricole utile de la France" ) )
+	measure 'Part de la surface agricole convertie' = DIVIDE ( [Hectares en agroforesterie (valeur)], [H SAU] )
 		formatString: 0.0%
 		displayFolder: Agroforesterie
-		lineageTag: 9fe5f4c0-cbbe-40ac-b6a0-6aca7790259f
+		lineageTag: 0c1acf5e-b42b-47ea-9fe7-d8836d8a3d5b
 
-	measure 'Azote récupéré par l''urine (t)' = LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Azote de nos excréments" ) * LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Part de cet azote dans l'urine" ) * [Part de l'urine récupérée (valeur)]
+	measure 'Azote de l''urine récupéré (t)' = [H excrétions] * [H part urine] * [Part de l'urine récupérée (valeur)]
 		formatString: #,0
 		displayFolder: Azote
-		lineageTag: 42928f05-f809-41c1-b271-1c91aab4b22d
+		lineageTag: c75332ea-32f7-4c5f-aaa1-ba22179287ed
 
-	measure 'Part des engrais azotés remplacée' = DIVIDE ( [Azote récupéré par l'urine (t)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Engrais azotés épandus" ) )
+	measure 'Azote des effluents mieux valorisé (t)' = [H effluents] * [Part des effluents mieux valorisée (valeur)]
+		formatString: #,0
+		displayFolder: Azote
+		lineageTag: 811f18ef-1c6d-421c-8d34-344c861768ea
+
+	measure 'Azote économisé par les légumineuses (t)' = [Hectares de légumineuses en plus (valeur)] * [H légumineuses] / 1000
+		formatString: #,0
+		displayFolder: Azote
+		lineageTag: 1a3698ee-3bba-4143-b11d-9f09a1a40f6d
+
+	measure 'Azote total des leviers (t)' = [Azote de l'urine récupéré (t)] + [Azote des effluents mieux valorisé (t)] + [Azote économisé par les légumineuses (t)]
+		formatString: #,0
+		displayFolder: Azote
+		lineageTag: cc0be121-b094-4fe0-80d0-619d09c01525
+
+	measure 'Part des engrais azotés couverte' = DIVIDE ( [Azote total des leviers (t)], [H engrais] )
 		formatString: 0.0%
 		displayFolder: Azote
-		lineageTag: af21fe81-11b3-4789-8c59-1feedaf2be93
+		lineageTag: ebaa8286-fe91-438e-a4da-2f56520c20ba
 
-	measure 'Urine récupérée / production française d''engrais' = DIVIDE ( [Azote récupéré par l'urine (t)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Production française d'engrais azotés" ) )
+	measure 'Leviers / production française d''engrais' = DIVIDE ( [Azote total des leviers (t)], [H production engrais] )
 		formatString: 0%
 		displayFolder: Azote
-		lineageTag: f71b2edf-23c8-480c-9cb8-ed5bfd56c906
+		lineageTag: 843e7608-bfac-4c6c-bc6c-cdbbc35273d3
 
-	measure 'Azote retiré par les moules (t)' = [Production de moules (t) (valeur)] * LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Azote retiré par tonne de moules" ) / 1000
+	measure 'Azote retiré par les moules (t)' = [Production de moules (t) (valeur)] * [H moules N] / 1000
 		formatString: #,0
 		displayFolder: Mer
-		lineageTag: 38fab8f6-798e-4e8a-bf45-97827a66cfa5
+		lineageTag: 73088cc2-4abc-44ed-8067-9662ed6c6431
 
-	measure 'Part des pertes fluviales captées' = DIVIDE ( [Azote retiré par les moules (t)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Azote perdu par les fleuves vers la mer" ) )
+	measure 'Part des pertes fluviales captées' = DIVIDE ( [Azote retiré par les moules (t)], [H fleuves] )
 		formatString: 0.00%
 		displayFolder: Mer
-		lineageTag: 4d30b153-2e1c-418d-bf62-c33489874217
+		lineageTag: 110d0134-d48b-415d-9a4b-4a0025e2f6e0
 
-	measure 'Moules / production 2024' = DIVIDE ( [Production de moules (t) (valeur)], LOOKUPVALUE ( Hypothèses[Valeur], Hypothèses[Hypothèse], "Production française de moules 2024" ) )
+	measure 'Moules / production 2024' = DIVIDE ( [Production de moules (t) (valeur)], [H moules 2024] )
 		formatString: 0.0
 		displayFolder: Mer
-		lineageTag: 005341c1-43a7-47e0-ac36-51b9618935ea
+		lineageTag: f4157b53-0f2c-4941-8f77-8b81fae370c8
 
 	column 'Clé'
 		dataType: int64
-		lineageTag: 39f31017-7e77-4d4c-a3c8-5c5388e620ca
+		lineageTag: 8d4638cb-48d4-4bc4-aed1-97dbbde48dc8
 		summarizeBy: none
 		sourceColumn: [Value]
 

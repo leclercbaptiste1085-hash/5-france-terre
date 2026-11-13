@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "k_moules",
   "position": {
-    "x": 856,
-    "y": 340,
-    "z": 3300,
+    "x": 960,
+    "y": 330,
+    "z": 4300,
     "height": 110,
-    "width": 195,
-    "tabOrder": 3300
+    "width": 143,
+    "tabOrder": 4300
   },
   "visual": {
     "visualType": "cardVisual",

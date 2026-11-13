@@ -3,10 +3,10 @@
   "name": "k_ha",
   "position": {
     "x": 24,
-    "y": 340,
+    "y": 330,
     "z": 1400,
     "height": 110,
-    "width": 195,
+    "width": 143,
     "tabOrder": 1400
   },
   "visual": {
