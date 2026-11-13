@@ -33,3 +33,8 @@
   (MUS 45 787 t + MSM 2 988 t, brut/eurostat_aquaculture_fr.json) x 13,7 kg N/t (Taylor et al., 2019) ; laminaires :
   65 000 t x 4,5 kg N/t frais (23 g N et 5,1 kg de biomasse par mètre de filière, Limfjorden) ; fleuves : SDES
   (brut/sdes_flux_azote_mer.pdf, 607 000 t, moyenne sur dix ans).
+- `brut/insee_bilan_azote_2020.csv` : INSEE, fiche 4.7 (brut/insee_bilan_azote_AGRI24-F27.pdf) ; apports de 4,2 Mt ventilés
+  selon les parts publiées (50 % minéraux, 40 % déjections, 7 % légumineuses, 3 % dépôts), prélèvements 2,7 Mt,
+  volatilisation 0,54 Mt, surplus net 0,97 Mt.
+- `brut/hypotheses_simulateur.csv` : coefficients du simulateur Power BI, écrits par son générateur ; sources par ligne.
+- `brut/inra_cipan_2012_synthese.pdf` : INRA, synthèse de l'étude CIPAN, juin 2012.

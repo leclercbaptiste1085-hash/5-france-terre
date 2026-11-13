@@ -322,4 +322,33 @@ laminaires : 65 000 t récoltées (Institut Agro) et 4,5 kg N par tonne fraîche
   theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
 enregistrer(g11, "11_ordres_grandeur_azote.png", l = 9, h = 4.6)
 
+# ---------------------------------------------------------------------------
+# 12. Le bilan azoté des sols agricoles (France métropolitaine, 2020) : ce qui entre, ce que les cultures prennent,
+#     ce qui se perd. Les apports sont empilés par origine.
+# ---------------------------------------------------------------------------
+bil <- lire("insee_bilan_azote_2020.csv") |>
+  mutate(poste = factor(poste, levels = c("Apports", "Prélevé par les cultures", "Perdu dans l'air", "Surplus net laissé dans les sols")),
+         origine = factor(origine, levels = rev(origine)))
+apports <- sum(bil$mt_n[bil$poste == "Apports"])
+note("Bilan azoté 2020 : apports %.1f Mt, prélevés %.1f Mt (%.0f %% des apports)", apports,
+     bil$mt_n[bil$poste == "Prélevé par les cultures"], 100 * bil$mt_n[bil$poste == "Prélevé par les cultures"] / apports)
+
+couleurs <- c("Engrais minéraux, boues et composts" = "#7A8CA3", "Déjections animales" = bleu, "Légumineuses" = vert,
+              "Dépôts atmosphériques" = brume, "Prélevé par les cultures" = vert, "Volatilisation" = "#5FA8A0", "Surplus net" = bleu)
+g12 <- ggplot(bil, aes(poste, mt_n, fill = origine)) +
+  geom_col(width = 0.62, colour = "white", linewidth = 0.4) +
+  geom_text(aes(label = ifelse(mt_n >= 0.25, paste0(sub(", ", ",\n", origine), "\n", format(mt_n, decimal.mark = ","), " Mt"), "")),
+            position = position_stack(vjust = 0.5), family = "Calibri", colour = "white", size = 3.1, lineheight = 0.9) +
+  geom_text(data = bil |> group_by(poste) |> summarise(t = sum(mt_n)), aes(poste, t, label = paste(format(t, decimal.mark = ","), "Mt")),
+            inherit.aes = FALSE, vjust = -0.5, family = "Calibri", colour = encre, size = 4) +
+  scale_fill_manual(values = couleurs) +
+  scale_x_discrete(labels = function(x) gsub(" (laissé|dans|par)", "\n\\1", x)) +
+  scale_y_continuous(expand = expansion(mult = c(0, 0.08))) +
+  labs(title = "Sur 4,2 millions de tonnes d'azote apportées aux sols,\nles cultures n'en prélèvent que 2,7",
+       subtitle = "Bilan azoté des terres agricoles, France métropolitaine, 2020 (millions de tonnes d'azote)",
+       x = NULL, y = NULL,
+       caption = "Source : INSEE, Transformations de l'agriculture et des consommations alimentaires, édition 2024, fiche 4.7 (d'après le SDES). Les apports sont ventilés selon les parts publiées.") +
+  theme(axis.text.y = element_blank(), panel.grid.major.y = element_blank())
+enregistrer(g12, "12_bilan_azote.png", l = 9, h = 5.4)
+
 close(res)

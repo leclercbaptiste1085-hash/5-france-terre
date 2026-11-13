@@ -23,6 +23,38 @@ importé : tout gain de rendement obtenu par les engrais est un gain importé.
 
 ![Engrais](sorties/8_engrais.png)
 
+## La bonne dose : ce que serait l'agriculture 2.0
+
+**L'azote n'est pas nocif pour les cultures : c'est l'élément dont elles ont le plus besoin.** Il entre dans les protéines et
+dans la chlorophylle ; sans lui, ni croissance, ni rendement, ni blé assez riche en protéines pour la boulangerie. Le
+triplement des rendements entre 1960 et 1995 lui doit beaucoup. Ce qui coûte, c'est l'excès. Le rendement répond à l'azote
+selon une courbe qui plafonne : au-delà de la dose utile, la plante n'en tire plus rien, et l'excédent se paie. Le blé trop
+nourri « verse », c'est-à-dire que sa tige trop longue se couche ; son feuillage dense et tendre attire maladies et pucerons ;
+un sol riche en nitrates freine la fixation d'azote par les légumineuses ; et ce que la plante ne prend pas part vers les
+nappes, les fleuves et l'air.
+
+**L'excès est mesuré.** En 2020, 4,2 millions de tonnes d'azote ont été apportées aux terres agricoles françaises : pour
+moitié des engrais minéraux, pour 40 % des déjections animales, le reste venant des légumineuses et de l'air. Les cultures
+et les prairies n'en ont prélevé que 2,7 millions, soit 64 %. 540 000 tonnes se sont volatilisées, surtout sous forme
+d'ammoniac, et 970 000 tonnes sont restées en excédent dans les sols, soit 33 kg par hectare (INSEE, 2024). Ce surplus est
+de l'azote payé, apporté, et perdu.
+
+![Bilan azoté](sorties/12_bilan_azote.png)
+
+**L'agriculture 2.0 n'est donc pas une agriculture sans azote, mais une agriculture qui met le bon azote, au bon moment, au
+bon endroit.** Quatre principes en découlent, que les sections suivantes chiffrent :
+1. **Mesurer avant d'apporter** : prévoir le besoin de la culture par un bilan, puis l'ajuster en cours de saison avec des
+   capteurs ou des images satellites. Dans neuf essais menés en Centre-Val de Loire, la méthode APPI-N de l'INRAE et
+   d'Arvalis a retardé le premier apport de seize jours et réduit la dose totale de 33 kg d'azote par hectare, sans
+   changement significatif du rendement ni de la teneur en protéines.
+2. **Fractionner et moduler** : plusieurs apports plutôt qu'un seul, et une dose qui varie d'un endroit à l'autre de la
+   parcelle selon ce que le sol fournit déjà.
+3. **Produire l'azote sur place** : légumineuses dans la rotation, effluents d'élevage mieux répartis, urine collectée.
+4. **Le retenir** : racines profondes des arbres, cultures intermédiaires entre deux récoltes.
+
+Le plafonnement des rendements n'appelle donc pas davantage d'engrais : il appelle un meilleur usage de ceux que l'on apporte
+déjà, et des systèmes qui en produisent et en retiennent une partie eux-mêmes.
+
 ## 2. Premier levier : l'agroforesterie, ou produire plus sur le même hectare
 
 **Le principe.** L'arbre et la culture n'exploitent pas les mêmes ressources au même endroit ni au même moment. Comme
@@ -189,6 +221,10 @@ technique, mais sa mise en œuvre. Ce sera l'objet du projet suivant.
   d'azote qui se recouvrent en partie ; leurs gains ne peuvent pas être sommés.
 - **Le chiffre des effluents d'élevage (31 %) est en azote total**, pas en azote disponible pour la plante ; il provient de
   l'étude FranceAgriMer de juin 2025, citée par *Réussir* (juillet 2025), que je n'ai pas lue en entier.
+- **Deux mesures des déjections animales.** L'INSEE compte 1,68 million de tonnes d'azote dans les déjections (y compris au
+  pâturage) ; FranceAgriMer, 597 500 tonnes dans les seuls fumiers et lisiers collectés. Les deux chiffres ne mesurent pas
+  la même chose.
+- **Le gain de la méthode APPI-N** repose sur neuf essais régionaux (2017-2019) ; il n'est pas généralisable tel quel.
 - **La complantation historique n'est pas chiffrée** : aucune statistique ne mesure l'étendue passée des joualles.
 
 ## Annexe : le contexte en graphiques
@@ -249,6 +285,8 @@ dans `sorties/`. Packages R : dplyr, tidyr, ggplot2, scales. Le détail des sour
 - INRA, [*Réduire les fuites de nitrate au moyen de cultures intermédiaires*](https://reseau-eau.educagri.fr/files/fichierRessource1_Etude_CIPAN-8pages_juin12.pdf), synthèse, juin 2012.
 - Phosphore : OFEV (Suisse), [rapport explicatif sur l'ordonnance sur les déchets](https://www.bafu.admin.ch/dam/fr/sd-web/UP9nWLKjlIUr/Rapport%2Bexplicatif%2Bconcernant%2Bla%2Bmodification%2Bde%2Bl%E2%80%99ordonnance%2Bsur%2Bles%2Bd%C3%A9chets%2BOLED.pdf) ;
   [ville de Stuttgart](https://www.stuttgart.de/fr/pressemitteilungen/2024/maerz/gemeinsamer-schritt-zur-nachhaltigen-phosphorrueckgewinnung-aus-klaerschlammasche-im-suedwesten), mars 2024.
+- INSEE, [*Évolution des surplus d'azote et de phosphore*](https://www.insee.fr/fr/statistiques/fichier/version-html/7728891/AGRI24-F27.pdf), fiche 4.7, *Transformations de l'agriculture et des consommations alimentaires*, édition 2024.
+- Pilotage de l'azote : C. Baudart, [« De nouvelles méthodes pour piloter l'apport d'azote en temps réel »](https://www.reussir.fr/grandes-cultures/de-nouvelles-methodes-pour-piloter-lapport-dazote-en-temps-reel), *Réussir Grandes cultures*, 31 décembre 2019 (méthode APPI-N, INRAE et Arvalis).
 - Annexe : [INSEE](https://www.insee.fr/fr/statistiques/7728861) ; [CGAAER](https://agriculture.gouv.fr/telecharger/136479) ;
   [Académie d'agriculture](https://academie-agriculture.fr/sites/default/files/publications/encyclopedie/commerce_exterieur_agroalimentaire.pdf) ;
   [Boursorama](https://www.boursorama.com).

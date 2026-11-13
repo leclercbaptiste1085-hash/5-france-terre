@@ -2,7 +2,7 @@
 
 Après la mer, je me suis penché sur la terre. Non pour dresser l'inventaire d'un déclin, mais pour chiffrer ce qui permettrait d'en sortir.
 
-Le point de départ tient en deux chiffres : le rendement du blé français ne progresse plus depuis le milieu des années 1990 (6,8 t/ha en moyenne sur 2020-2024), et la France importe la majeure partie de ses engrais azotés (elle n'en produit que 18 à 35 % selon les sources) et la totalité de sa potasse. Intensifier davantage, c'est importer davantage.
+Le point de départ : le rendement du blé français ne progresse plus depuis le milieu des années 1990, et la France importe la majeure partie de ses engrais azotés. Pourtant, le problème n'est pas l'azote, indispensable aux plantes, mais son gaspillage : sur 4,2 millions de tonnes apportées aux sols en 2020, les cultures n'en ont prélevé que 2,7 (INSEE). L'agriculture 2.0, c'est le bon azote, au bon moment, au bon endroit.
 
 Des leviers techniques, avec leurs ordres de grandeur :
 
