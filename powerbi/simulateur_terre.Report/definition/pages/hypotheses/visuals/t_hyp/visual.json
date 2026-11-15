@@ -23,11 +23,11 @@
                       "Entity": "Hypothèses"
                     }
                   },
-                  "Property": "hypothese"
+                  "Property": "Hypothèse"
                 }
               },
-              "queryRef": "Hypothèses.hypothese",
-              "nativeQueryRef": "hypothese"
+              "queryRef": "Hypothèses.Hypothèse",
+              "nativeQueryRef": "Hypothèse"
             },
             {
               "field": {
@@ -37,11 +37,11 @@
                       "Entity": "Hypothèses"
                     }
                   },
-                  "Property": "valeur"
+                  "Property": "Valeur"
                 }
               },
-              "queryRef": "Hypothèses.valeur",
-              "nativeQueryRef": "valeur"
+              "queryRef": "Hypothèses.Valeur",
+              "nativeQueryRef": "Valeur"
             },
             {
               "field": {
@@ -51,11 +51,11 @@
                       "Entity": "Hypothèses"
                     }
                   },
-                  "Property": "unite"
+                  "Property": "Unité"
                 }
               },
-              "queryRef": "Hypothèses.unite",
-              "nativeQueryRef": "unite"
+              "queryRef": "Hypothèses.Unité",
+              "nativeQueryRef": "Unité"
             },
             {
               "field": {
@@ -65,11 +65,11 @@
                       "Entity": "Hypothèses"
                     }
                   },
-                  "Property": "source"
+                  "Property": "Source"
                 }
               },
-              "queryRef": "Hypothèses.source",
-              "nativeQueryRef": "source"
+              "queryRef": "Hypothèses.Source",
+              "nativeQueryRef": "Source"
             }
           ]
         }

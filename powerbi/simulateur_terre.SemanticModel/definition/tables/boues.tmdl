@@ -1,53 +1,66 @@
 table boues
-	lineageTag: 221b6547-0dd9-4f9a-bb7d-413e7510f830
+	lineageTag: 081acd54-2df3-41b0-b1fd-472304deec64
 
 	column 'pays'
 		dataType: string
-		lineageTag: 9626806e-02e8-4d65-a417-7d541993648c
+		lineageTag: 9fd09dee-9771-4585-90a8-a591b89b20a5
 		summarizeBy: none
 		sourceColumn: pays
 
 	column 'annee'
 		dataType: double
-		lineageTag: 9b98da7c-50ed-4307-bee0-2fd051d5c194
+		formatString: #,0.##
+		lineageTag: 3f6f7a35-ba9c-4a85-bcec-6d7472c1a4ed
 		summarizeBy: sum
 		sourceColumn: annee
 
 	column 'total_kt'
 		dataType: double
-		lineageTag: d3be1600-2b39-4c69-8c9f-1b45a92f1d9d
+		formatString: #,0.##
+		lineageTag: 247cd64f-42e4-43fb-b994-cc3c4d45bb18
 		summarizeBy: sum
 		sourceColumn: total_kt
 
 	column 'agriculture'
 		dataType: double
-		lineageTag: f81d7430-725c-4b94-8b13-7a89f22137b3
+		formatString: #,0.##
+		lineageTag: ca4eda00-b1ff-4d8d-a908-9531566094f1
 		summarizeBy: sum
 		sourceColumn: agriculture
 
 	column 'compost'
 		dataType: double
-		lineageTag: d7e1535b-6f6c-4f3a-ad59-1d956a1ec6f4
+		formatString: #,0.##
+		lineageTag: aa0626ef-42ca-46cb-a0a1-741694a3de89
 		summarizeBy: sum
 		sourceColumn: compost
 
 	column 'incineration'
 		dataType: double
-		lineageTag: 6f23e134-b3fa-4b40-9232-afebfdcc4160
+		formatString: #,0.##
+		lineageTag: de52324c-c340-41e2-8431-321339dc5f71
 		summarizeBy: sum
 		sourceColumn: incineration
 
 	column 'decharge'
 		dataType: double
-		lineageTag: 5447d5c3-cd04-44bb-8173-2eb42afcff74
+		formatString: #,0.##
+		lineageTag: a5540edf-2dcd-491b-b9c9-0137e23e7dda
 		summarizeBy: sum
 		sourceColumn: decharge
 
 	column 'autre'
 		dataType: double
-		lineageTag: e6808428-6f47-4b50-9640-49afafe47658
+		formatString: #,0.##
+		lineageTag: f4dab024-47ec-44a8-841e-68cee93c1d95
 		summarizeBy: sum
 		sourceColumn: autre
+
+	column 'Nom du pays'
+		dataType: string
+		lineageTag: ed89938a-c8ed-4195-afd7-4f192bb1e4fa
+		summarizeBy: none
+		sourceColumn: Nom du pays
 
 	partition boues = m
 		mode: import
@@ -55,11 +68,12 @@ table boues
 				let
 				    Source = Csv.Document(File.Contents(Dossier & "eurostat_boues_pays.csv"), [Delimiter = ",", Columns = 8, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
 				    Entetes = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
-				    Types = Table.TransformColumnTypes(Entetes, {{"pays", type text}, {"annee", type number}, {"total_kt", type number}, {"agriculture", type number}, {"compost", type number}, {"incineration", type number}, {"decharge", type number}, {"autre", type number}}, "en-US")
+				    Types = Table.TransformColumnTypes(Entetes, {{"pays", type text}, {"annee", type number}, {"total_kt", type number}, {"agriculture", type number}, {"compost", type number}, {"incineration", type number}, {"decharge", type number}, {"autre", type number}}, "en-US"),
+				    Noms = Table.AddColumn(Types, "Nom du pays", each Record.FieldOrDefault([FR = "France", DE = "Allemagne", NL = "Pays-Bas", BE = "Belgique", AT = "Autriche", ES = "Espagne", IE = "Irlande", PL = "Pologne", SE = "Suède", DK = "Danemark", CH = "Suisse", IT = "Italie", PT = "Portugal", UK = "Royaume-Uni"], [pays], [pays]), type text)
 				in
-				    Types
+				    Noms
 
 	measure 'Part des boues rendue au sol' = CALCULATE ( DIVIDE ( SUM ( boues[agriculture] ) + SUM ( boues[compost] ), SUM ( boues[total_kt] ) ), boues[annee] >= 2019 )
 		formatString: 0%
-		lineageTag: 8f59367a-3c1e-45b6-a1c2-d938799f786e
+		lineageTag: 37f827fe-6acc-4d0b-9c1e-b6656810a346
 

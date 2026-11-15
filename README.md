@@ -202,12 +202,18 @@ question : **combien d'engrais azotés importés pourrait-on remplacer ?** Une g
 d'azote de synthèse consommées chaque année, remplies levier par levier ; trois chiffres donnent l'azote apporté, la part des
 engrais remplacée et la comparaison avec la production française (800 000 t).
 
+![Simulateur : maximum théorique](powerbi/simulateur_maximum.png)
+
 Deux scénarios. **« Maximum théorique »** : toute l'urine collectée (255 000 t d'azote) et toutes les pertes d'ammoniac des
 élevages évitées (360 000 t), soit 615 000 t, 31 % des engrais azotés consommés et 77 % de la production française. C'est un
 plafond, pas une promesse. **« Personnalisé »** : quatre curseurs règlent la part de l'urine collectée, la part des pertes
 d'ammoniac évitées, les hectares de légumineuses en plus et les tonnes d'algues cultivées. Les légumineuses et les algues
 n'entrent pas dans le maximum, faute de plafond sourcé. Une page compare les pays européens sur leurs boues d'épuration, une
-autre liste chaque coefficient avec sa source.
+autre liste chaque coefficient avec sa source. Exemple de scénario personnalisé ci-dessous : 40 % de l'urine collectée,
+45 % des pertes d'ammoniac évitées, un million d'hectares de légumineuses en plus et 300 000 tonnes d'algues apportent
+305 350 tonnes d'azote, soit 15 % des engrais azotés consommés.
+
+![Simulateur : scénario personnalisé](powerbi/simulateur_personnalise.png)
 
 Côté technique : chaque curseur est un paramètre de simulation (`GENERATESERIES`, `SELECTEDVALUE` avec valeur par défaut) ;
 les coefficients sont des mesures constantes regroupées dans un dossier « Hypothèses », si bien qu'une hypothèse se change à

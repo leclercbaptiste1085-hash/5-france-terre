@@ -109,7 +109,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Boues d''épuration rendues au sol par pays (Eurostat) ; azote en jeu chaque année (échelle logarithmique)'"
+                  "Value": "'Boues d''épuration rendues au sol par pays (Eurostat) ; azote en jeu chaque année en France'"
                 }
               }
             },

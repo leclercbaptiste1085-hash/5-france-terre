@@ -1,29 +1,30 @@
 table Hypothèses
-	lineageTag: 278b51bc-030e-438e-996f-e0a41d49152d
+	lineageTag: f1b96873-e99d-4d4f-8dbb-6248a13211c6
 
-	column 'hypothese'
+	column 'Hypothèse'
 		dataType: string
-		lineageTag: b3a0ff1f-5383-4e6e-a574-a018da678ea4
+		lineageTag: b858bc15-89a1-4cb9-9b09-b619a069441c
 		summarizeBy: none
-		sourceColumn: hypothese
+		sourceColumn: Hypothèse
 
-	column 'valeur'
+	column 'Valeur'
 		dataType: double
-		lineageTag: a81c8f07-0d16-4489-85c6-859902ebf072
+		formatString: #,0.##
+		lineageTag: f27a3566-9881-4109-bbaf-3f8632e72aa0
 		summarizeBy: sum
-		sourceColumn: valeur
+		sourceColumn: Valeur
 
-	column 'unite'
+	column 'Unité'
 		dataType: string
-		lineageTag: c0110d0d-b190-4f25-b212-217b74de8285
+		lineageTag: 68290542-02f8-48e1-91a3-8f87a150790d
 		summarizeBy: none
-		sourceColumn: unite
+		sourceColumn: Unité
 
-	column 'source'
+	column 'Source'
 		dataType: string
-		lineageTag: b79b4fc6-7dc9-4145-9f82-7824cd0bb40f
+		lineageTag: 18c61cb5-3de2-4428-adec-e7a3f6a08a09
 		summarizeBy: none
-		sourceColumn: source
+		sourceColumn: Source
 
 	partition Hypothèses = m
 		mode: import
@@ -31,7 +32,7 @@ table Hypothèses
 				let
 				    Source = Csv.Document(File.Contents(Dossier & "hypotheses_simulateur.csv"), [Delimiter = ",", Columns = 4, Encoding = 65001, QuoteStyle = QuoteStyle.Csv]),
 				    Entetes = Table.PromoteHeaders(Source, [PromoteAllScalars = true]),
-				    Types = Table.TransformColumnTypes(Entetes, {{"hypothese", type text}, {"valeur", type number}, {"unite", type text}, {"source", type text}}, "en-US")
+				    Types = Table.TransformColumnTypes(Entetes, {{"Hypothèse", type text}, {"Valeur", type number}, {"Unité", type text}, {"Source", type text}}, "en-US")
 				in
 				    Types
 
