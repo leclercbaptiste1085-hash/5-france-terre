@@ -3,9 +3,9 @@
   "name": "note",
   "position": {
     "x": 440,
-    "y": 610,
+    "y": 606,
     "z": 4000,
-    "height": 90,
+    "height": 104,
     "width": 816,
     "tabOrder": 4000
   },
@@ -19,7 +19,17 @@
               {
                 "textRuns": [
                   {
-                    "value": ""
+                    "value": "Comment lire. ",
+                    "textStyle": {
+                      "fontWeight": "bold",
+                      "fontSize": "11pt"
+                    }
+                  },
+                  {
+                    "value": "Le graphique donne l'azote apporté par les quatre leviers (effluents, urine, légumineuses, algues), en tonnes par an. L'agroforesterie se lit à part, sur la carte de droite : les hectares qu'il faudrait en plus, sans arbres, pour produire autant (gain mesuré : 1,34). Les leviers se recouvrent en partie : le total est un ordre de grandeur.",
+                    "textStyle": {
+                      "fontSize": "11pt"
+                    }
                   }
                 ]
               }
@@ -49,74 +59,6 @@
               "expr": {
                 "Literal": {
                   "Value": "false"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "title": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Comment lire'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
-                }
-              }
-            },
-            "bold": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "titleWrap": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            }
-          }
-        }
-      ],
-      "subTitle": [
-        {
-          "properties": {
-            "show": {
-              "expr": {
-                "Literal": {
-                  "Value": "true"
-                }
-              }
-            },
-            "text": {
-              "expr": {
-                "Literal": {
-                  "Value": "'Les trois premiers leviers remplacent des engrais (en tonnes d''azote). L''agroforesterie, elle, augmente la production : la carte de droite donne les hectares qu''il faudrait en plus, sans arbres, pour produire autant (gain mesuré : 1,34). Les leviers se recouvrent en partie : le total est un ordre de grandeur.'"
-                }
-              }
-            },
-            "fontSize": {
-              "expr": {
-                "Literal": {
-                  "Value": "12D"
                 }
               }
             }

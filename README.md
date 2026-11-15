@@ -194,6 +194,28 @@ La mer, le fleuve, puis la terre : dans chaque domaine, le savoir existe et il e
 pour les cuves des méthaniers, de l'INRAE pour l'agroforesterie ou du LEESU pour l'azote. Ce qui manque n'est pas la
 technique, mais sa mise en œuvre. Ce sera l'objet du projet suivant.
 
+## Simulateur Power BI
+
+Le dossier `powerbi/` contient un simulateur interactif (format PBIP, à ouvrir avec Power BI Desktop) qui pose une seule
+question : **combien d'engrais azotés importés pourrait-on remplacer ?** Cinq curseurs règlent les leviers (hectares en
+agroforesterie, part de l'urine collectée, part des effluents d'élevage mieux utilisés, hectares de légumineuses en plus,
+tonnes d'algues cultivées) ; le rapport affiche l'azote apporté par chaque levier, la part des 2 millions de tonnes
+d'engrais azotés ainsi remplacée, et les hectares de production gagnés par l'agroforesterie. Une page compare les pays
+européens sur leurs boues d'épuration, une autre liste chaque coefficient avec sa source.
+
+![Simulateur Power BI](powerbi/simulateur_p1.png)
+
+Dans l'exemple ci-dessus (1,2 million d'hectares en agroforesterie et autant en légumineuses supplémentaires, 25 % de
+l'urine collectée, 30 % des effluents mieux utilisés, 800 000 tonnes d'algues), les quatre leviers apportent environ
+295 000 tonnes d'azote, soit 15 % des engrais azotés consommés, et l'agroforesterie équivaut à 408 000 hectares de
+production en plus. Les effluents d'élevage pèsent de loin le plus lourd ; les algues, le moins.
+
+Côté technique : chaque curseur est un paramètre de simulation (`GENERATESERIES`, `SELECTEDVALUE` avec valeur par défaut) ;
+les coefficients sont des mesures constantes regroupées dans un dossier « Hypothèses », si bien qu'une hypothèse se
+change à un seul endroit ; les pourcentages sont stockés en entiers (0 à 100) pour que le filtre d'un curseur retrouve
+toujours sa valeur exacte. Les calculs ont été vérifiés par requêtes DAX sur le modèle (par exemple : urine collectée à
+100 % = 300 000 × 0,85 = 255 000 tonnes).
+
 ## Limites
 
 - **Le plateau du blé a plusieurs causes** (choix variétaux, réduction des intrants, aléas de récolte) ; ce projet le

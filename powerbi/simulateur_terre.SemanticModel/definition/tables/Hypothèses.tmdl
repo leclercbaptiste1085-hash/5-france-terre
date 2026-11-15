@@ -1,27 +1,27 @@
 table Hypothèses
-	lineageTag: 5fbda501-7235-4c2a-9c9f-08983a053964
+	lineageTag: 5b8bb406-6e73-474e-8e57-14dbeee70c7b
 
 	column 'hypothese'
 		dataType: string
-		lineageTag: e5e4a336-9e2d-43ba-ac5e-e1e2c2eb0700
+		lineageTag: 95a59a77-a5d5-45bd-872b-1b7cbfc20b1f
 		summarizeBy: none
 		sourceColumn: hypothese
 
 	column 'valeur'
 		dataType: double
-		lineageTag: a39e0480-8fe1-49b6-a914-686ad150689e
+		lineageTag: 6f6bb7a5-8683-4cc7-a3b6-65fa160c86ad
 		summarizeBy: sum
 		sourceColumn: valeur
 
 	column 'unite'
 		dataType: string
-		lineageTag: cdfd2bf7-068a-4b21-b332-ff26a4f66857
+		lineageTag: 7db9fe96-876f-430f-95ca-f09d9b36b62a
 		summarizeBy: none
 		sourceColumn: unite
 
 	column 'source'
 		dataType: string
-		lineageTag: a033b96d-2265-4728-8154-813d8b1a08fd
+		lineageTag: b3272f6f-060d-4a9b-9013-9f422bbd8261
 		summarizeBy: none
 		sourceColumn: source
 

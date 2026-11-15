@@ -8,7 +8,7 @@ md = md.split("\n## Reproduire")[0]                       # le rapport s'arrête
 md = re.sub(r"\n\| \| \|\n\|---\|---\|\n(\|.*\|\n?)+", "\n", md)   # tableau d'images de l'annexe : retiré
 titre, corps = md.split("\n", 1)
 html = markdown.markdown(corps, extensions=["tables"])
-html = html.replace('src="sorties/', f'src="file:///{ici.as_posix()}/sorties/')
+html = html.replace('src="sorties/', f'src="file:///{ici.as_posix()}/sorties/').replace('src="powerbi/', f'src="file:///{ici.as_posix()}/powerbi/')
 html = re.sub(r"<h2>", '<h2 class="saut">', html)         # chaque partie commence sur une nouvelle page
 html = html.replace('<h2 class="saut">1.', "<h2>1.", 1)
 html = re.sub(r"<p>(<img[^>]+>)</p>", r"<figure>\1</figure>", html)
