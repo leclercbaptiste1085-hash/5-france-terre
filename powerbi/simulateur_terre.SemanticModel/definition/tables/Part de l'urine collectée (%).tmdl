@@ -1,14 +1,14 @@
 table 'Part de l''urine collectée (%)'
-	lineageTag: 13a9f2b5-9e0d-4ff8-9d03-27ef31a2590c
+	lineageTag: a5961ac1-b754-4c8e-9056-50565b75d1ea
 
 	measure 'Part de l''urine collectée (%) (valeur)' = SELECTEDVALUE ( 'Part de l''urine collectée (%)'[Part de l'urine collectée (%)], 20 )
 		formatString: 0
-		lineageTag: c45e89f2-ed23-472e-bdc9-5508823147ea
+		lineageTag: 88544d35-869f-4458-a60a-60241e2fe611
 
 	column 'Part de l''urine collectée (%)'
 		dataType: double
 		formatString: 0
-		lineageTag: 01c9ef5f-0d25-4900-a06b-4cb7d306268c
+		lineageTag: 53ff5b89-cce3-4532-93df-a5b2ce4194d1
 		summarizeBy: none
 		sourceColumn: [Value]
 		extendedProperty ParameterMetadata =
