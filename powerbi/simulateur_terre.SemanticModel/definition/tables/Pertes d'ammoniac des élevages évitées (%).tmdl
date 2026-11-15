@@ -1,14 +1,14 @@
 table 'Pertes d''ammoniac des élevages évitées (%)'
-	lineageTag: fde8c6bf-c968-418b-99bc-23833b945fb1
+	lineageTag: 19e77b4f-4363-4d4c-9224-4dcc1b378187
 
-	measure 'Pertes d''ammoniac des élevages évitées (%) (valeur)' = SELECTEDVALUE ( 'Pertes d''ammoniac des élevages évitées (%)'[Pertes d'ammoniac des élevages évitées (%)], 30 )
+	measure 'Pertes d''ammoniac des élevages évitées (%) (valeur)' = SELECTEDVALUE ( 'Pertes d''ammoniac des élevages évitées (%)'[Pertes d'ammoniac des élevages évitées (%)], 0 )
 		formatString: 0
-		lineageTag: 671eb0f1-4261-4d63-bcfd-cf07b8706b48
+		lineageTag: 5688b4f0-b847-4e0a-9abe-928e73350d7e
 
 	column 'Pertes d''ammoniac des élevages évitées (%)'
 		dataType: double
 		formatString: 0
-		lineageTag: d7dc37c1-d919-47b7-8e42-bf211f46f1ef
+		lineageTag: a0aefce6-4977-4f6e-82cb-9aca75f50590
 		summarizeBy: none
 		sourceColumn: [Value]
 		extendedProperty ParameterMetadata =

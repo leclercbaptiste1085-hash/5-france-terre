@@ -78,7 +78,7 @@
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "100000D"
+                            "Value": "0D"
                           }
                         }
                       }

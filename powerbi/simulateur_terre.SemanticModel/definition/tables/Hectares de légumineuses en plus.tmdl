@@ -1,14 +1,14 @@
 table 'Hectares de légumineuses en plus'
-	lineageTag: 41df9d2f-3f25-4a9a-a69a-6e664e40bb82
+	lineageTag: db292b7d-b3b7-4dfa-85b6-341da7504af4
 
-	measure 'Hectares de légumineuses en plus (valeur)' = SELECTEDVALUE ( 'Hectares de légumineuses en plus'[Hectares de légumineuses en plus], 500000 )
+	measure 'Hectares de légumineuses en plus (valeur)' = SELECTEDVALUE ( 'Hectares de légumineuses en plus'[Hectares de légumineuses en plus], 0 )
 		formatString: #,0
-		lineageTag: 4f4b0d23-b5b4-4e89-a5a7-89ac10e20e98
+		lineageTag: 3c115a4d-6e90-4d63-8282-794ad10a3e85
 
 	column 'Hectares de légumineuses en plus'
 		dataType: double
 		formatString: #,0
-		lineageTag: 2482a38f-0f8c-4d01-b6a6-58f608ffe47f
+		lineageTag: 166c2e9e-bc8f-4e18-b226-5e5c7733e829
 		summarizeBy: none
 		sourceColumn: [Value]
 		extendedProperty ParameterMetadata =

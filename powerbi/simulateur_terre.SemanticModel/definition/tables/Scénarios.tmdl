@@ -1,15 +1,15 @@
 table 'Scénarios'
-	lineageTag: c54d9ec5-2ad6-4265-a3dc-93621aeb0e60
+	lineageTag: 1858910a-4a5e-4d06-9ef5-6ebffc7745f1
 
 	column 'Ordre'
 		dataType: int64
-		lineageTag: b3e82ab9-10cf-4016-9a79-507c9240e7e0
+		lineageTag: 6d9fcec6-e8df-406b-82dc-2677f09031e9
 		summarizeBy: none
 		sourceColumn: [Ordre]
 
 	column 'Scénario'
 		dataType: string
-		lineageTag: 55cbbec0-a72f-46ea-9777-1169e813196f
+		lineageTag: c633cd7b-8266-4926-ad0b-fcd1b6db061b
 		summarizeBy: none
 		sourceColumn: [Scénario]
 		sortByColumn: Ordre
