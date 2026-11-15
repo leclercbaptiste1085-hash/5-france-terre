@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "g_leviers",
   "position": {
-    "x": 440,
-    "y": 220,
-    "z": 3000,
-    "height": 380,
-    "width": 816,
-    "tabOrder": 3000
+    "x": 650,
+    "y": 426,
+    "z": 5000,
+    "height": 220,
+    "width": 606,
+    "tabOrder": 5000
   },
   "visual": {
     "visualType": "clusteredBarChart",
@@ -42,31 +42,14 @@
                       "Entity": "Résultats"
                     }
                   },
-                  "Property": "Azote apporté (t)"
+                  "Property": "Azote par levier (t)"
                 }
               },
-              "queryRef": "Résultats.Azote apporté (t)",
-              "nativeQueryRef": "Azote apporté (t)"
+              "queryRef": "Résultats.Azote par levier (t)",
+              "nativeQueryRef": "Azote par levier (t)"
             }
           ]
         }
-      },
-      "sortDefinition": {
-        "sort": [
-          {
-            "field": {
-              "Measure": {
-                "Expression": {
-                  "SourceRef": {
-                    "Entity": "Résultats"
-                  }
-                },
-                "Property": "Azote apporté (t)"
-              }
-            },
-            "direction": "Descending"
-          }
-        ]
       }
     },
     "objects": {
@@ -77,6 +60,26 @@
               "expr": {
                 "Literal": {
                   "Value": "true"
+                }
+              }
+            },
+            "labelDisplayUnits": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "valueAxis": [
+        {
+          "properties": {
+            "show": {
+              "expr": {
+                "Literal": {
+                  "Value": "false"
                 }
               }
             }
@@ -98,14 +101,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Azote apporté par chaque levier (tonnes par an)'"
+                  "Value": "'Azote apporté par levier (tonnes par an)'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "14D"
+                  "Value": "13D"
                 }
               }
             },

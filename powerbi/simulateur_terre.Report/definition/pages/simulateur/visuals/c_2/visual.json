@@ -3,11 +3,11 @@
   "name": "c_2",
   "position": {
     "x": 24,
-    "y": 312,
-    "z": 1220,
+    "y": 554,
+    "z": 4120,
     "height": 90,
-    "width": 380,
-    "tabOrder": 1220
+    "width": 296,
+    "tabOrder": 4120
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Part des effluents d'élevage mieux utilisés (%)"
+                      "Entity": "Hectares de légumineuses en plus"
                     }
                   },
-                  "Property": "Part des effluents d'élevage mieux utilisés (%)"
+                  "Property": "Hectares de légumineuses en plus"
                 }
               },
-              "queryRef": "Part des effluents d'élevage mieux utilisés (%).Part des effluents d'élevage mieux utilisés (%)",
-              "nativeQueryRef": "Part des effluents d'élevage mieux utilisés (%)",
+              "queryRef": "Hectares de légumineuses en plus.Hectares de légumineuses en plus",
+              "nativeQueryRef": "Hectares de légumineuses en plus",
               "active": true
             }
           ]
@@ -57,7 +57,7 @@
                 "From": [
                   {
                     "Name": "p",
-                    "Entity": "Part des effluents d'élevage mieux utilisés (%)",
+                    "Entity": "Hectares de légumineuses en plus",
                     "Type": 0
                   }
                 ],
@@ -73,12 +73,12 @@
                                 "Source": "p"
                               }
                             },
-                            "Property": "Part des effluents d'élevage mieux utilisés (%)"
+                            "Property": "Hectares de légumineuses en plus"
                           }
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "10D"
+                            "Value": "500000D"
                           }
                         }
                       }

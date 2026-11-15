@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "k_total",
   "position": {
-    "x": 716,
-    "y": 92,
+    "x": 440,
+    "y": 146,
     "z": 2100,
     "height": 110,
-    "width": 260,
+    "width": 400,
     "tabOrder": 2100
   },
   "visual": {
@@ -23,11 +23,11 @@
                       "Entity": "Résultats"
                     }
                   },
-                  "Property": "Azote apporté (t)"
+                  "Property": "Azote apporté chaque année"
                 }
               },
-              "queryRef": "Résultats.Azote apporté (t)",
-              "nativeQueryRef": "Azote apporté (t)"
+              "queryRef": "Résultats.Azote apporté chaque année",
+              "nativeQueryRef": "Azote apporté chaque année"
             }
           ]
         }

@@ -2,12 +2,12 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "note",
   "position": {
-    "x": 440,
-    "y": 606,
-    "z": 4000,
-    "height": 104,
-    "width": 816,
-    "tabOrder": 4000
+    "x": 24,
+    "y": 650,
+    "z": 6000,
+    "height": 64,
+    "width": 1232,
+    "tabOrder": 6000
   },
   "visual": {
     "visualType": "textbox",
@@ -22,13 +22,13 @@
                     "value": "Comment lire. ",
                     "textStyle": {
                       "fontWeight": "bold",
-                      "fontSize": "11pt"
+                      "fontSize": "10pt"
                     }
                   },
                   {
-                    "value": "Le graphique donne l'azote apporté par les quatre leviers (effluents, urine, légumineuses, algues), en tonnes par an. L'agroforesterie se lit à part, sur la carte de droite : les hectares qu'il faudrait en plus, sans arbres, pour produire autant (gain mesuré : 1,34). Les leviers se recouvrent en partie : le total est un ordre de grandeur.",
+                    "value": "« Maximum théorique » : toute l'urine collectée (255 000 t d'azote) et toutes les pertes d'ammoniac des élevages évitées (360 000 t) ; c'est un plafond, pas une promesse. Les légumineuses et les algues n'ont pas de plafond sourcé : elles ne comptent que dans le scénario personnalisé. Les effluents déjà épandus ne sont pas comptés : ils remplacent déjà des engrais. Sources et coefficients : page Hypothèses.",
                     "textStyle": {
-                      "fontSize": "11pt"
+                      "fontSize": "10pt"
                     }
                   }
                 ]

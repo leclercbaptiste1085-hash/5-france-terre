@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "c_4",
+  "name": "scenario",
   "position": {
     "x": 24,
-    "y": 496,
-    "z": 1240,
-    "height": 90,
-    "width": 380,
-    "tabOrder": 1240
+    "y": 80,
+    "z": 1100,
+    "height": 56,
+    "width": 560,
+    "tabOrder": 1100
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Algues cultivées (t par an)"
+                      "Entity": "Scénarios"
                     }
                   },
-                  "Property": "Algues cultivées (t par an)"
+                  "Property": "Scénario"
                 }
               },
-              "queryRef": "Algues cultivées (t par an).Algues cultivées (t par an)",
-              "nativeQueryRef": "Algues cultivées (t par an)",
+              "queryRef": "Scénarios.Scénario",
+              "nativeQueryRef": "Scénario",
               "active": true
             }
           ]
@@ -41,7 +41,7 @@
             "mode": {
               "expr": {
                 "Literal": {
-                  "Value": "'Single'"
+                  "Value": "'Basic'"
                 }
               }
             }
@@ -51,40 +51,72 @@
       "general": [
         {
           "properties": {
+            "orientation": {
+              "expr": {
+                "Literal": {
+                  "Value": "1D"
+                }
+              }
+            },
             "filter": {
               "filter": {
                 "Version": 2,
                 "From": [
                   {
-                    "Name": "p",
-                    "Entity": "Algues cultivées (t par an)",
+                    "Name": "s",
+                    "Entity": "Scénarios",
                     "Type": 0
                   }
                 ],
                 "Where": [
                   {
                     "Condition": {
-                      "Comparison": {
-                        "ComparisonKind": 0,
-                        "Left": {
-                          "Column": {
-                            "Expression": {
-                              "SourceRef": {
-                                "Source": "p"
+                      "In": {
+                        "Expressions": [
+                          {
+                            "Column": {
+                              "Expression": {
+                                "SourceRef": {
+                                  "Source": "s"
+                                }
+                              },
+                              "Property": "Scénario"
+                            }
+                          }
+                        ],
+                        "Values": [
+                          [
+                            {
+                              "Literal": {
+                                "Value": "'Maximum théorique'"
                               }
-                            },
-                            "Property": "Algues cultivées (t par an)"
-                          }
-                        },
-                        "Right": {
-                          "Literal": {
-                            "Value": "100000D"
-                          }
-                        }
+                            }
+                          ]
+                        ]
                       }
                     }
                   }
                 ]
+              }
+            }
+          }
+        }
+      ],
+      "selection": [
+        {
+          "properties": {
+            "singleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
+              }
+            },
+            "strictSingleSelect": {
+              "expr": {
+                "Literal": {
+                  "Value": "true"
+                }
               }
             }
           }
@@ -96,7 +128,20 @@
             "show": {
               "expr": {
                 "Literal": {
-                  "Value": "true"
+                  "Value": "false"
+                }
+              }
+            }
+          }
+        }
+      ],
+      "items": [
+        {
+          "properties": {
+            "textSize": {
+              "expr": {
+                "Literal": {
+                  "Value": "12D"
                 }
               }
             }

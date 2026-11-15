@@ -3,11 +3,11 @@
   "name": "c_0",
   "position": {
     "x": 24,
-    "y": 128,
-    "z": 1200,
+    "y": 462,
+    "z": 4100,
     "height": 90,
-    "width": 380,
-    "tabOrder": 1200
+    "width": 296,
+    "tabOrder": 4100
   },
   "visual": {
     "visualType": "slicer",
@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Hectares en agroforesterie"
+                      "Entity": "Part de l'urine collectée (%)"
                     }
                   },
-                  "Property": "Hectares en agroforesterie"
+                  "Property": "Part de l'urine collectée (%)"
                 }
               },
-              "queryRef": "Hectares en agroforesterie.Hectares en agroforesterie",
-              "nativeQueryRef": "Hectares en agroforesterie",
+              "queryRef": "Part de l'urine collectée (%).Part de l'urine collectée (%)",
+              "nativeQueryRef": "Part de l'urine collectée (%)",
               "active": true
             }
           ]
@@ -57,7 +57,7 @@
                 "From": [
                   {
                     "Name": "p",
-                    "Entity": "Hectares en agroforesterie",
+                    "Entity": "Part de l'urine collectée (%)",
                     "Type": 0
                   }
                 ],
@@ -73,12 +73,12 @@
                                 "Source": "p"
                               }
                             },
-                            "Property": "Hectares en agroforesterie"
+                            "Property": "Part de l'urine collectée (%)"
                           }
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "500000D"
+                            "Value": "20D"
                           }
                         }
                       }

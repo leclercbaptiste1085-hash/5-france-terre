@@ -3,9 +3,9 @@
   "name": "titre",
   "position": {
     "x": 24,
-    "y": 10,
+    "y": 8,
     "z": 1000,
-    "height": 70,
+    "height": 66,
     "width": 1230,
     "tabOrder": 1000
   },
@@ -109,7 +109,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Chaque curseur règle un levier. Les barres montrent l''azote qu''il apporterait, à comparer aux 2 millions de tonnes d''engrais azotés consommées chaque année.'"
+                  "Value": "'La France consomme 2 millions de tonnes d''azote de synthèse par an et n''en produit qu''environ 800 000. Que rapporteraient les leviers ?'"
                 }
               }
             },

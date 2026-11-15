@@ -1,0 +1,20 @@
+table 'Scénarios'
+	lineageTag: ad035330-18bd-456e-b15b-c0a617ac8919
+
+	column 'Ordre'
+		dataType: int64
+		lineageTag: 216d2017-5264-4e22-8581-c984f5345251
+		summarizeBy: none
+		sourceColumn: [Ordre]
+
+	column 'Scénario'
+		dataType: string
+		lineageTag: 02dfed80-2cb3-4055-8923-c0732bf0beb7
+		summarizeBy: none
+		sourceColumn: [Scénario]
+		sortByColumn: Ordre
+
+	partition 'Scénarios' = calculated
+		mode: import
+		source = SELECTCOLUMNS ( GENERATESERIES ( 1, 2, 1 ), "Ordre", [Value], "Scénario", SWITCH ( [Value], 1, "Maximum théorique", 2, "Personnalisé" ) )
+

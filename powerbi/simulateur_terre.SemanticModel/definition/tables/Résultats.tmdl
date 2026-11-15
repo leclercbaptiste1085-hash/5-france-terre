@@ -1,81 +1,89 @@
 table Résultats
-	lineageTag: c27e6f49-6f48-47b7-beda-9da092dffc5a
+	lineageTag: ca73dfdf-6f26-4b5f-a0d0-0d36bb59fc22
 
 	measure 'H engrais' = 2000000
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: 83649273-8523-4f1b-8e56-3db647d285f1
+		lineageTag: 171dfec3-35e3-45c7-8b31-dd854d3053d6
 
-	measure 'H effluents' = 597500
+	measure 'H production engrais' = 800000
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: 06b52c3f-2cd7-4f34-ac98-0378dff21444
+		lineageTag: 047a52f7-7333-4098-ad35-55a29bd4ff7d
 
-	measure 'H légumineuses' = 40
+	measure 'H ammoniac élevages' = 360000
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: b378b798-4e69-42b5-bf10-f1d858bb6b3e
+		lineageTag: a342c4e3-d7b7-42d6-98a6-b837910ca36f
 
 	measure 'H excrétions' = 300000
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: f46504b2-c31d-4d79-90ef-13f344308c5e
+		lineageTag: d69db1c4-88b9-4222-9eb2-80ca28c5611e
 
 	measure 'H part urine' = 0.85
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: a508dee5-3b12-4f65-a2d1-a66b3eef7741
+		lineageTag: dfded0b5-c69f-4f1d-b424-5283b0bfdacd
+
+	measure 'H légumineuses' = 40
+		formatString: #,0.##
+		displayFolder: Hypothèses
+		lineageTag: 6c1bca79-409c-4887-8967-34e026dfafcc
 
 	measure 'H algues' = 4.5
 		formatString: #,0.##
 		displayFolder: Hypothèses
-		lineageTag: 492efce2-2cf0-4925-b0f0-021e90ec6da2
+		lineageTag: 3858e67c-a9f7-4bbc-8ede-6010d7c12de5
 
-	measure 'H gain surface' = 1.34
-		formatString: #,0.##
-		displayFolder: Hypothèses
-		lineageTag: 3aa555b8-e3a2-430b-9354-905f018716f4
+	measure 'Scénario choisi' = SELECTEDVALUE ( Scénarios[Scénario], "Maximum théorique" )
+		displayFolder: Leviers
+		lineageTag: 73aa4d42-b61a-4ba0-84c3-bdd6c9fe3422
 
-	measure 'H SAU' = 26700000
-		formatString: #,0.##
-		displayFolder: Hypothèses
-		lineageTag: c5472315-95b2-4cd6-8e21-844a7a033286
-
-	measure 'Azote des effluents (t)' = [H effluents] * [Part des effluents d'élevage mieux utilisés (%) (valeur)] / 100
+	measure 'Azote des pertes d''ammoniac évitées (t)' = [H ammoniac élevages] * IF ( [Scénario choisi] = "Maximum théorique", 1, [Pertes d'ammoniac des élevages évitées (%) (valeur)] / 100 )
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: 59e23e14-aedd-4c8c-b017-71f864bb076f
+		lineageTag: d9c22afd-5a82-4a52-9c4e-e6495a4e34e5
 
-	measure 'Azote des légumineuses (t)' = [Hectares de légumineuses en plus (valeur)] * [H légumineuses] / 1000
+	measure 'Azote de l''urine (t)' = [H excrétions] * [H part urine] * IF ( [Scénario choisi] = "Maximum théorique", 1, [Part de l'urine collectée (%) (valeur)] / 100 )
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: f33ba9db-44a4-483a-aa35-316e9928386f
+		lineageTag: 469ca9a8-1712-4c2b-afa6-e1ae38e33cf5
 
-	measure 'Azote de l''urine (t)' = [H excrétions] * [H part urine] * [Part de l'urine collectée (%) (valeur)] / 100
+	measure 'Azote des légumineuses (t)' = IF ( [Scénario choisi] = "Maximum théorique", 0, [Hectares de légumineuses en plus (valeur)] * [H légumineuses] / 1000 )
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: 1ccc0649-2b91-45ec-8494-63ba5fca022a
+		lineageTag: 8500f984-c98f-4ccb-bf82-4444331e8016
 
-	measure 'Azote des algues (t)' = [Algues cultivées (t par an) (valeur)] * [H algues] / 1000
+	measure 'Azote des algues (t)' = IF ( [Scénario choisi] = "Maximum théorique", 0, [Algues cultivées (t par an) (valeur)] * [H algues] / 1000 )
 		formatString: #,0
 		displayFolder: Leviers
-		lineageTag: 209ff033-4ee9-4d65-a655-ed5b8363aca9
+		lineageTag: 39c9e0a1-ee50-4c56-a01a-c869b18cdde9
 
-	measure 'Azote apporté (t)' = SWITCH ( SELECTEDVALUE ( Leviers[Ordre] ), 1, [Azote des effluents (t)], 2, [Azote des légumineuses (t)], 3, [Azote de l'urine (t)], 4, [Azote des algues (t)], [Azote des effluents (t)] + [Azote des légumineuses (t)] + [Azote de l'urine (t)] + [Azote des algues (t)] )
+	measure 'Azote apporté (t)' = [Azote des pertes d'ammoniac évitées (t)] + [Azote de l'urine (t)] + [Azote des légumineuses (t)] + [Azote des algues (t)]
 		formatString: #,0
-		lineageTag: 16bef07d-11cd-460b-93a2-8bd97d0ffa7f
+		lineageTag: 77b267c5-fb3a-4ab3-b59e-2a3291812627
 
-	measure 'Engrais azotés remplacés' = DIVIDE ( [Azote apporté (t)], [H engrais] )
-		formatString: 0%
-		lineageTag: e980de7c-e12c-4865-924f-829545ab75f3
-
-	measure 'Hectares de production gagnés' = [Hectares en agroforesterie (valeur)] * ( [H gain surface] - 1 )
+	measure 'Azote par levier (t)' = SWITCH ( SELECTEDVALUE ( Leviers[Ordre] ), 1, [Azote des pertes d'ammoniac évitées (t)], 2, [Azote de l'urine (t)], 3, [Azote des légumineuses (t)], 4, [Azote des algues (t)] )
 		formatString: #,0
-		lineageTag: c176a936-f0d5-4a21-98aa-09573489c145
+		lineageTag: abbaad29-d76c-44c5-80e5-b49c12b5eb73
+
+	measure 'Jauge (t)' = IF ( SELECTEDVALUE ( Leviers[Ordre] ) = 5, MAX ( 0, [H engrais] - [Azote apporté (t)] ), [Azote par levier (t)] )
+		formatString: #,0
+		lineageTag: c260eddd-7f1d-4726-884e-1a1cc640fb57
+
+	measure 'Engrais azotés remplacés' = FORMAT ( DIVIDE ( [Azote apporté (t)], [H engrais] ), "0 %" )
+		lineageTag: 34280797-5925-429e-98e0-3bdc6952dd01
+
+	measure 'Azote apporté chaque année' = FORMAT ( [Azote apporté (t)], "#,0" ) & " t"
+		lineageTag: cdf3e0b8-dfe9-400f-951d-d045925bf592
+
+	measure 'Comparé à la production française d''engrais azotés' = FORMAT ( DIVIDE ( [Azote apporté (t)], [H production engrais] ), "0 %" )
+		lineageTag: 99b9cd6d-3fd3-4b19-bf73-6bdcb0e53534
 
 	column 'Clé'
 		dataType: int64
-		lineageTag: bf66f747-7600-4eb5-afda-2e1a448e407a
+		lineageTag: 0b6c2ab9-18bb-4c1c-95a8-9c957a51bc84
 		summarizeBy: none
 		sourceColumn: [Value]
 

@@ -1,19 +1,20 @@
-table Leviers
-	lineageTag: 438c5e76-ae0b-4c06-b136-9257312f129b
+table 'Leviers'
+	lineageTag: 5df92924-9d46-42aa-a331-91fffb07a18e
 
 	column 'Ordre'
 		dataType: int64
-		lineageTag: a1f18735-32b4-4430-a502-cd25f817dcd8
+		lineageTag: f35e6611-9037-45f0-8522-c326a521264e
 		summarizeBy: none
 		sourceColumn: [Ordre]
 
 	column 'Levier'
 		dataType: string
-		lineageTag: d4ed6727-0b35-4017-b03e-d123b45a526e
+		lineageTag: 5fd9fc13-2ab8-487b-906b-70aee7217d51
 		summarizeBy: none
 		sourceColumn: [Levier]
+		sortByColumn: Ordre
 
-	partition Leviers = calculated
+	partition 'Leviers' = calculated
 		mode: import
-		source = SELECTCOLUMNS ( GENERATESERIES ( 1, 4, 1 ), "Ordre", [Value], "Levier", SWITCH ( [Value], 1, "Effluents d'élevage", 2, "Légumineuses", 3, "Urine collectée", 4, "Algues cultivées" ) )
+		source = SELECTCOLUMNS ( GENERATESERIES ( 1, 5, 1 ), "Ordre", [Value], "Levier", SWITCH ( [Value], 1, "Pertes d'ammoniac évitées", 2, "Urine collectée", 3, "Légumineuses", 4, "Algues cultivées", 5, "Reste à importer ou produire" ) )
 

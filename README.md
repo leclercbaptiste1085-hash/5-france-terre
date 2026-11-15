@@ -145,15 +145,16 @@ c'est de garder l'azote à terre : par les racines des arbres, et par la récup�
 L'azote de nos excréments n'est pas le seul gisement, ni le plus important. D'autres leviers, moins connus du grand public,
 pèsent autant ou davantage.
 
-**Les effluents d'élevage : le premier gisement, mal réparti.** La France produit et collecte 108 millions de tonnes de
-fumier et de lisier, dont 80 % sont épandus. Ils contiennent 597 500 tonnes d'azote, de quoi couvrir 31 % des besoins
-actuels en engrais azotés minéraux (FranceAgriMer, juin 2025). Tout cet azote n'est pas disponible pour la plante : 20 à
-30 % pour un fumier, 60 à 80 % pour un lisier, et une part se perd dans l'air à l'épandage. La difficulté est surtout
-logistique : l'étude ne tient pas compte de la distance entre les élevages et les terres qui manquent d'azote. C'est là
-que la spécialisation des exploitations pèse : entre 2010 et 2020, la France a perdu 30 % de ses fermes de
-polyculture-élevage (annexe), celles qui épandaient sur leurs champs le fumier de leurs bêtes. Rapprocher l'élevage des
-cultures, entre exploitations voisines ou par des plateformes de traitement des effluents, est un levier technique autant
-qu'économique.
+**Les effluents d'élevage : moins perdre ce qui est déjà épandu.** La France produit et collecte 108 millions de tonnes
+de fumier et de lisier, qui contiennent 597 500 tonnes d'azote (FranceAgriMer, juin 2025). Mais 80 % sont déjà épandus :
+ils remplacent déjà des engrais, et ne constituent pas un gisement nouveau. Le gisement, c'est ce qu'ils perdent. Sur les
+540 000 tonnes d'azote qui partent chaque année dans l'air sous forme d'ammoniac, les deux tiers viennent des élevages
+(INSEE), soit environ 360 000 tonnes, perdues dans les bâtiments, les fosses et surtout à l'épandage. Les techniques pour
+les retenir existent : injecter le lisier dans le sol ou l'enfouir rapidement réduit ses pertes d'ammoniac de 70 à 90 %,
+contre 30 à 60 % pour une rampe à pendillards (chambres d'agriculture, d'après l'ADEME). S'y ajoute une difficulté
+logistique : les élevages et les terres qui manquent d'azote ne sont pas toujours au même endroit. C'est là que la
+spécialisation des exploitations pèse : entre 2010 et 2020, la France a perdu 30 % de ses fermes de polyculture-élevage
+(annexe), celles qui épandaient sur leurs champs le fumier de leurs bêtes.
 
 **Les légumineuses : l'azote pris dans l'air, gratuitement.** Pois, féverole, luzerne et trèfle hébergent dans leurs racines
 des bactéries qui fixent l'azote de l'air : 60 à 70 % de l'azote du pois en vient, environ 75 % pour la féverole, 90 % pour
@@ -185,7 +186,7 @@ municipaux par habitant en 2024, contre 60 en 2000, et 174 en Autriche (Eurostat
 | Agroforesterie | 1,3 à 1,6 fois la production d'un hectare spécialisé | 15 à 50 ans pour le bois | peu de mesures en vraie grandeur |
 | Séparation de l'urine | jusqu'à 15 % des engrais azotés de synthèse | dès les constructions neuves | réseaux à créer, logistique de collecte |
 | Mer cultivée | protéines sans engrais ; 1 000 t d'azote retirées | immédiat | ordre de grandeur sans rapport avec les pertes |
-| Effluents d'élevage | 597 500 t d'azote, 31 % des besoins en engrais minéraux | immédiat | distance entre élevages et cultures |
+| Pertes d'ammoniac des élevages | jusqu'à 360 000 t d'azote par an ; 70 à 90 % évitables à l'épandage | immédiat | matériel d'épandage, coût, distance élevages-cultures |
 | Légumineuses | 20 à 60 kg d'azote en moins par hectare sur le blé suivant | une rotation | débouchés et rendements à sécuriser |
 | Cultures intermédiaires | nitrate des eaux de drainage réduit de plus de 50 % | une saison | inefficaces après un maïs grain |
 | Phosphore des boues | ressource importée à plus de 90 % | 2026 en Suisse, 2029 en Allemagne | procédés encore coûteux |
@@ -197,24 +198,22 @@ technique, mais sa mise en œuvre. Ce sera l'objet du projet suivant.
 ## Simulateur Power BI
 
 Le dossier `powerbi/` contient un simulateur interactif (format PBIP, à ouvrir avec Power BI Desktop) qui pose une seule
-question : **combien d'engrais azotés importés pourrait-on remplacer ?** Cinq curseurs règlent les leviers (hectares en
-agroforesterie, part de l'urine collectée, part des effluents d'élevage mieux utilisés, hectares de légumineuses en plus,
-tonnes d'algues cultivées) ; le rapport affiche l'azote apporté par chaque levier, la part des 2 millions de tonnes
-d'engrais azotés ainsi remplacée, et les hectares de production gagnés par l'agroforesterie. Une page compare les pays
-européens sur leurs boues d'épuration, une autre liste chaque coefficient avec sa source.
+question : **combien d'engrais azotés importés pourrait-on remplacer ?** Une grande jauge représente les 2 millions de tonnes
+d'azote de synthèse consommées chaque année, remplies levier par levier ; trois chiffres donnent l'azote apporté, la part des
+engrais remplacée et la comparaison avec la production française (800 000 t).
 
-![Simulateur Power BI](powerbi/simulateur_p1.png)
-
-Dans l'exemple ci-dessus (1,2 million d'hectares en agroforesterie et autant en légumineuses supplémentaires, 25 % de
-l'urine collectée, 30 % des effluents mieux utilisés, 800 000 tonnes d'algues), les quatre leviers apportent environ
-295 000 tonnes d'azote, soit 15 % des engrais azotés consommés, et l'agroforesterie équivaut à 408 000 hectares de
-production en plus. Les effluents d'élevage pèsent de loin le plus lourd ; les algues, le moins.
+Deux scénarios. **« Maximum théorique »** : toute l'urine collectée (255 000 t d'azote) et toutes les pertes d'ammoniac des
+élevages évitées (360 000 t), soit 615 000 t, 31 % des engrais azotés consommés et 77 % de la production française. C'est un
+plafond, pas une promesse. **« Personnalisé »** : quatre curseurs règlent la part de l'urine collectée, la part des pertes
+d'ammoniac évitées, les hectares de légumineuses en plus et les tonnes d'algues cultivées. Les légumineuses et les algues
+n'entrent pas dans le maximum, faute de plafond sourcé. Une page compare les pays européens sur leurs boues d'épuration, une
+autre liste chaque coefficient avec sa source.
 
 Côté technique : chaque curseur est un paramètre de simulation (`GENERATESERIES`, `SELECTEDVALUE` avec valeur par défaut) ;
-les coefficients sont des mesures constantes regroupées dans un dossier « Hypothèses », si bien qu'une hypothèse se
-change à un seul endroit ; les pourcentages sont stockés en entiers (0 à 100) pour que le filtre d'un curseur retrouve
-toujours sa valeur exacte. Les calculs ont été vérifiés par requêtes DAX sur le modèle (par exemple : urine collectée à
-100 % = 300 000 × 0,85 = 255 000 tonnes).
+les coefficients sont des mesures constantes regroupées dans un dossier « Hypothèses », si bien qu'une hypothèse se change à
+un seul endroit ; les pourcentages sont stockés en entiers (0 à 100) pour que le filtre d'un curseur retrouve toujours sa
+valeur exacte ; les cartes affichent un texte déjà formaté (« 615 000 t ») plutôt que les abréviations par défaut. Les
+calculs sont vérifiés par requêtes DAX sur le modèle.
 
 ## Limites
 
@@ -241,8 +240,9 @@ toujours sa valeur exacte. Les calculs ont été vérifiés par requêtes DAX su
   la potasse (0 %) et le phosphate (9 %) ne sont pas en cause.
 - **Les leviers ne s'additionnent pas.** Effluents, urine, légumineuses et cultures intermédiaires portent sur des flux
   d'azote qui se recouvrent en partie ; leurs gains ne peuvent pas être sommés.
-- **Le chiffre des effluents d'élevage (31 %) est en azote total**, pas en azote disponible pour la plante ; il provient de
-  l'étude FranceAgriMer de juin 2025, citée par *Réussir* (juillet 2025), que je n'ai pas lue en entier.
+- **Les effluents déjà épandus ne sont pas comptés comme un levier** : ils remplacent déjà des engrais. Seules leurs
+  pertes d'ammoniac le sont (environ 360 000 t, deux tiers des 540 000 t volatilisées selon l'INSEE). Les taux de réduction
+  par injection ou enfouissement (70 à 90 %) viennent de fiches de chambres d'agriculture reprenant l'ADEME.
 - **Deux mesures des déjections animales.** L'INSEE compte 1,68 million de tonnes d'azote dans les déjections (y compris au
   pâturage) ; FranceAgriMer, 597 500 tonnes dans les seuls fumiers et lisiers collectés. Les deux chiffres ne mesurent pas
   la même chose.

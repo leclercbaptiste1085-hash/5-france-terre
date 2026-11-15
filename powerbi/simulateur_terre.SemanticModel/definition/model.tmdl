@@ -8,12 +8,12 @@ model Model
 
 annotation PBI_ProTooling = ["DevMode"]
 
-ref table 'Hectares en agroforesterie'
 ref table 'Part de l''urine collectée (%)'
-ref table 'Part des effluents d''élevage mieux utilisés (%)'
+ref table 'Pertes d''ammoniac des élevages évitées (%)'
 ref table 'Hectares de légumineuses en plus'
 ref table 'Algues cultivées (t par an)'
 ref table 'Leviers'
+ref table 'Scénarios'
 ref table 'Résultats'
 ref table 'boues'
 ref table 'azote'

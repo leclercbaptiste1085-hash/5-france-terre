@@ -2,11 +2,11 @@
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
   "name": "k_part",
   "position": {
-    "x": 440,
-    "y": 92,
+    "x": 24,
+    "y": 146,
     "z": 2000,
     "height": 110,
-    "width": 260,
+    "width": 400,
     "tabOrder": 2000
   },
   "visual": {

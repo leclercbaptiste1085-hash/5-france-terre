@@ -12,7 +12,7 @@ Des leviers techniques, avec leurs ordres de grandeur :
 
 3️⃣ Cultiver la mer, sans engrais. Les algues puisent dans l'eau l'azote que les fleuves y ont perdu, puis reviennent aux champs comme engrais, comme le goémon breton autrefois ; moules et huîtres filtrent la même eau. Pourtant, la France cueille ses algues plus qu'elle ne les cultive. Mais il faut être honnête : nos moules et nos laminaires en retirent environ 1 000 tonnes par an, quand les fleuves en portent 607 000 vers la mer. La mer est un complément, pas un exutoire ; le levier est à terre.
 
-4️⃣ Et d'autres leviers, plus gros encore. Le fumier et le lisier de nos élevages contiennent près de 600 000 tonnes d'azote, de quoi couvrir 31 % de nos besoins en engrais (FranceAgriMer, 2025), à condition de les acheminer jusqu'aux terres qui en manquent. Un blé semé après un pois, qui fixe l'azote de l'air, demande 20 à 60 kg d'azote de moins par hectare. Et la Suisse impose depuis cette année de récupérer le phosphore des boues d'épuration ; l'Allemagne le fera en 2029.
+4️⃣ Et d'autres leviers, plus gros encore. Nos élevages perdent chaque année environ 360 000 tonnes d'azote dans l'air, sous forme d'ammoniac (INSEE) ; injecter ou enfouir rapidement le lisier en évite 70 à 90 %. Un blé semé après un pois, qui fixe l'azote de l'air, demande 20 à 60 kg d'azote de moins par hectare. Et la Suisse impose depuis cette année de récupérer le phosphore des boues d'épuration ; l'Allemagne le fera en 2029.
 
 La mer, le fleuve, puis la terre : chaque fois, la technique existe et elle est souvent française. Ce qui manque, c'est sa mise en œuvre. Ce sera le fil de mon prochain travail.
 

@@ -1,13 +1,13 @@
 {
   "$schema": "https://developer.microsoft.com/json-schemas/fabric/item/report/definition/visualContainer/2.14.0/schema.json",
-  "name": "bloc_curseurs",
+  "name": "bloc_perso",
   "position": {
     "x": 24,
-    "y": 88,
-    "z": 1100,
-    "height": 36,
-    "width": 380,
-    "tabOrder": 1100
+    "y": 426,
+    "z": 4000,
+    "height": 34,
+    "width": 600,
+    "tabOrder": 4000
   },
   "visual": {
     "visualType": "textbox",
@@ -68,14 +68,14 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Réglez les leviers'"
+                  "Value": "'Scénario personnalisé : réglez les leviers (choisir « Personnalisé » ci-dessus)'"
                 }
               }
             },
             "fontSize": {
               "expr": {
                 "Literal": {
-                  "Value": "15D"
+                  "Value": "12D"
                 }
               }
             },
