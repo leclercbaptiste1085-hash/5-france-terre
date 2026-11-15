@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Part de l'urine collectée"
+                      "Entity": "Part de l'urine collectée (%)"
                     }
                   },
-                  "Property": "Part de l'urine collectée"
+                  "Property": "Part de l'urine collectée (%)"
                 }
               },
-              "queryRef": "Part de l'urine collectée.Part de l'urine collectée",
-              "nativeQueryRef": "Part de l'urine collectée",
+              "queryRef": "Part de l'urine collectée (%).Part de l'urine collectée (%)",
+              "nativeQueryRef": "Part de l'urine collectée (%)",
               "active": true
             }
           ]
@@ -57,7 +57,7 @@
                 "From": [
                   {
                     "Name": "p",
-                    "Entity": "Part de l'urine collectée",
+                    "Entity": "Part de l'urine collectée (%)",
                     "Type": 0
                   }
                 ],
@@ -73,12 +73,12 @@
                                 "Source": "p"
                               }
                             },
-                            "Property": "Part de l'urine collectée"
+                            "Property": "Part de l'urine collectée (%)"
                           }
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "0.2D"
+                            "Value": "20D"
                           }
                         }
                       }

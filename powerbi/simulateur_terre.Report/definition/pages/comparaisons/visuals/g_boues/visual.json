@@ -98,7 +98,7 @@
             "text": {
               "expr": {
                 "Literal": {
-                  "Value": "'Boues épandues ou compostées, dernière année connue'"
+                  "Value": "'Boues épandues ou compostées (pays dont la donnée date de 2019 ou après)'"
                 }
               }
             },

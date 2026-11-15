@@ -20,14 +20,14 @@
                 "Column": {
                   "Expression": {
                     "SourceRef": {
-                      "Entity": "Part des effluents d'élevage mieux utilisés"
+                      "Entity": "Part des effluents d'élevage mieux utilisés (%)"
                     }
                   },
-                  "Property": "Part des effluents d'élevage mieux utilisés"
+                  "Property": "Part des effluents d'élevage mieux utilisés (%)"
                 }
               },
-              "queryRef": "Part des effluents d'élevage mieux utilisés.Part des effluents d'élevage mieux utilisés",
-              "nativeQueryRef": "Part des effluents d'élevage mieux utilisés",
+              "queryRef": "Part des effluents d'élevage mieux utilisés (%).Part des effluents d'élevage mieux utilisés (%)",
+              "nativeQueryRef": "Part des effluents d'élevage mieux utilisés (%)",
               "active": true
             }
           ]
@@ -57,7 +57,7 @@
                 "From": [
                   {
                     "Name": "p",
-                    "Entity": "Part des effluents d'élevage mieux utilisés",
+                    "Entity": "Part des effluents d'élevage mieux utilisés (%)",
                     "Type": 0
                   }
                 ],
@@ -73,12 +73,12 @@
                                 "Source": "p"
                               }
                             },
-                            "Property": "Part des effluents d'élevage mieux utilisés"
+                            "Property": "Part des effluents d'élevage mieux utilisés (%)"
                           }
                         },
                         "Right": {
                           "Literal": {
-                            "Value": "0.1D"
+                            "Value": "10D"
                           }
                         }
                       }

@@ -1,15 +1,15 @@
 table Leviers
-	lineageTag: f3ae2400-2655-435a-982a-0cc09f02f70b
+	lineageTag: 992b1686-f2a6-482f-91ab-dd22eb137a7a
 
 	column 'Ordre'
 		dataType: int64
-		lineageTag: 844f7ded-b55d-40d0-9f40-b75fd4d62f7d
+		lineageTag: 4c215e24-348b-42bd-ba35-c22ffbcc2db7
 		summarizeBy: none
 		sourceColumn: [Ordre]
 
 	column 'Levier'
 		dataType: string
-		lineageTag: 4f78f864-83f6-47a0-a083-031f8d155101
+		lineageTag: 0cb11f5c-e8e6-49fe-ae8c-de6fe31a54e7
 		summarizeBy: none
 		sourceColumn: [Levier]
 

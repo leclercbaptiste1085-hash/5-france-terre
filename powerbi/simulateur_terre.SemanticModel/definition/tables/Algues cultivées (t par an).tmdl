@@ -1,14 +1,14 @@
 table 'Algues cultivées (t par an)'
-	lineageTag: 6d065666-5e13-4c22-ac3a-d5a603e6c245
+	lineageTag: 47ae7c3c-4b05-4863-920e-1de6c4ed6f3a
 
 	measure 'Algues cultivées (t par an) (valeur)' = SELECTEDVALUE ( 'Algues cultivées (t par an)'[Algues cultivées (t par an)], 100000 )
 		formatString: #,0
-		lineageTag: 555cb9bd-cdde-4827-b854-bda163da7388
+		lineageTag: 2968dc68-c0b9-40bf-929e-89feb463d192
 
 	column 'Algues cultivées (t par an)'
 		dataType: double
 		formatString: #,0
-		lineageTag: 2d134783-9db7-4d47-8045-5b0084099651
+		lineageTag: b4e2c3ea-4892-442b-b440-4d25981eb62b
 		summarizeBy: none
 		sourceColumn: [Value]
 		extendedProperty ParameterMetadata =
