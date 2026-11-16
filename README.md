@@ -107,11 +107,32 @@ précisément la terre et l'eau, jusqu'à la mer : c'est le lien entre ce projet
 
 ### À terre : l'arbre et la culture
 
-**La joualle du Sud-Ouest.** Des rangs de vigne grimpant sur des arbres fruitiers (cerisiers en Gironde, pruniers d'Ente en
-Lot-et-Garonne, abricotiers sur les coteaux du Lot et de la Garonne), séparés par des bandes de céréales, de légumes ou de
-fourrage. Les cultures intercalaires ont été remplacées au milieu du XXe siècle par le seul blé, puis le remembrement a fait
-disparaître les dernières joualles. Plus haut, dans le Comminges et le Béarn, les **hautains** faisaient monter la vigne
-sur des arbres vivants, au-dessus des cultures.
+**La joualle du Sud-Ouest : trois étages sur la même parcelle.** La joualle associe sur la même parcelle « de la vigne
+poussant sur des arbres fruitiers et plusieurs autres cultures intercalaires ». Ses trois étages :
+- **les arbres**, choisis selon le sol et le climat et renouvelés rang par rang : pêchers de vigne dans les Charentes,
+  cerisiers en Gironde, pruniers d'Ente en Lot-et-Garonne et en Périgord, abricotiers sur les coteaux du Lot et de la
+  Garonne ;
+- **la vigne**, qui grimpe dans ces arbres utilisés comme « tuteurs vivants » ;
+- **entre les rangs**, des bandes larges au moins du passage d'un attelage de bœufs, et parfois de 15 mètres, semées de
+  légumes, de céréales (avoine, blé, orge, sarrasin), de fourrage, de betteraves, puis de pommes de terre ou de tabac.
+
+Le même hectare donnait du vin, des fruits, du grain et du fourrage pour les bêtes de trait. La joualle était conçue pour
+l'outil de son temps, l'attelage, comme l'agroforesterie de l'INRAE l'est pour le tracteur.
+
+**Un système de deux mille ans.** Virgile, dans les *Géorgiques*, conseille déjà de « marier la vigne à l'ormeau ». La
+joualle était si répandue que la « joualée de vigne » devient une mesure de surface dès 1340. Elle a reculé en trois
+temps. Au XVIIIe siècle, l'abbé Rozier, agronome, la condamne : « Tout arbre nuit à la vigne, autant par son ombrage que
+par ses racines. » En 1851, l'oïdium, apparu à Cartelègue dans le Blayais, « sonne le glas » des joualles du Bordelais ;
+elles se maintiennent plus au nord, dans les Charentes. Au XXe siècle, la joualle se réduit à une alternance de rangs de
+vigne et de bandes de blé jusqu'aux années 1960, puis le remembrement fait disparaître « la quasi-totalité des dernières
+joualles ». Elle survit hors de France, en Galice et surtout dans le Minho portugais, la région du *vinho verde*.
+
+Ce déclin résume tout le projet : une condamnation savante (l'arbre « nuit »), un choc sanitaire, puis la machine et la
+réglementation. Les mesures de l'INRAE donnent aujourd'hui tort à l'abbé Rozier : quand la densité est réglée, l'arbre ne
+retire pas à la culture plus qu'il n'ajoute par sa propre production.
+
+Plus haut, dans le Comminges et le Béarn, les **hautains** faisaient monter la vigne sur des arbres vivants, au-dessus des
+cultures : c'est la même famille que la *vite maritata* italienne décrite plus loin.
 
 **Les prés-vergers.** En Normandie, le même pré donne des pommes à cidre, de l'herbe et du lait : les vaches pâturent sous
 des pommiers haute-tige plantés à moins de 100 arbres par hectare, contre jusqu'à 3 000 dans un verger moderne (GRAB). Ce
@@ -372,7 +393,9 @@ calculs sont vérifiés par requêtes DAX sur le modèle.
   170 000 ha de systèmes traditionnels) datent de 2015-2016 ; celles des prés-vergers varient de 100 000 à 165 000 ha selon
   les sources. Les grandes cultures ne sont pas toutes des monocultures au sens strict : elles tournent d'une année sur
   l'autre, mais chaque parcelle porte une seule espèce à la fois.
-- **La complantation historique n'est pas chiffrée** : aucune statistique ne mesure l'étendue passée des joualles.
+- **La complantation historique n'est pas chiffrée** : aucune statistique ne mesure l'étendue passée des joualles Leur
+  histoire repose sur l'article Wikipédia, dont les notes sont incomplètes ; sa mention d'une survivance en Galice et
+  dans le Minho n'a pas été vérifiée par ailleurs.
 - **Les systèmes français au contact de l'eau sont chiffrés par des sources de filière.** Le nombre d'étangs de la Dombes
   varie de 1 100 à 1 200 selon les sources ; la surface en riz de Camargue varie fortement d'une année à l'autre ; aucune
   source trouvée ne donne la surface des herbus pâturés ni le tonnage d'algues épandu sur les champs du Léon ; le chiffre de
@@ -431,7 +454,7 @@ dans `sorties/`. Packages R : dplyr, tidyr, ggplot2, scales. Le détail des sour
   C. Dupraz, [texte du concours agro-véto 2023](https://www.concours-agro-veto.fr/sites/default/files/media/2025-10/sujet_paysage_2023.pdf) ;
   résultats de Restinclières et Vézénobres repris par la [Mission bocage](https://www.parc-loire-anjou-touraine.fr/sites/default/files/2020-04/journees-techniques-agroforesterie-definition-et-perspectives-mission-bocage.pdf) ;
   [METAGROFORESTRY](https://biosefair.hub.inrae.fr/media/files/fiche_resultats_metagroforestry).
-- Joualles : [Wikipédia](https://fr.wikipedia.org/wiki/Joualle) ;
+- Joualles : [Wikipédia, « Joualle »](https://fr.wikipedia.org/wiki/Joualle) (d'après G. Lavignac, *Cépages du Sud-Ouest*, Éditions du Rouergue, 2001 ; abbé Rozier, *L'Art de faire du vin en Provence*, 1772) ; Virgile, [*Géorgiques*](https://fr.wikisource.org/wiki/G%C3%A9orgiques_I) ;
   [Les Vergers retrouvés du Comminges](https://www.les-vergers-retrouves-du-comminges.org/histoire/joualles-et-hautains/).
 - Dehesa : [Real Decreto 4/2014](https://www.boe.es/buscar/act.php?id=BOE-A-2014-318) ;
   [Agronews Castilla y León](https://www.agronewscastillayleon.com/en-la-ultima-montanera-se-certificaron-703000-cochinos-ibericos-de-bellota), juillet 2017 ;
