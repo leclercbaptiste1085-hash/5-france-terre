@@ -372,4 +372,98 @@ g13 <- ggplot(surf, aes(ha, surface)) +
   theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
 enregistrer(g13, "13_surfaces_agroforesterie.png", l = 9.5, h = 4.6)
 
+# ---------------------------------------------------------------------------
+# 14-15. Est-ce finançable ? Un hectare de blé seul contre un hectare de blé et de noyers, sur 45 ans
+# Flux annuels par hectare, en euros constants ; année 0 = plantation, année 45 = coupe des noyers.
+# ---------------------------------------------------------------------------
+h <- list(
+  duree      = 45,     # coupe des noyers à croissance lente « vers cinquante ans » (Réussir, 27/10/2022) ; 45 retenu
+  taux       = 0.04,   # taux d'actualisation central ; sensibilité à 2 % et 6 %
+  charges    = 1600,   # charges du blé tendre, €/ha, 2025 (Arvalis, cité par Réussir)
+  part_intr  = 0.31,   # part des intrants dans le coût de production du blé (SEMAE, 2026) : seuls ces frais disparaissent sous l'arbre
+  produit    = c(normal = 1500, crise = 1200), # produit du blé, €/ha : 2025 = 1 200, « plus de 20 % sous la moyenne 2019-2023 » (Arvalis)
+  aide_pac   = 280,    # aides PAC ≈ 40 €/t (Arvalis) × 7 t/ha ; versées en entier sous 100 arbres/ha (guide PAC 2024)
+  plant      = 1750,   # plantation, € HT/ha : « 1 500 à 2 000 » (Réussir, 2022)
+  aide_plant = 0.70,   # subvention de la plantation : « 50 à 80 % » (Réussir, 2022)
+  entretien  = 25,     # entretien annuel, €/ha (évaluation ministérielle pour les haies, reprise faute de mieux)
+  emprise    = 0.05,   # surface sous les arbres non cultivée : « 4 à 5 % » (Réussir, 2022)
+  perte_fin  = 0.20,   # baisse du rendement intercalaire en fin de vie des arbres : « jusqu'à 20 % » (F. Liagre, Agroof)
+  debut_perte= 15,     # « déclin progressif après quinze ans » (témoignage Réussir, 2022)
+  bois_m3    = 40,     # bois d'œuvre : 50 arbres/ha, 20 % de pertes, 1 m3 par arbre (Réussir, 2022)
+  plaq_m3    = 80,     # plaquettes à la coupe : « 80 m3 » (idem)
+  plaq_an    = 22.5,   # plaquettes d'élagage dès la 20e année : « 20 à 25 m3/ha/an » (idem)
+  plaq_net   = 7.5,    # 27,5 €/m3 vendus (« 25 à 30 ») moins 20 €/m3 de prestation de broyage (idem)
+  prix_bois  = c(prudent = 300, central = 600, optimiste = 1000)) # « 1 000 €/m3 » = estimation optimiste (Terre-net, 2012)
+
+flux <- function(produit, aides, prix_bois) {
+  t <- 0:h$duree
+  rdt <- ifelse(t <= h$debut_perte, 1, 1 - h$perte_fin * (t - h$debut_perte) / (h$duree - h$debut_perte))
+  part <- (1 - h$emprise) * rdt                         # production de blé relative au blé seul
+  aide <- if (aides) h$aide_pac else 0
+  ble_seul <- ifelse(t == 0, 0, produit + aide - h$charges)
+  agro <- ifelse(t == 0, 0, produit * part + aide - h$charges * (1 - h$part_intr * h$emprise)) -
+    ifelse(t == 0, h$plant * (1 - if (aides) h$aide_plant else 0), h$entretien) +
+    ifelse(t >= 20 & t < h$duree, h$plaq_an * h$plaq_net, 0) +
+    ifelse(t == h$duree, h$bois_m3 * prix_bois + h$plaq_m3 * h$plaq_net, 0)
+  data.frame(t, ble_seul, agro, ecart = agro - ble_seul)
+}
+van <- function(x, r = h$taux) sum(x / (1 + r)^(seq_along(x) - 1))
+tri <- function(x) tryCatch(uniroot(function(r) van(x, r), c(-0.5, 0.5))$root, error = function(e) NA)
+nom <- function(ble, aides) paste0("Blé ", ifelse(ble == "normal", "année normale", "année de crise"), ", ", ifelse(aides, "avec aides", "sans aides"))
+couleurs <- c("Blé année normale, avec aides" = bleu, "Blé année normale, sans aides" = brume,
+              "Blé année de crise, avec aides" = vert, "Blé année de crise, sans aides" = "#9FD3B5")
+
+sc <- expand.grid(ble = names(h$produit), aides = c(TRUE, FALSE), bois = names(h$prix_bois), stringsAsFactors = FALSE) |>
+  rowwise() |> mutate(
+    f = list(flux(h$produit[[ble]], aides, h$prix_bois[[bois]])),
+    van_ble = van(f$ble_seul), van_agro = van(f$agro), gain = van(f$ecart), tri = tri(f$ecart),
+    besoin = -min(cumsum(f$ecart))) |> ungroup()
+for (i in seq_len(nrow(sc))) with(sc[i, ], note(
+  "Finançable ? blé %s, %s aides, bois %s : VAN blé seul %.0f, agroforesterie %.0f, gain %.0f €/ha ; TRI de l'écart %.1f %% ; creux de trésorerie %.0f €/ha",
+  ble, ifelse(aides, "avec", "sans"), bois, van_ble, van_agro, gain, 100 * tri, besoin))
+seuil <- function(produit, aides) uniroot(function(p) van(flux(produit, aides, p)$ecart), c(0, 5000))$root
+for (b in names(h$produit)) for (a in c(TRUE, FALSE))
+  note("Prix du bois d'équilibre (gain nul, 4 %%) : blé %s, %s aides : %.0f €/m3", b, ifelse(a, "avec", "sans"), seuil(h$produit[[b]], a))
+for (r in c(0.02, 0.06)) note("Sensibilité au taux %.0f %% (blé normal, avec aides, bois 600) : gain %.0f €/ha",
+                              100 * r, van(flux(1500, TRUE, 600)$ecart, r))
+
+# 14. Trésorerie cumulée de l'écart (agroforesterie moins blé seul), bois au prix central
+cum <- sc |> filter(bois == "central") |> mutate(scenario = nom(ble, aides)) |>
+  select(scenario, f) |> unnest(f) |> group_by(scenario) |> mutate(cumul = cumsum(ecart)) |> ungroup()
+g14 <- ggplot(cum, aes(t, cumul, colour = scenario)) +
+  geom_hline(yintercept = 0, colour = "#9AA5B1") +
+  geom_line(linewidth = 1.1) +
+  scale_colour_manual(values = couleurs) +
+  scale_y_continuous(labels = label_number(big.mark = " ", suffix = " €")) +
+  coord_cartesian(ylim = c(-5500, 2500)) +
+  annotate("text", x = 44.3, y = 2200, hjust = 1, family = "Calibri", colour = encre, size = 3.6,
+           label = sprintf("Coupe du bois, 45e année : la courbe remonte à +%s à +%s €",
+                           label_number(big.mark = " ")(round(min(cum$cumul[cum$t == 45]), -2)),
+                           label_number(big.mark = " ")(round(max(cum$cumul[cum$t == 45]), -2)))) +
+  labs(title = "L'arbre coûte pendant 44 ans et paie la 45e",
+       subtitle = "Trésorerie cumulée d'un hectare de blé et de noyers, comparée à un hectare de blé seul (€ constants, non actualisés, bois à 600 €/m3)",
+       x = "Années après la plantation", y = NULL,
+       caption = paste("Hypothèses : plantation 1 750 €/ha (aidée à 70 % dans les scénarios avec aides), 50 noyers/ha, 40 m3 de bois d'œuvre à 45 ans,",
+                       "\nemprise 5 %, rendement du blé −20 % en fin de rotation, plaquettes dès 20 ans. Sources : Réussir, Arvalis, SEMAE, Terre-net (détail dans le README).")) +
+  theme(legend.position = "top", legend.title = element_blank(), legend.justification = "left")
+enregistrer(g14, "14_tresorerie_agroforesterie.png", l = 9.5, h = 5.4)
+
+# 15. Gain actualisé selon le prix du bois
+grille <- expand.grid(prix = seq(0, 1200, 25), ble = names(h$produit), aides = c(TRUE, FALSE), stringsAsFactors = FALSE) |>
+  rowwise() |> mutate(gain = van(flux(h$produit[[ble]], aides, prix)$ecart)) |> ungroup() |>
+  mutate(scenario = nom(ble, aides))
+g15 <- ggplot(grille, aes(prix, gain, colour = scenario)) +
+  geom_hline(yintercept = 0, colour = "#9AA5B1") +
+  geom_vline(xintercept = unname(h$prix_bois), colour = "#C9D2DC", linetype = "dashed") +
+  geom_line(linewidth = 1.1) +
+  scale_colour_manual(values = couleurs) +
+  scale_x_continuous(labels = label_number(suffix = " €/m3", big.mark = " ")) +
+  scale_y_continuous(labels = label_number(big.mark = " ", suffix = " €")) +
+  labs(title = "Tout se joue sur le prix du bois dans 45 ans",
+       subtitle = "Gain actualisé à 4 % d'un hectare agroforestier sur un hectare de blé seul, selon le prix du bois de noyer (€/ha)",
+       x = "Prix du bois d'œuvre de noyer", y = NULL,
+       caption = "Pointillés : prix prudent (300), central (600) et optimiste (1 000 €/m3, estimation citée par Terre-net, 2012). Mêmes hypothèses que le graphique précédent.") +
+  theme(legend.position = "top", legend.title = element_blank(), legend.justification = "left")
+enregistrer(g15, "15_gain_prix_bois.png", l = 9.5, h = 5.4)
+
 close(res)

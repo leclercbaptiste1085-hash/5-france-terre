@@ -20,3 +20,21 @@ Azote des excréments : Perdu dans l'air (épuration) 50 % (160 kt) ; Perdu dans
 Mer cultivée : 0.96 kt N retirées, soit 0.16 % des 607 kt perdues par les fleuves ; x63 pour en capter 10 % 
 Bilan azoté 2020 : apports 4.2 Mt, prélevés 2.7 Mt (64 % des apports) 
 Agroforesterie moderne dans les parcelles : 0.11 % des grandes cultures ; traditionnelle : 1.5 % 
+Finançable ? blé normal, avec aides, bois prudent : VAN blé seul 3730, agroforesterie 3903, gain 173 €/ha ; TRI de l'écart 4.3 % ; creux de trésorerie 3748 €/ha 
+Finançable ? blé crise, avec aides, bois prudent : VAN blé seul -2486, agroforesterie -1772, gain 715 €/ha ; TRI de l'écart 5.2 % ; creux de trésorerie 2261 €/ha 
+Finançable ? blé normal, sans aides, bois prudent : VAN blé seul -2072, agroforesterie -3124, gain -1052 €/ha ; TRI de l'écart 2.8 % ; creux de trésorerie 4973 €/ha 
+Finançable ? blé crise, sans aides, bois prudent : VAN blé seul -8288, agroforesterie -8798, gain -510 €/ha ; TRI de l'écart 3.4 % ; creux de trésorerie 3486 €/ha 
+Finançable ? blé normal, avec aides, bois central : VAN blé seul 3730, agroforesterie 5957, gain 2228 €/ha ; TRI de l'écart 6.3 % ; creux de trésorerie 3748 €/ha 
+Finançable ? blé crise, avec aides, bois central : VAN blé seul -2486, agroforesterie 283, gain 2769 €/ha ; TRI de l'écart 7.0 % ; creux de trésorerie 2261 €/ha 
+Finançable ? blé normal, sans aides, bois central : VAN blé seul -2072, agroforesterie -1069, gain 1003 €/ha ; TRI de l'écart 4.8 % ; creux de trésorerie 4973 €/ha 
+Finançable ? blé crise, sans aides, bois central : VAN blé seul -8288, agroforesterie -6744, gain 1544 €/ha ; TRI de l'écart 5.2 % ; creux de trésorerie 3486 €/ha 
+Finançable ? blé normal, avec aides, bois optimiste : VAN blé seul 3730, agroforesterie 8697, gain 4967 €/ha ; TRI de l'écart 7.8 % ; creux de trésorerie 3748 €/ha 
+Finançable ? blé crise, avec aides, bois optimiste : VAN blé seul -2486, agroforesterie 3022, gain 5508 €/ha ; TRI de l'écart 8.4 % ; creux de trésorerie 2261 €/ha 
+Finançable ? blé normal, sans aides, bois optimiste : VAN blé seul -2072, agroforesterie 1670, gain 3742 €/ha ; TRI de l'écart 6.1 % ; creux de trésorerie 4973 €/ha 
+Finançable ? blé crise, sans aides, bois optimiste : VAN blé seul -8288, agroforesterie -4005, gain 4283 €/ha ; TRI de l'écart 6.5 % ; creux de trésorerie 3486 €/ha 
+Prix du bois d'équilibre (gain nul, 4 %) : blé normal, avec aides : 275 €/m3 
+Prix du bois d'équilibre (gain nul, 4 %) : blé normal, sans aides : 454 €/m3 
+Prix du bois d'équilibre (gain nul, 4 %) : blé crise, avec aides : 196 €/m3 
+Prix du bois d'équilibre (gain nul, 4 %) : blé crise, sans aides : 375 €/m3 
+Sensibilité au taux 2 % (blé normal, avec aides, bois 600) : gain 7392 €/ha 
+Sensibilité au taux 6 % (blé normal, avec aides, bois 600) : gain 194 €/ha 

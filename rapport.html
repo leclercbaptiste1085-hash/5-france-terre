@@ -26,7 +26,9 @@ culture, la culture et l'animal, le champ et l'eau. C'est ce qu'il appelle l'agr
 complantation. Il mesure ce qu'elles rapportent, montre comment la politique agricole les a fait reculer en ne payant que
 l'hectare nu, puis fait le tour des systèmes qui, de la Campanie au Sahel et du Japon au Brésil, mêlent encore les espèces
 sur le même hectare. Il fait enfin l'inventaire de ce qui subsiste en France, et en particulier des systèmes qui relient
-la terre à l'eau et à la mer : étangs de la Dombes, riz de Camargue, prés-salés, goémon, claires à huîtres. La récupération
+la terre à l'eau et à la mer : étangs de la Dombes, riz de Camargue, prés-salés, goémon, claires à huîtres. Il pose
+enfin la question d'un banquier : un hectare agroforestier est-il finançable, avec et sans aides, en année normale et en
+année de crise ? La récupération
 de l'azote n'est traitée qu'en complément.</p>
 <h2>1. Le constat, en deux chiffres</h2>
 <p><strong>Le rendement plafonne.</strong> Le blé français a gagné 0,12 t/ha chaque année entre le début des années 1960 et le milieu des
@@ -395,7 +397,129 @@ Dombes, la Camargue, le Marais poitevin, les prés-salés, les claires. Là, l'e
 pas tout séparer. Ils montrent ce que le projet précédent sur la mer laissait entrevoir : la terre et la mer ne sont pas
 deux économies distinctes. La mer nourrit l'herbe des prés-salés et les champs du Léon ; la terre, par ses fleuves, nourrit
 les huîtres des claires. Les séparer, c'est perdre dans les deux sens.</p>
-<h2 class="saut">8. En complément : ne plus perdre l'azote que l'on épand</h2>
+<h2 class="saut">8. Est-ce finançable ? Un hectare de blé contre un hectare de blé et de noyers</h2>
+<p>L'agroforesterie produit davantage par hectare. Mais un agriculteur, et la banque qui lui prête, ne raisonnent pas en
+production : ils raisonnent en trésorerie. Le modèle compare, année par année sur 45 ans, un hectare de blé seul et un
+hectare de blé planté de 50 noyers, avec et sans aides publiques, en année normale et en année de crise.</p>
+<p><strong>Les hypothèses</strong>, toutes sourcées et modifiables en tête de la section 14 d'<code>analyse.R</code> :</p>
+<table>
+<thead>
+<tr>
+<th>Paramètre</th>
+<th>Valeur</th>
+<th>Source</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Produit du blé</td>
+<td>1 500 €/ha (moyenne 2019-2023) ; 1 200 €/ha en crise (2025)</td>
+<td>Arvalis, cité par <em>Réussir</em></td>
+</tr>
+<tr>
+<td>Charges du blé</td>
+<td>1 600 €/ha, dont 31 % d'intrants, seuls économisés sous les arbres</td>
+<td>Arvalis (2025) ; SEMAE (2026)</td>
+</tr>
+<tr>
+<td>Aides PAC</td>
+<td>environ 280 €/ha (40 €/t), versées en entier sous 100 arbres/ha</td>
+<td>Arvalis ; guide PAC 2024</td>
+</tr>
+<tr>
+<td>Plantation</td>
+<td>1 750 €/ha, subventionnée à 70 % avec aides, à 0 % sans</td>
+<td><em>Réussir</em>, 2022 (1 500 à 2 000 €, aidés de 50 à 80 %)</td>
+</tr>
+<tr>
+<td>Arbres</td>
+<td>50 noyers/ha, 20 % de pertes, 1 m3 de bois d'œuvre par arbre, coupe à 45 ans</td>
+<td><em>Réussir</em>, 2022 (F. Liagre, Agroof)</td>
+</tr>
+<tr>
+<td>Culture sous les arbres</td>
+<td>5 % de surface perdue ; rendement en baisse après 15 ans, jusqu'à −20 %</td>
+<td><em>Réussir</em>, 2022</td>
+</tr>
+<tr>
+<td>Revenus intermédiaires</td>
+<td>plaquettes d'élagage dès 20 ans : 22,5 m3/ha/an à 7,5 €/m3 net de broyage</td>
+<td><em>Réussir</em>, 2022</td>
+</tr>
+<tr>
+<td>Prix du bois de noyer</td>
+<td>300 (prudent), 600 (central), 1 000 €/m3 (optimiste)</td>
+<td><em>Terre-net</em>, 2012 (1 000 € « optimiste »)</td>
+</tr>
+<tr>
+<td>Taux d'actualisation</td>
+<td>4 % (sensibilité 2 % et 6 %)</td>
+<td>hypothèse</td>
+</tr>
+</tbody>
+</table>
+<p><strong>Premier constat : le blé seul ne vit plus sans aides.</strong> Avec 1 500 € de produit et 1 600 € de charges, un hectare de blé
+perd 100 € par an sans aides ; en année de crise, il perd 120 € même avec les aides. C'est le diagnostic d'Arvalis pour 2025.</p>
+<p><strong>Deuxième constat : l'arbre est rentable, et davantage en temps de crise.</strong> Au prix central du bois, l'hectare
+agroforestier rapporte, en valeur actualisée sur 45 ans, de 1 000 à 2 800 € de plus que l'hectare de blé seul :</p>
+<table>
+<thead>
+<tr>
+<th>Gain actualisé à 4 % (€/ha)</th>
+<th>Bois à 300 €/m3</th>
+<th>Bois à 600 €/m3</th>
+<th>Bois à 1 000 €/m3</th>
+</tr>
+</thead>
+<tbody>
+<tr>
+<td>Blé normal, avec aides</td>
+<td>+170</td>
+<td><strong>+2 230</strong></td>
+<td>+4 970</td>
+</tr>
+<tr>
+<td>Blé normal, sans aides</td>
+<td>−1 050</td>
+<td><strong>+1 000</strong></td>
+<td>+3 740</td>
+</tr>
+<tr>
+<td>Blé en crise, avec aides</td>
+<td>+720</td>
+<td><strong>+2 770</strong></td>
+<td>+5 510</td>
+</tr>
+<tr>
+<td>Blé en crise, sans aides</td>
+<td>−510</td>
+<td><strong>+1 540</strong></td>
+<td>+4 280</td>
+</tr>
+</tbody>
+</table>
+<p>Le rendement interne de l'écart va de 4,8 à 7,0 % au prix central. La crise du blé <em>améliore</em> l'agroforesterie : le blé
+perdu sous les arbres vaut moins, alors que le bois ne dépend pas du marché des céréales. L'arbre est une diversification,
+comme un actif peu corrélé dans un portefeuille.</p>
+<p><strong>Troisième constat : les aides PAC à l'hectare ne changent presque rien à l'écart ; la subvention de plantation, si.</strong>
+Sous 100 arbres par hectare, la parcelle touche la même aide qu'un champ nu : les supprimer appauvrit les deux hectares
+autant. Ce qui pèse, c'est l'aide à la plantation : sans elle, le gain baisse d'environ 1 200 €/ha, et le prix du bois
+nécessaire pour rentrer dans ses frais passe de 275 à 454 €/m3 (de 196 à 375 €/m3 en crise). C'est aussi ce qui explique le
+passé : si la parcelle plantée perdait toute son aide, comme les terres boisées exclues des paiements de 1992, la perte
+atteindrait environ 5 800 €/ha en valeur actualisée (280 € par an pendant 45 ans), bien plus que le gain de l'arbre.</p>
+<figure><img alt="Trésorerie" src="file:///C:/portfolio/07-terre/sorties/14_tresorerie_agroforesterie.png" /></figure>
+<p><strong>Quatrième constat, le vrai frein : la rentabilité arrive trop tard pour être financée.</strong> L'écart de trésorerie reste
+négatif pendant 44 ans et atteint un creux de 2 300 à 5 000 €/ha ; tout se rembourse à la coupe. Aucun prêt agricole
+classique ne court sur 45 ans, et l'agriculteur qui plante à 40 ans ne vendra probablement pas le bois lui-même. Le projet
+est rentable, mais il n'est pas finançable par le crédit ordinaire : c'est un actif de long terme, comme une forêt ou une
+infrastructure, porté par un acteur qui raisonne à court terme.</p>
+<figure><img alt="Gain selon le prix du bois" src="file:///C:/portfolio/07-terre/sorties/15_gain_prix_bois.png" /></figure>
+<p><strong>Cinquième constat : le taux d'actualisation décide.</strong> Au prix central, le gain vaut 7 400 €/ha à 2 %, 2 230 € à 4 % et
+190 € à 6 %. Pour un actif qui paie dans 45 ans, le coût de l'argent pèse plus que le prix du bois.</p>
+<p><strong>Ce qu'il faudrait financer, donc.</strong> Pas une aide de plus à l'hectare, mais le creux de trésorerie : un prêt de très long
+terme adossé à la valeur du bois sur pied, une avance remboursable à la coupe, ou une valeur de l'arbre reconnue dans la
+valeur de la terre lors d'une vente ou d'une transmission. C'est un problème de banquier, pas d'agronome.</p>
+<h2 class="saut">9. En complément : ne plus perdre l'azote que l'on épand</h2>
 <p>L'agriculture 2.0 réduit le besoin d'engrais ; elle ne le supprime pas. L'autre moitié du sujet est de ne plus perdre ce que
 l'on épand.</p>
 <p><strong>L'excès est mesuré.</strong> En 2020, 4,2 millions de tonnes d'azote ont été apportées aux terres agricoles françaises : pour
@@ -423,7 +547,7 @@ vers les nappes, les fleuves et l'air.</p>
   607 000 tonnes apportées chaque année par les fleuves (SDES) : un complément, pas une solution.</p>
 <p>Le détail de ces chiffres (boues d'épuration par pays, devenir de l'azote des excréments, ordres de grandeur marins) figure en
 annexe.</p>
-<h2 class="saut">9. Ce que cela donne ensemble</h2>
+<h2 class="saut">10. Ce que cela donne ensemble</h2>
 <table>
 <thead>
 <tr>
@@ -436,9 +560,9 @@ annexe.</p>
 <tbody>
 <tr>
 <td>Agroforesterie</td>
-<td>1,3 à 1,6 fois la production d'un hectare spécialisé</td>
+<td>1,3 à 1,6 fois la production d'un hectare spécialisé ; +1 000 à +2 800 €/ha actualisés au prix central du bois</td>
 <td>15 à 50 ans pour le bois</td>
-<td>peu de mesures en vraie grandeur ; densité à régler</td>
+<td>creux de trésorerie de 2 300 à 5 000 €/ha pendant 44 ans ; densité à régler</td>
 </tr>
 <tr>
 <td>Complantation et pâturage arboré</td>
@@ -476,7 +600,7 @@ annexe.</p>
 pour les cuves des méthaniers ou de l'INRAE pour l'agroforesterie. Ce qui manque n'est pas la technique, mais sa mise en
 œuvre. Ce sera l'objet du projet suivant.</p>
 <h2 class="saut">Simulateur Power BI</h2>
-<p>Le simulateur porte sur le complément de la section 8, le seul volet du projet qui se prête à une addition de tonnes.
+<p>Le simulateur porte sur le complément de la section 9, le seul volet du projet qui se prête à une addition de tonnes.
 Le dossier <code>powerbi/</code> contient un simulateur interactif (format PBIP, à ouvrir avec Power BI Desktop) qui pose une seule
 question : <strong>combien d'engrais azotés importés pourrait-on remplacer ?</strong> Une grande jauge représente les 2 millions de tonnes
 d'azote de synthèse consommées chaque année, remplies levier par levier ; trois chiffres donnent l'azote apporté, la part des
@@ -539,6 +663,12 @@ calculs sont vérifiés par requêtes DAX sur le modèle.</p>
   varie de 1 100 à 1 200 selon les sources ; la surface en riz de Camargue varie fortement d'une année à l'autre ; aucune
   source trouvée ne donne la surface des herbus pâturés ni le tonnage d'algues épandu sur les champs du Léon ; le chiffre de
   3 000 hectares de claires désigne parfois les claires seules, parfois les claires et les parcs.</li>
+<li><strong>Le modèle financier est un ordre de grandeur, pas un plan d'affaires.</strong> Ses paramètres viennent pour l'essentiel
+  d'articles de presse agricole (<em>Réussir</em>, <em>Terre-net</em>) citant des experts, non de comptabilités réelles ; le prix du bois
+  de noyer dans 45 ans est inconnu, d'où trois scénarios ; les charges du blé (1 600 €/ha) sont une moyenne nationale
+  de 2025, et la part des intrants (31 %) vient d'une enquête régionale ; l'entretien des arbres (25 €/ha/an) reprend une
+  évaluation faite pour les haies. Le modèle ne compte ni l'effet des arbres sur l'azote, l'érosion ou les années sèches,
+  ni la valeur du foncier, ni la fiscalité : il est volontairement défavorable à l'arbre sur ces points.</li>
 <li><strong>Les exemples étrangers n'ont pas tous la même solidité.</strong> Les chiffres de <em>Faidherbia</em> (FAO), du Niger (Nations unies),
   de la rizière à canards (presse et fiches de vulgarisation) et de la cabruca (surface non datée) viennent de sources de
   programme plutôt que d'essais publiés ; le gain de rendement souvent prêté à la méthode <em>aigamo</em> (20 à 50 %) n'est pas

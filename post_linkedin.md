@@ -1,22 +1,22 @@
-Près de Naples, la vigne monte à quinze mètres dans les peupliers, et l'on cultive dessous. En Zambie, le maïs pousse sous un acacia qui perd ses feuilles à la saison des pluies : 4,7 tonnes par hectare sous l'arbre, 1,9 hors de son ombre. Au Japon, des canetons désherbent les rizières. Mêler les arbres, les cultures et les bêtes sur le même hectare : c'est ce que j'appelle l'agriculture 2.0. La France l'a su, puis l'a oublié.
+Planter 50 noyers dans un hectare de blé rapporte, sur 45 ans, de 1 000 à 2 800 € de plus que le blé seul. Pourtant, aucune banque ne financerait cette parcelle. J'ai voulu comprendre pourquoi.
 
 Après la mer, je me suis penché sur la terre, à partir de données publiques.
 
-1️⃣ Le point de départ. Le rendement du blé français ne progresse plus depuis le milieu des années 1990 (6,8 t/ha sur 2020-2024, FAOSTAT), et la France importe l'essentiel de ses engrais. Intensifier davantage la monoculture, c'est importer davantage.
+1️⃣ Mêler rapporte. Sur les parcelles de l'INRAE, 100 hectares d'arbres et de céréales produisent autant de grain et de bois que 134 hectares séparés. Les joualles du Sud-Ouest mêlaient vigne, pruniers et blé ; les prés-vergers normands, pommiers, herbe et vaches. Ailleurs, on le fait encore : vignes de quinze mètres dans les peupliers près de Naples, maïs sous les acacias en Zambie, canards dans les rizières au Japon.
 
-2️⃣ Mêler rapporte. Sur les parcelles de l'INRAE dans le Gard et l'Hérault, 100 hectares d'arbres et de céréales produisent autant de grain et de bois que 134 hectares séparés (mesuré), jusqu'à 160 selon les simulations : l'arbre et la céréale ne puisent ni au même endroit ni au même moment.
+2️⃣ Ce qui subsiste en France vit au bord de l'eau : étangs de la Dombes qui alternent poissons et céréales, riz de Camargue qui dessale la terre, prés-salés du Mont-Saint-Michel, claires à huîtres de Marennes-Oléron.
 
-3️⃣ Nous savons encore le faire, surtout au bord de l'eau. Dans la Dombes, 1 100 étangs alternent deux ans de poissons et un an de céréales. En Camargue, le riz dessale la terre pour le blé. Au Mont-Saint-Michel, les moutons broutent l'herbe que la mer recouvre ; dans le Léon, le goémon a fait la « ceinture dorée » des légumes ; à Marennes-Oléron, les anciens marais salants affinent les huîtres. Là où l'eau imposait de mêler, la machine n'a pas tout séparé. Ailleurs, les prés-vergers sont passés de 500 000 à 100 000 hectares, et l'agroforesterie moderne ne pèse que 0,1 % des grandes cultures.
+3️⃣ La PAC payait l'hectare nu. Depuis 1992, l'aide est versée à l'hectare de grande culture ; il a fallu attendre 2006 pour qu'un texte fixe le sort des parcelles plantées d'arbres. L'agroforesterie moderne pèse 0,1 % des grandes cultures.
 
-4️⃣ La PAC payait l'hectare nu. Depuis 1992, l'aide est versée à l'hectare de céréales, d'oléagineux et de protéagineux. Il a fallu attendre 2006 pour qu'un texte fixe l'aide aux parcelles plantées d'arbres : entière sous 50 arbres par hectare ; au-delà, l'emprise des arbres était déduite. L'arbre n'a pas reculé parce qu'il produisait moins, mais parce qu'il ne rapportait pas d'aide.
+4️⃣ J'ai donc modélisé les flux d'un hectare sur 45 ans, avec et sans aides, en année normale et en année de crise (sources Arvalis, Agroof, INRAE).
+→ Sans aides, le blé seul perd déjà 100 € par hectare et par an.
+→ La crise du blé rend l'arbre plus intéressant : le bois ne dépend pas du prix des céréales. C'est une diversification.
+→ Supprimer les aides à l'hectare ne change presque rien à l'écart ; supprimer la subvention de plantation coûte 1 200 € par hectare.
+→ Le vrai frein : l'écart de trésorerie reste négatif 44 ans, avec un creux de 2 300 à 5 000 € par hectare, et tout se rembourse à la coupe. Aucun prêt agricole ne court sur 45 ans.
 
-5️⃣ Ailleurs, on continue. La dehesa ibérique, chênes, herbe et porcs, couvre 3,5 millions d'hectares. Au Niger, les paysans ont laissé repousser 200 millions d'arbres dans leurs champs, sur 5 millions d'hectares. Dans les oasis du Maghreb, palmiers, fruitiers et cultures forment trois étages. À Bahia, le cacao pousse sous la forêt. En Colombie, les vaches pâturent entre des rangs d'arbustes fourragers et donnent 1,5 à 5 fois plus de lait par hectare.
+L'agroforesterie n'a pas un problème de rendement, mais de financement : c'est un actif de long terme porté par des exploitations qui raisonnent à court terme. Ce qu'il faudrait financer, ce n'est pas une aide de plus à l'hectare, c'est ce creux. Un sujet de banquier autant que d'agronome.
 
-Une condition, que montre le blé cultivé sous les paulownias en Chine : trop d'arbres, et le rendement chute. L'association se règle, comme une dose d'engrais.
-
-La mer, le fleuve, puis la terre : chaque fois, le savoir existe. Ce qui manque, c'est sa mise en œuvre.
-
-Données, code, calculs, onze systèmes comparés et leurs limites :
+Données, code R, modèle financier, simulateur Power BI et limites :
 https://github.com/leclercbaptiste1085-hash/5-france-terre
 
-#Agriculture #Agroforesterie #PAC #Économie #Souveraineté
+#Agriculture #Agroforesterie #FinancementAgricole #PAC #Finance
