@@ -1,20 +1,22 @@
-Dans les vignes du Sud-Ouest, on plantait autrefois des cerisiers ou des pruniers dans chaque rang, et l'on semait du blé entre les rangs. En Normandie, les vaches pâturaient sous les pommiers. En Espagne, les porcs ibériques s'engraissent encore de glands sous les chênes. Mêler les arbres, les cultures et les bêtes sur le même hectare : c'est ce que j'appelle l'agriculture 2.0. Nous l'avons presque oubliée.
+Près de Naples, la vigne monte à quinze mètres dans les peupliers, et l'on cultive dessous. En Zambie, le maïs pousse sous un acacia qui perd ses feuilles à la saison des pluies : 4,7 tonnes par hectare sous l'arbre, 1,9 hors de son ombre. Au Japon, des canetons désherbent les rizières. Mêler les arbres, les cultures et les bêtes sur le même hectare : c'est ce que j'appelle l'agriculture 2.0. La France l'a su, puis l'a oublié.
 
 Après la mer, je me suis penché sur la terre, à partir de données publiques.
 
-1️⃣ Le point de départ. Le rendement du blé français ne progresse plus depuis le milieu des années 1990 (6,8 t/ha en moyenne sur 2020-2024, FAOSTAT), et la France importe la majeure partie de ses engrais azotés. Intensifier davantage la monoculture, c'est importer davantage.
+1️⃣ Le point de départ. Le rendement du blé français ne progresse plus depuis le milieu des années 1990 (6,8 t/ha sur 2020-2024, FAOSTAT), et la France importe l'essentiel de ses engrais. Intensifier davantage la monoculture, c'est importer davantage.
 
-2️⃣ L'arbre a quitté les champs. Les grandes cultures couvrent 11,1 millions d'hectares (Eurostat). L'agroforesterie moderne, des arbres plantés dans les parcelles cultivées, n'en couvrait que 10 000 à 15 000 vers 2015, soit 0,1 %. Les prés-vergers sont passés de plus de 500 000 hectares vers 1950 à environ 100 000. Il n'existe même pas de recensement officiel récent.
+2️⃣ Mêler rapporte. Sur les parcelles de l'INRAE dans le Gard et l'Hérault, 100 hectares d'arbres et de céréales produisent autant de grain et de bois que 134 hectares séparés (mesuré), jusqu'à 160 selon les simulations : l'arbre et la céréale ne puisent ni au même endroit ni au même moment.
 
-3️⃣ La règle l'a voulu. Les aides de la PAC sont versées à l'hectare admissible ; jusqu'en 2014, une parcelle cultivée n'y avait droit qu'avec moins de 50 arbres forestiers par hectare, et le seuil est aujourd'hui de 100. L'hectare nu, d'une seule culture, était le plus simple à financer.
+3️⃣ Nous savions le faire. Les joualles du Sud-Ouest mêlaient vigne, pruniers et blé ; les prés-vergers normands, pommiers, herbe et vaches. Ils couvraient plus de 500 000 hectares vers 1950, il en reste environ 100 000. L'agroforesterie moderne ne pèse que 0,1 % des grandes cultures.
 
-4️⃣ Pourtant, mêler rapporte. Sur les parcelles de l'INRAE dans le Gard et l'Hérault, 100 hectares d'arbres et de céréales produisent autant de grain et de bois que 134 hectares séparés (valeur mesurée), et jusqu'à 160 selon les simulations : l'arbre et la céréale ne puisent ni au même endroit ni au même moment. En Chine, les poissons des rizières de Qingtian mangent les insectes et fertilisent l'eau ; la dehesa ibérique fait vivre une filière entière sur 3,5 millions d'hectares.
+4️⃣ La PAC payait l'hectare nu. Depuis 1992, l'aide est versée à l'hectare de céréales, d'oléagineux et de protéagineux. Il a fallu attendre 2006 pour qu'un texte fixe l'aide aux parcelles plantées d'arbres : entière sous 50 arbres par hectare ; au-delà, l'emprise des arbres était déduite. L'arbre n'a pas reculé parce qu'il produisait moins, mais parce qu'il ne rapportait pas d'aide.
 
-5️⃣ Et ne plus rien perdre. Sur 4,2 millions de tonnes d'azote apportées aux sols en 2020, les cultures n'en ont prélevé que 2,7 (INSEE). Nos élevages en perdent environ 360 000 tonnes par an dans l'air, et 90 % de l'azote de nos excréments est détruit dans les stations d'épuration (LEESU). Un simulateur Power BI chiffre ce que rapporterait sa récupération : au maximum, 31 % des engrais azotés consommés.
+5️⃣ Ailleurs, on continue. La dehesa ibérique, chênes, herbe et porcs, couvre 3,5 millions d'hectares. Au Niger, les paysans ont laissé repousser 200 millions d'arbres dans leurs champs, sur 5 millions d'hectares. Dans les oasis du Maghreb, palmiers, fruitiers et cultures forment trois étages. À Bahia, le cacao pousse sous la forêt. En Colombie, les vaches pâturent entre des rangs d'arbustes fourragers et donnent 1,5 à 5 fois plus de lait par hectare.
 
-« Si notre or est fumier, en revanche, notre fumier est or », écrivait Victor Hugo en 1862. La mer, le fleuve, puis la terre : chaque fois, le savoir existe, et il est souvent français. Ce qui manque, c'est sa mise en œuvre.
+Une condition, que montre le blé cultivé sous les paulownias en Chine : trop d'arbres, et le rendement chute. L'association se règle, comme une dose d'engrais.
 
-Données, code, calculs et limites :
+La mer, le fleuve, puis la terre : chaque fois, le savoir existe. Ce qui manque, c'est sa mise en œuvre.
+
+Données, code, calculs, onze systèmes comparés et leurs limites :
 https://github.com/leclercbaptiste1085-hash/5-france-terre
 
 #Agriculture #Agroforesterie #PAC #Économie #Souveraineté
