@@ -351,4 +351,25 @@ g12 <- ggplot(bil, aes(poste, mt_n, fill = origine)) +
   theme(axis.text.y = element_blank(), panel.grid.major.y = element_blank())
 enregistrer(g12, "12_bilan_azote.png", l = 9, h = 5.4)
 
+# ---------------------------------------------------------------------------
+# 13. L'arbre dans les champs : surfaces comparées (échelle logarithmique, segments partant de 1 000 ha)
+# ---------------------------------------------------------------------------
+surf <- lire("surfaces_agroforesterie.csv") |> mutate(surface = factor(surface, levels = rev(surface)))
+gc <- surf$ha[surf$groupe == "mono"]
+note("Agroforesterie moderne dans les parcelles : %.2f %% des grandes cultures ; traditionnelle : %.1f %%",
+     100 * 12500 / gc, 100 * 170000 / gc)
+
+g13 <- ggplot(surf, aes(ha, surface)) +
+  geom_segment(aes(x = 1000, xend = ha, yend = surface, colour = groupe), linewidth = 9) +
+  geom_text(aes(label = paste(label_number(big.mark = " ")(ha), "ha")), hjust = -0.12, family = "Calibri", colour = encre, size = 3.8) +
+  scale_colour_manual(values = c(total = "#7A8CA3", mono = bleu, passe = brume, mixte = vert, objectif = "#5FA8A0")) +
+  scale_x_log10(labels = label_number(big.mark = " "), breaks = 10^(3:7), limits = c(1000, 3e8), expand = expansion(mult = c(0, 0))) +
+  labs(title = "L'arbre dans les champs : 0,1 % des grandes cultures",
+       subtitle = "Surfaces en France métropolitaine, en hectares (échelle logarithmique : chaque graduation vaut 10 fois la précédente)",
+       x = NULL, y = NULL,
+       caption = paste("Sources : Agreste, Mémento 2024 ; Eurostat apro_cpsh1 ; GRAB, guide du pré-verger, 2024 ; J.-J. Dubois, Pollution atmosphérique, 2016 ;",
+                       "\nPlan national de développement de l'agroforesterie, 2015 (étude AGROOF). Pas de recensement officiel récent de l'agroforesterie.")) +
+  theme(panel.grid.major.y = element_blank(), panel.grid.major.x = element_line(colour = "#E3E8EE"))
+enregistrer(g13, "13_surfaces_agroforesterie.png", l = 9.5, h = 4.6)
+
 close(res)

@@ -38,3 +38,7 @@
   volatilisation 0,54 Mt, surplus net 0,97 Mt.
 - `brut/hypotheses_simulateur.csv` : coefficients du simulateur Power BI, écrits par son générateur ; sources par ligne.
 - `brut/inra_cipan_2012_synthese.pdf` : INRA, synthèse de l'étude CIPAN, juin 2012.
+- `brut/surfaces_agroforesterie.csv` : SAU (Agreste, brut/agreste_memento_2024.pdf) ; grandes cultures 2024 (Eurostat
+  apro_cpsh1, brut/eurostat_surfaces_fr.json : céréales 8 527, oléagineux 2 275, protéagineux 321 milliers d'ha) ;
+  prés-vergers 1930-1950 (brut/grab_guide_pre_verger.pdf) ; agroforesterie 2015 (J.-J. Dubois, Pollution atmosphérique,
+  2016) ; objectif 2035 (brut/plan_agroforesterie_2015.pdf, étude AGROOF).
