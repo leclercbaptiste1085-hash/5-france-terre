@@ -6,7 +6,7 @@ Après la mer, je me suis penché sur la terre, à partir de données publiques.
 
 2️⃣ Mêler rapporte. Sur les parcelles de l'INRAE dans le Gard et l'Hérault, 100 hectares d'arbres et de céréales produisent autant de grain et de bois que 134 hectares séparés (mesuré), jusqu'à 160 selon les simulations : l'arbre et la céréale ne puisent ni au même endroit ni au même moment.
 
-3️⃣ Nous savions le faire. Les joualles du Sud-Ouest mêlaient vigne, pruniers et blé ; les prés-vergers normands, pommiers, herbe et vaches. Ils couvraient plus de 500 000 hectares vers 1950, il en reste environ 100 000. L'agroforesterie moderne ne pèse que 0,1 % des grandes cultures.
+3️⃣ Nous savons encore le faire, surtout au bord de l'eau. Dans la Dombes, 1 100 étangs alternent deux ans de poissons et un an de céréales. En Camargue, le riz dessale la terre pour le blé. Au Mont-Saint-Michel, les moutons broutent l'herbe que la mer recouvre ; dans le Léon, le goémon a fait la « ceinture dorée » des légumes ; à Marennes-Oléron, les anciens marais salants affinent les huîtres. Là où l'eau imposait de mêler, la machine n'a pas tout séparé. Ailleurs, les prés-vergers sont passés de 500 000 à 100 000 hectares, et l'agroforesterie moderne ne pèse que 0,1 % des grandes cultures.
 
 4️⃣ La PAC payait l'hectare nu. Depuis 1992, l'aide est versée à l'hectare de céréales, d'oléagineux et de protéagineux. Il a fallu attendre 2006 pour qu'un texte fixe l'aide aux parcelles plantées d'arbres : entière sous 50 arbres par hectare ; au-delà, l'emprise des arbres était déduite. L'arbre n'a pas reculé parce qu'il produisait moins, mais parce qu'il ne rapportait pas d'aide.
 

@@ -20,6 +20,7 @@ body {{ font-family: Calibri, "Segoe UI", Arial, sans-serif; color: #1B2A3A; fon
 h1 {{ color: #1F5A8C; font-size: 23pt; line-height: 1.15; margin: 0 0 3mm; }}
 .auteur {{ font-size: 9pt; color: #4A5568; margin-bottom: 5mm; }}
 h2 {{ color: #1F5A8C; font-size: 15pt; margin: 6mm 0 3mm; }}
+h3 {{ color: #2E8B57; font-size: 12.5pt; margin: 5mm 0 2mm; }}
 p {{ margin: 0 0 3mm; text-align: justify; hyphens: auto; }}
 strong {{ color: #1B2A3A; }}
 figure {{ margin: 2mm 0 4mm; break-inside: avoid; }}

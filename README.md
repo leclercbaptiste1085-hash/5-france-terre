@@ -6,7 +6,9 @@ davantage. La thèse du projet est qu'il faut **mêler à nouveau ce que l'agric
 culture, la culture et l'animal, le champ et l'eau. C'est ce qu'il appelle l'agriculture 2.0 : l'agroforesterie et la
 complantation. Il mesure ce qu'elles rapportent, montre comment la politique agricole les a fait reculer en ne payant que
 l'hectare nu, puis fait le tour des systèmes qui, de la Campanie au Sahel et du Japon au Brésil, mêlent encore les espèces
-sur le même hectare. La récupération de l'azote n'est traitée qu'en complément.
+sur le même hectare. Il fait enfin l'inventaire de ce qui subsiste en France, et en particulier des systèmes qui relient
+la terre à l'eau et à la mer : étangs de la Dombes, riz de Camargue, prés-salés, goémon, claires à huîtres. La récupération
+de l'azote n'est traitée qu'en complément.
 
 ## 1. Le constat, en deux chiffres
 
@@ -98,7 +100,12 @@ qu'en plein champ. L'association n'est pas gagnante d'office : elle se règle, c
 nitrates qui, sinon, gagneraient la nappe. L'INRAE modélise cet effet (projet METAGROFORESTRY) ; aucune mesure publique n'en
 donne encore l'ampleur à l'échelle d'une parcelle française.
 
-## 5. La complantation en France : ce que l'on savait faire
+## 5. Ce qui subsiste en France, de la terre à la mer
+
+La France n'a pas tout perdu. Il lui reste des systèmes qui mêlent les espèces, et une partie d'entre eux relient
+précisément la terre et l'eau, jusqu'à la mer : c'est le lien entre ce projet et le précédent.
+
+### À terre : l'arbre et la culture
 
 **La joualle du Sud-Ouest.** Des rangs de vigne grimpant sur des arbres fruitiers (cerisiers en Gironde, pruniers d'Ente en
 Lot-et-Garonne, abricotiers sur les coteaux du Lot et de la Garonne), séparés par des bandes de céréales, de légumes ou de
@@ -110,6 +117,57 @@ sur des arbres vivants, au-dessus des cultures.
 des pommiers haute-tige plantés à moins de 100 arbres par hectare, contre jusqu'à 3 000 dans un verger moderne (GRAB). Ce
 système a reculé de 500 000 à environ 100 000 hectares en moins d'un siècle. L'Allemagne en a conservé davantage : ses
 *Streuobstwiesen* couvrent encore 300 000 à 400 000 hectares selon les estimations.
+
+### Au bord de l'eau douce : le champ et l'étang
+
+**Les étangs de la Dombes (Ain) : la rizière à poissons française.** Depuis le Moyen Âge, les étangs de la Dombes alternent
+deux années d'« évolage », en eau, où l'on élève carpes, tanches et brochets, et une année d'« assec », vidés et semés
+d'avoine ou de maïs. Le poisson fertilise le fond de l'étang, la céréale en profite, puis l'eau revient sur un sol nettoyé.
+C'est l'équivalent exact de la rizière à poissons chinoise, en rotation plutôt qu'en même temps. Il reste environ 1 100 à
+1 200 étangs sur 11 200 hectares, contre près de 20 000 hectares au milieu du XIXe siècle (APPED ; ministère de la Culture).
+
+**La Camargue : le riz qui dessale la terre.** Dans le delta du Rhône, le riz n'est pas qu'une culture : l'eau douce qui
+l'inonde lessive le sel qui remonte de la mer et rend la terre cultivable pour les années suivantes. Il tourne avec le blé
+dur et la luzerne, et les fermes y associent souvent un élevage de taureaux ou de moutons dont le fumier revient aux
+champs ; en agriculture biologique, une année de riz alterne avec au moins quatre de cultures sèches (INRAE). La surface en
+riz est passée d'environ 32 000 hectares en 1962 à moins de 5 000 en 1981, remontée à 21 000 en 2012, puis retombée à
+environ 11 500 (FranceAgriMer, 2024).
+
+**Le Marais poitevin : la prairie sous les arbres têtards.** Entre Niort et la mer, le « marais mouillé » est un bocage
+d'eau : prairies pâturées ou fauchées, bordées de canaux et de frênes taillés en têtard, dont on récoltait les branches pour
+le bois et le fourrage. Il en reste près de 400 000. L'inventaire de 2001 estimait qu'il manquait déjà près des trois quarts
+des arbres plantés à l'origine ; la chalarose, une maladie du frêne, les décime aujourd'hui, et 17 000 arbres ont été
+replantés depuis 2017 (parc naturel régional ; Natura 2000).
+
+### Au contact de la mer : ce que la mer donne à la terre
+
+**Les prés-salés.** Dans la baie du Mont-Saint-Michel et celle de la Somme, des moutons pâturent les herbus que la marée
+recouvre : l'herbe salée, nourrie par les sédiments de la mer, devient de la viande, sans engrais ni culture. Les deux baies
+ont chacune leur appellation d'origine protégée. La baie du Mont-Saint-Michel produit 8 000 à 10 000 agneaux par an, dont
+environ 1 500 sous appellation (*Réussir*, 2024).
+
+**Le goémon et la ceinture dorée.** Sur la côte du Léon, autour de Roscoff et de Saint-Pol-de-Léon, les paysans ont
+fertilisé pendant des siècles leurs champs avec le goémon ramassé sur les grèves et avec le maërl, un sable calcaire
+d'algues. Ce sont ces terres, enrichies par la mer, qui ont fait vers 1880 la « ceinture dorée » des légumes bretons
+(artichauts, choux-fleurs, oignons). L'épandage d'algues y est devenu minoritaire, mais la ressource reste : Lanildut, premier
+port goémonier d'Europe, débarque environ 35 000 tonnes d'algues par an, aujourd'hui surtout pour l'industrie.
+
+**Les claires de Marennes-Oléron : la saline devenue parc à huîtres.** Quand le sel de l'Atlantique a cessé de payer, les
+ostréiculteurs charentais ont repris les marais salants abandonnés et en ont fait des « claires », bassins d'argile où les
+huîtres sont affinées. Environ 3 000 hectares de claires produisent une huître sous indication géographique protégée,
+environ 17 000 tonnes par an. C'est un recyclage d'infrastructure : un ouvrage de la terre conçu pour la mer, réemployé
+pour un autre usage de la mer.
+
+| Système | Région | Ce qui est mêlé | Surface ou volume | Tendance |
+|---|---|---|---|---|
+| Prés-vergers | Normandie, Bretagne | pommiers + herbe + vaches | 100 000 à 165 000 ha | en recul |
+| Joualles et hautains | Sud-Ouest, Pyrénées | vigne + fruitiers + céréales | non chiffré | quasi disparus |
+| Étangs de la Dombes | Ain | poissons puis céréales | 11 200 ha, 1 100 à 1 200 étangs | 20 000 ha vers 1850 |
+| Riz de Camargue | Bouches-du-Rhône, Gard | riz + blé dur + luzerne + taureaux | environ 11 500 ha | moitié de 2012 |
+| Marais poitevin | Vendée, Deux-Sèvres, Charente-Maritime | frênes têtards + prairies + bétail | près de 400 000 têtards | chalarose |
+| Prés-salés | Mont-Saint-Michel, Somme | herbus marins + moutons | 8 000 à 10 000 agneaux/an | stable, deux AOP |
+| Goémon et ceinture dorée | Léon | algues et maërl + légumes | 35 000 t d'algues à Lanildut | épandage minoritaire |
+| Claires | Marennes-Oléron | anciens marais salants + huîtres | 3 000 ha, 17 000 t/an | menacées par la chaleur l'été |
 
 ## 6. Ailleurs : onze systèmes qui mêlent
 
@@ -195,6 +253,12 @@ mal à la machine, et la politique agricole payait l'hectare d'une seule culture
 Ce que la recherche apporte, c'est de les rendre compatibles avec la machine : des rangées d'arbres espacées pour le passage
 des engins, des essences choisies pour la valeur de leur bois, des densités mesurées. Ce qui manque en France, c'est
 l'échelle : 10 000 à 15 000 hectares pour 11 millions d'hectares de grandes cultures.
+
+**Le lien avec la mer.** Les systèmes français qui ont le mieux résisté sont ceux qui vivent au contact de l'eau : la
+Dombes, la Camargue, le Marais poitevin, les prés-salés, les claires. Là, l'eau imposait de mêler, et la machine ne pouvait
+pas tout séparer. Ils montrent ce que le projet précédent sur la mer laissait entrevoir : la terre et la mer ne sont pas
+deux économies distinctes. La mer nourrit l'herbe des prés-salés et les champs du Léon ; la terre, par ses fleuves, nourrit
+les huîtres des claires. Les séparer, c'est perdre dans les deux sens.
 
 ## 8. En complément : ne plus perdre l'azote que l'on épand
 
@@ -309,6 +373,10 @@ calculs sont vérifiés par requêtes DAX sur le modèle.
   les sources. Les grandes cultures ne sont pas toutes des monocultures au sens strict : elles tournent d'une année sur
   l'autre, mais chaque parcelle porte une seule espèce à la fois.
 - **La complantation historique n'est pas chiffrée** : aucune statistique ne mesure l'étendue passée des joualles.
+- **Les systèmes français au contact de l'eau sont chiffrés par des sources de filière.** Le nombre d'étangs de la Dombes
+  varie de 1 100 à 1 200 selon les sources ; la surface en riz de Camargue varie fortement d'une année à l'autre ; aucune
+  source trouvée ne donne la surface des herbus pâturés ni le tonnage d'algues épandu sur les champs du Léon ; le chiffre de
+  3 000 hectares de claires désigne parfois les claires seules, parfois les claires et les parcs.
 - **Les exemples étrangers n'ont pas tous la même solidité.** Les chiffres de *Faidherbia* (FAO), du Niger (Nations unies),
   de la rizière à canards (presse et fiches de vulgarisation) et de la cabruca (surface non datée) viennent de sources de
   programme plutôt que d'essais publiés ; le gain de rendement souvent prêté à la méthode *aigamo* (20 à 50 %) n'est pas
@@ -397,6 +465,12 @@ dans `sorties/`. Packages R : dplyr, tidyr, ggplot2, scales. Le détail des sour
   [réponse ministérielle à l'Assemblée nationale](https://questions.assemblee-nationale.fr/dyn/12/questions/QANR5L12QE112218.pdf) (arrêté du 31 octobre 2006) ;
   *Agra Valor* n° 141, [juin 2006](https://www.agroforesterie.fr/wp-content/uploads/2022/07/agravalor-n141-juin-2006.pdf) (surface de 2006) ;
   haies : Pointereau (2002), cité par l'[INRAE](https://hal.inrae.fr/hal-04882705v1/file/Haie_Cours1_10102024.pdf).
+- Systèmes français au contact de l'eau : Dombes, [ministère de la Culture](https://www.culture.gouv.fr/Media/Thematiques/Patrimoine-culturel-immateriel/Files/Fiches-inventaire-du-PCI/La-peche-aux-poissons-d-eau-douce-des-etangs-de-la-Dombes) et [avis du MNHN](https://zones-humides.org/sites/default/files/fichiers/AVIS%20MNHN%20DOMBES%20Def.pdf) ;
+  Camargue, [INRAE](https://comite-agriculture-biologique.hub.inrae.fr/content/download/3512/36175?version=1), [FranceAgriMer](https://www.franceagrimer.fr/content/download/72761/document/20240112_FICHE_FILIERE_RIZICULTURE_2024.pdf) et [CIRAD](https://revues.cirad.fr/index.php/cahiers-agricultures/article/download/31050/30810/31285) ;
+  Marais poitevin, [parc naturel régional](https://www.agroforesterie.fr/wp-content/uploads/2022/11/actes-colloque-trognes-intervention-jordane-ancelin-poitevin-marsh-regional-natural-park-poitou-charentes-france.pdf) et [Natura 2000](https://www.pays-de-la-loire.developpement-durable.gouv.fr/IMG/pdf/pre_sentation_n2000_marais_poitevin.pdf) ;
+  prés-salés, [INAO](https://www.inao.gouv.fr/fichier/PNODUPresSalesMontSaintMichel.pdf) et [*Réussir*](https://www.reussir.fr/lesmarches/pour-sauver-son-aop-agneau-pres-sales-du-mont-saint-michel-le-normandie-compte-sur-rungis) ;
+  ceinture dorée et goémon, [Ceinture dorée](https://franco.wiki/fr/Ceinture_dor%C3%A9e.html) et [fiche d'inventaire du patrimoine culturel immatériel](https://dev73.id-interactive.fr/pci/wp-content/uploads/2025/01/FI-La-recolte-du-goemon.pdf) ;
+  claires, [CNES](https://cnes.fr/geoimage/poitou-charentes-bassin-marennes-oleron-un-territoire-littoral-lidentite-singuliere-de-charente) et [cahier des charges de l'IGP](https://extranet.inao.gouv.fr/fichier/CDC-IGPHMO-2203.pdf).
 - Alberata aversana : [Slow Food](https://www.fondazioneslowfood.com/it/presidi-slow-food/alberata-aversana/) ;
   [Gambero Rosso](https://www.gamberorosso.it/notizie/rubriche/storie/alberata-aversana-vite/) ;
   [Italia Nostra](https://www.italianostra.org/wp-content/uploads/CASERTA.pdf) (16 000 ha en 1960).
