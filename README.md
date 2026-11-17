@@ -13,6 +13,19 @@ goémon et les claires à huîtres. Il se demande enfin, comme le ferait un banq
 finançable, avec et sans aides, en année normale comme en année de crise. La récupération de l'azote, quant à elle, n'est
 traitée qu'en complément.
 
+Ce choix tient à un changement de logique économique. L'agriculture du XXe siècle s'est organisée autour des **économies
+d'échelle** : en spécialisant chaque parcelle dans une seule culture et en agrandissant les exploitations, on abaissait le
+coût de chaque tonne produite. Ce modèle a longtemps fonctionné, mais il a reporté hors du champ une partie de ses coûts,
+qu'il s'agisse de l'azote perdu vers les nappes et l'air, des haies arrachées ou des engrais importés. L'accumulation de ces
+déchets et de ces pertes, aujourd'hui connue de tous, oblige donc à redéfinir ce que l'on entend par produire efficacement.
+Les enjeux du XXIe siècle ont certes été maintes fois rappelés, mais ils ne sont encore que partiellement pris en compte
+dans la manière dont on aide et dont on finance l'agriculture. Le mode de production défendu ici relève d'une autre logique,
+que les économistes appellent les **économies de gamme** (*economies of scope*, Panzar et Willig, 1981) : il devient moins
+coûteux de produire plusieurs biens ensemble que séparément, parce qu'ils partagent la même terre, la même eau et la même
+lumière, et que les résidus de l'un servent d'intrants à l'autre. C'était d'ailleurs le mode de production ordinaire de la
+terre avant la spécialisation, comme en témoignent les joualles, les prés-vergers ou les étangs de la Dombes, et la surface
+équivalente mesurée par l'INRAE (section 4) n'en est, au fond, que la traduction agronomique.
+
 ## 1. Le constat, en deux chiffres
 
 Le rendement du blé français a progressé de 0,12 t/ha par an entre le début des années 1960 et le milieu des années 1990,
@@ -283,7 +296,8 @@ Les onze exemples suivants sont classés par continent.
 ## 7. Ce que ces systèmes enseignent
 
 Ces systèmes ont d'abord en commun de produire plusieurs choses sur le même hectare (grain, bois, fruits, lait, viande), et
-c'est bien ce total, plutôt que le rendement d'une seule culture, qu'il convient de comparer. Ils recyclent en outre sur
+c'est bien ce total, plutôt que le rendement d'une seule culture, qu'il convient de comparer ; ils reposent en ce sens sur
+des économies de gamme bien plus que sur des économies d'échelle. Ils recyclent en outre sur
 place ce que la monoculture doit acheter, qu'il s'agisse de l'azote (apporté par les fientes, les déjections ou les arbres
 fixateurs), du désherbage (assuré par les canards, les poissons ou les porcs) ou de la protection contre le vent et la
 chaleur (offerte par le palmier ou le paulownia). Ils supposent par ailleurs un réglage précis de la densité d'arbres ou du
@@ -417,7 +431,10 @@ annexe.
 | Légumineuses | 20 à 60 kg d'azote en moins par hectare sur le blé suivant | une rotation | débouchés et rendements à sécuriser |
 | Séparation de l'urine | jusqu'à 15 % des engrais azotés de synthèse | dès les constructions neuves | réseaux à créer, collecte |
 
-Qu'il s'agisse de la mer, du fleuve ou de la terre, le savoir-faire existe donc, et il est souvent français, comme le
+Ce tableau résume le changement de logique défendu dans ce projet. L'agriculture du XXe siècle cherchait à abaisser le coût
+de chaque tonne en produisant toujours davantage de la même chose, au prix de pertes qu'elle ne comptait pas ; celle du XXIe
+siècle doit plutôt chercher à tirer davantage d'un même hectare, en y associant plusieurs productions et en réemployant ce
+qui était perdu. Qu'il s'agisse de la mer, du fleuve ou de la terre, le savoir-faire existe d'ailleurs, et il est souvent français, comme le
 montrent GTT pour les cuves des méthaniers ou l'INRAE pour l'agroforesterie. La difficulté réside davantage dans sa mise en
 œuvre, qui fera l'objet du projet suivant.
 
@@ -546,6 +563,7 @@ dans `sorties/`. Packages R : dplyr, tidyr, ggplot2, scales. Le détail des sour
 
 ## Sources
 
+- Économies de gamme : J. C. Panzar et R. D. Willig, « Economies of Scope », *American Economic Review*, vol. 71, n° 2, 1981, p. 268-272.
 - FAOSTAT : [production](https://www.fao.org/faostat/fr/#data/QCL), [échanges](https://www.fao.org/faostat/fr/#data/TCL),
   [engrais](https://www.fao.org/faostat/fr/#data/RFN).
 - INRAE, [*Agroforesterie et agrivoltaïsme*](https://ciag.hub.inrae.fr/content/download/5447/41887?version=1) ;
