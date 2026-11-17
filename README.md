@@ -1,185 +1,199 @@
 # La France et la terre : l'agriculture 2.0, mêler au lieu de séparer
 
-Ce projet ne dresse pas l'inventaire d'un déclin : il chiffre une autre façon de produire. Le rendement du blé ne progresse
-plus depuis trente ans, et la France importe l'essentiel de ses engrais. Intensifier davantage la monoculture, c'est importer
-davantage. La thèse du projet est qu'il faut **mêler à nouveau ce que l'agriculture moderne a séparé** : l'arbre et la
-culture, la culture et l'animal, le champ et l'eau. C'est ce qu'il appelle l'agriculture 2.0 : l'agroforesterie et la
-complantation. Il mesure ce qu'elles rapportent, montre comment la politique agricole les a fait reculer en ne payant que
-l'hectare nu, puis fait le tour des systèmes qui, de la Campanie au Sahel et du Japon au Brésil, mêlent encore les espèces
-sur le même hectare. Il fait enfin l'inventaire de ce qui subsiste en France, et en particulier des systèmes qui relient
-la terre à l'eau et à la mer : étangs de la Dombes, riz de Camargue, prés-salés, goémon, claires à huîtres. Il pose
-enfin la question d'un banquier : un hectare agroforestier est-il finançable, avec et sans aides, en année normale et en
-année de crise ? La récupération
-de l'azote n'est traitée qu'en complément.
+Ce projet ne cherche pas à dresser l'inventaire d'un déclin ; il s'attache plutôt à chiffrer une autre façon de produire.
+Le rendement du blé ne progresse plus depuis trente ans et la France importe l'essentiel de ses engrais, si bien
+qu'intensifier encore la monoculture reviendrait surtout à importer davantage. La thèse défendue ici est donc qu'il faut
+**mêler à nouveau ce que l'agriculture moderne a séparé**, c'est-à-dire l'arbre et la culture, la culture et l'animal, le
+champ et l'eau. C'est ce que le projet appelle l'agriculture 2.0, dont l'agroforesterie et la complantation sont les deux
+formes principales. Il en mesure d'abord le rendement, puis montre comment la politique agricole les a fait reculer en ne
+rémunérant que l'hectare nu. Il passe ensuite en revue les systèmes qui, de la Campanie au Sahel et du Japon au Brésil,
+associent encore plusieurs espèces sur le même hectare, avant de recenser ce qui subsiste en France, en particulier les
+systèmes qui relient la terre à l'eau et à la mer, comme les étangs de la Dombes, le riz de Camargue, les prés-salés, le
+goémon et les claires à huîtres. Il se demande enfin, comme le ferait un banquier, si un hectare agroforestier est
+finançable, avec et sans aides, en année normale comme en année de crise. La récupération de l'azote, quant à elle, n'est
+traitée qu'en complément.
 
 ## 1. Le constat, en deux chiffres
 
-**Le rendement plafonne.** Le blé français a gagné 0,12 t/ha chaque année entre le début des années 1960 et le milieu des
-années 1990, passant de 2,9 à 6,6 t/ha. Depuis, il ne progresse plus : 6,8 t/ha en moyenne sur 2020-2024, soit 0,004 t/ha
-de gain par an (FAOSTAT). On ne produira plus davantage en intensifiant la même technique.
+Le rendement du blé français a progressé de 0,12 t/ha par an entre le début des années 1960 et le milieu des années 1990,
+passant de 2,9 à 6,6 t/ha. Il stagne depuis, puisque la moyenne de 2020-2024 s'établit à 6,8 t/ha, ce qui correspond à un
+gain de 0,004 t/ha par an (FAOSTAT). On peut donc difficilement espérer produire davantage en intensifiant la même technique.
 
 ![Rendement du blé](sorties/1_rendement_ble.png)
 
-**Les engrais viennent d'ailleurs.** Au début des années 1960, la France produisait 120 % de l'azote et 193 % de la potasse
-qu'épandaient ses agriculteurs. Aujourd'hui, elle ne produit plus que 9 % du phosphate et aucune potasse ; pour l'azote,
-la part produite en France est de 18 % selon FAOSTAT et d'environ 35 % selon FranceAgriMer (800 000 t produites pour
-2 millions de tonnes consommées). Dans les deux cas, l'essentiel est importé : tout gain de rendement obtenu par les engrais
-est un gain importé.
+Ce plafonnement est d'autant plus préoccupant que les engrais viennent désormais de l'étranger. Au début des années 1960,
+la France produisait 120 % de l'azote et 193 % de la potasse qu'épandaient ses agriculteurs. Elle ne produit plus
+aujourd'hui que 9 % du phosphate et aucune potasse, tandis que, pour l'azote, la part produite sur le territoire varie de
+18 % selon FAOSTAT à environ 35 % selon FranceAgriMer (800 000 t produites pour 2 millions de tonnes consommées). Quelle que
+soit la source retenue, l'essentiel est importé, de sorte que tout gain de rendement obtenu par les engrais dépend lui aussi
+de l'étranger.
 
 ![Engrais](sorties/8_engrais.png)
 
 ## 2. Ce que l'on a séparé
 
-Pendant des siècles, l'agriculture française a associé sur la même parcelle des arbres, des cultures et des animaux : vignes
-grimpant aux arbres fruitiers, vaches sous les pommiers, haies autour des champs. La mécanisation, le remembrement et la
-spécialisation ont tout séparé : d'un côté la forêt, de l'autre le champ d'une seule espèce.
+Pendant des siècles, l'agriculture française a associé sur la même parcelle des arbres, des cultures et des animaux, qu'il
+s'agisse de vignes grimpant aux arbres fruitiers, de vaches pâturant sous les pommiers ou de haies entourant les champs. La
+mécanisation, le remembrement et la spécialisation ont progressivement dissocié ces éléments, en reléguant l'arbre à la
+forêt et en réservant le champ à une seule espèce.
 
-**Les surfaces.** Les grandes cultures (céréales, oléagineux, protéagineux) couvrent 11,1 millions d'hectares.
-L'agroforesterie moderne, avec des arbres plantés dans des parcelles cultivées, ne dépassait pas 1 000 hectares en 2006
-(Dupraz, cité par Agra Valor) et n'en couvrait que 10 000 à 15 000 vers 2015, soit **0,1 %** des grandes cultures. En
-comptant les systèmes traditionnels (prés-vergers, alignements), on atteint environ 170 000 hectares (J.-J. Dubois, 2016).
-Aucun recensement officiel récent ne mesure l'agroforesterie : c'est déjà un symptôme.
+Les surfaces en témoignent. Les grandes cultures (céréales, oléagineux, protéagineux) couvrent 11,1 millions d'hectares,
+alors que l'agroforesterie moderne, qui consiste à planter des arbres dans des parcelles cultivées, ne dépassait pas
+1 000 hectares en 2006 (Dupraz, cité par Agra Valor) et n'en couvrait encore que 10 000 à 15 000 vers 2015, soit environ
+**0,1 %** des grandes cultures. Si l'on y ajoute les systèmes traditionnels, comme les prés-vergers et les alignements
+d'arbres, on atteint environ 170 000 hectares (J.-J. Dubois, 2016). Il faut d'ailleurs noter qu'aucun recensement officiel
+récent ne mesure l'agroforesterie, ce qui en dit long sur la place qu'on lui accorde.
 
 ![Surfaces](sorties/13_surfaces_agroforesterie.png)
 
-**Le recul.** Les prés-vergers, ces pommiers haute-tige sous lesquels pâturent les vaches, couvraient 500 000 à 600 000
-hectares vers 1930-1950. Il en reste environ 100 000 à 165 000 selon les sources (GRAB, 2024 ; plan national de 2015), et
-prés-vergers et bosquets reculaient encore de 21 000 hectares par an entre 2012 et 2014 (Solagro). Les haies sont passées de
-1 244 000 km en 1975 à 708 000 km en 1987 (Pointereau, 2002) : 43 % en douze ans, au plus fort du remembrement. Elles ont
-perdu 70 % de leur longueur depuis 1950 (annexe).
+Le recul est également très net. Les prés-vergers, où les vaches pâturent sous des pommiers haute-tige, couvraient 500 000
+à 600 000 hectares vers 1930-1950 ; il en reste aujourd'hui entre 100 000 et 165 000 selon les sources (GRAB, 2024 ; plan
+national de 2015), et les prés-vergers et bosquets perdaient encore 21 000 hectares par an entre 2012 et 2014 (Solagro).
+Quant aux haies, leur longueur est passée de 1 244 000 km en 1975 à 708 000 km en 1987 (Pointereau, 2002), soit une baisse
+de 43 % en douze ans au plus fort du remembrement ; au total, elles ont perdu 70 % de leur longueur depuis 1950 (annexe).
 
 ## 3. Pourquoi l'arbre a quitté les champs : la PAC payait l'hectare nu
 
-L'arbre n'a pas reculé parce qu'il produisait moins. Il a reculé parce que les règles publiques, pendant un demi-siècle, ont
-payé la parcelle d'une seule culture et compté l'arbre comme une surface perdue.
+Le recul de l'arbre ne s'explique pas par une productivité moindre. Il tient bien davantage aux règles publiques qui,
+pendant un demi-siècle, ont rémunéré la parcelle d'une seule culture et considéré l'arbre comme une surface perdue.
 
-**1953 : on paie pour arracher.** La politique d'arrachage des pommiers de 1953, puis l'abandon des quotas d'État dans les
-années 1970, ont poussé les producteurs normands à remplacer les pommiers haute-tige des prés-vergers par des vergers
-basse-tige (CESER Normandie, 2024). Le remembrement des années 1955-1975 a fait le reste : les travaux qui l'accompagnaient
-rasaient haies et arbres isolés pour agrandir les parcelles.
+Dès 1953, une politique d'arrachage des pommiers, suivie dans les années 1970 de l'abandon des quotas d'État, a conduit
+les producteurs normands à remplacer les pommiers haute-tige des prés-vergers par des vergers basse-tige (CESER Normandie,
+2024). Le remembrement des années 1955-1975 a ensuite achevé le mouvement, puisque les travaux qui l'accompagnaient
+supprimaient haies et arbres isolés afin d'agrandir les parcelles.
 
-**1992 : l'aide à l'hectare de grande culture.** La réforme de la PAC de 1992 remplace le soutien des prix par des
-« paiements compensatoires » versés à l'hectare de céréales, d'oléagineux et de protéagineux (règlement 1765/92). Ces paiements
-sont refusés aux terres qui étaient, au 31 décembre 1991, en prairie permanente, en cultures permanentes ou en forêt (réponse
-ministérielle au Sénat, 1999). Le système récompense donc exactement ce que l'agroforesterie défait : une seule culture
-annuelle, sur une surface sans arbre. Une parcelle plantée d'arbres était, au mieux, une surface dont on déduisait les arbres.
+La réforme de la PAC de 1992 a renforcé cette logique. Elle remplace en effet le soutien des prix par des « paiements
+compensatoires » versés à l'hectare de céréales, d'oléagineux et de protéagineux (règlement 1765/92), et refuse ces
+paiements aux terres qui étaient, au 31 décembre 1991, en prairie permanente, en cultures permanentes ou en forêt (réponse
+ministérielle au Sénat, 1999). Le dispositif récompense donc précisément ce que l'agroforesterie cherche à défaire, à savoir
+une culture annuelle unique sur une surface sans arbre ; une parcelle plantée était, au mieux, une surface dont on déduisait
+les arbres.
 
-**2006 : l'arbre toléré, puis déduit.** Il faut attendre un arrêté du 31 octobre 2006 pour que l'admissibilité des parcelles
-agroforestières soit fixée : en dessous de 50 arbres par hectare, la parcelle reste aidée sur toute sa surface ; au-delà, la
-surface occupée par les arbres est déduite (réponse ministérielle à l'Assemblée nationale). Un agriculteur qui plantait
-perdait donc l'aide sur l'emprise de ses arbres, pour un bois qui ne rapporterait qu'au bout de vingt à cinquante ans. Le
-seuil est passé à 100 arbres par hectare (guide d'admissibilité PAC 2024).
+Il faut attendre un arrêté du 31 octobre 2006 pour que l'admissibilité des parcelles agroforestières soit enfin fixée. En
+dessous de 50 arbres par hectare, la parcelle reste aidée sur toute sa surface ; au-delà, la surface occupée par les arbres
+est déduite (réponse ministérielle à l'Assemblée nationale). Un agriculteur qui plantait perdait ainsi l'aide sur l'emprise
+de ses arbres, alors que le bois ne lui rapporterait qu'au bout de vingt à cinquante ans. Ce seuil a depuis été porté à
+100 arbres par hectare (guide d'admissibilité PAC 2024).
 
-**2015 : le début d'un retournement.** L'agroforesterie est reconnue comme surface d'intérêt écologique, des aides à la
-plantation apparaissent, et le plan national de développement de l'agroforesterie vise 122 000 hectares en 2035, dix fois la
-surface de 2015. Mais le retard d'un demi-siècle ne se rattrape pas vite : un arbre planté en 2015 donne son bois vers 2050.
+Un retournement s'amorce toutefois à partir de 2015. L'agroforesterie est alors reconnue comme surface d'intérêt
+écologique, des aides à la plantation apparaissent, et le plan national de développement de l'agroforesterie se fixe
+l'objectif de 122 000 hectares en 2035, soit dix fois la surface de 2015. Un tel retard ne se rattrape cependant pas
+rapidement, car un arbre planté en 2015 ne donnera son bois que vers 2050.
 
 ## 4. Le gain : produire plus sur le même hectare
 
-**Le principe.** L'arbre et la culture n'exploitent pas les mêmes ressources au même endroit ni au même moment. Comme
-l'explique Christian Dupraz, la céréale d'hiver assèche le sol de surface au printemps, ce qui oblige l'arbre à s'enraciner
-plus profond, sous la culture. Sur 40 ans, d'après les simulations de l'INRAE, une parcelle de noyers et de blé intercepte
-1,39 fois la lumière et valorise 1,55 fois l'eau d'une parcelle spécialisée.
+Ce gain repose sur le fait que l'arbre et la culture n'exploitent pas les mêmes ressources au même endroit ni au même
+moment. Comme l'explique Christian Dupraz, la céréale d'hiver assèche le sol de surface au printemps, ce qui oblige l'arbre à
+s'enraciner plus profondément, sous la culture. D'après les simulations de l'INRAE, une parcelle associant noyers et blé
+intercepte ainsi, sur 40 ans, 1,39 fois la lumière et valorise 1,55 fois l'eau d'une parcelle spécialisée.
 
-**Le gain mesuré.** L'indicateur est la surface équivalente (*land equivalent ratio*, LER) : la surface qu'il faudrait,
-arbres et cultures séparés, pour produire autant que l'hectare associé. Sur les parcelles de l'INRAE dirigées par Christian
-Dupraz, il atteint **1,34 mesuré** (peupliers et céréales récoltés après 13 à 15 ans, Vézénobres, Gard) et **1,4 à 1,6
-simulé** sur une rotation complète de noyers et de blé (Restinclières, Hérault). Cent hectares en agroforesterie produisent
-autant de grain et de bois que 130 à 160 hectares séparés.
+Pour mesurer ce gain, on utilise la surface équivalente (*land equivalent ratio*, LER), qui indique la surface nécessaire
+pour produire autant que l'hectare associé si l'on cultivait séparément les arbres et les cultures. Sur les parcelles de
+l'INRAE dirigées par Christian Dupraz, elle atteint **1,34** dans un essai mesuré (peupliers et céréales récoltés après 13 à
+15 ans, à Vézénobres, dans le Gard) et **1,4 à 1,6** en simulation sur une rotation complète de noyers et de blé
+(Restinclières, Hérault). Autrement dit, cent hectares en agroforesterie produisent autant de grain et de bois que 130 à
+160 hectares conduits séparément.
 
 ![Agroforesterie](sorties/6_agroforesterie.png)
 
-**Les paramètres techniques.** Les parcelles de l'INRAE comptent 80 noyers par hectare (Restinclières) ou 140 peupliers par
-hectare, contre 200 en peupleraie pure (Vézénobres). Les rangées sont espacées pour laisser passer les machines : c'est ce qui
-distingue l'agroforesterie moderne des systèmes anciens, abandonnés faute de pouvoir y faire passer un tracteur.
+Sur le plan technique, les parcelles de l'INRAE comptent 80 noyers par hectare à Restinclières, et 140 peupliers par hectare
+à Vézénobres, contre 200 en peupleraie pure. Les rangées y sont suffisamment espacées pour laisser passer les machines, ce
+qui distingue l'agroforesterie moderne des systèmes anciens, dont beaucoup ont été abandonnés faute de pouvoir y faire
+circuler un tracteur.
 
-**La densité décide de tout.** En Chine, sur la plaine du fleuve Jaune, le blé est cultivé entre des rangées de paulownias.
-Une étude de 1997 y trouve que le rendement du blé augmente tant que les arbres couvrent moins de 28 % de la parcelle, avec
-un optimum vers 14 %, et baisse au-delà ; dans une parcelle plus dense, une étude de 2008 mesure un blé 51 % moins productif
-qu'en plein champ. L'association n'est pas gagnante d'office : elle se règle, comme une dose d'engrais.
+La densité des arbres joue néanmoins un rôle décisif. En Chine, dans la plaine du fleuve Jaune, où le blé est cultivé entre
+des rangées de paulownias, une étude de 1997 montre que le rendement du blé augmente tant que les arbres couvrent moins de
+28 % de la parcelle, avec un optimum vers 14 %, puis diminue au-delà ; dans une parcelle plus dense, une étude de 2008 relève
+même un blé 51 % moins productif qu'en plein champ. L'association n'est donc pas gagnante par principe, et elle demande à être
+réglée avec autant de soin qu'une dose d'engrais.
 
-**Le filet de sécurité.** Les racines des arbres descendent sous la zone exploitée par la culture et y interceptent les
-nitrates qui, sinon, gagneraient la nappe. L'INRAE modélise cet effet (projet METAGROFORESTRY) ; aucune mesure publique n'en
-donne encore l'ampleur à l'échelle d'une parcelle française.
+Les arbres jouent enfin un rôle de protection, puisque leurs racines descendent sous la zone exploitée par la culture et y
+interceptent les nitrates qui, sans elles, gagneraient la nappe. L'INRAE modélise cet effet dans le projet METAGROFORESTRY,
+mais aucune mesure publique n'en donne encore l'ampleur à l'échelle d'une parcelle française.
 
 ## 5. Ce qui subsiste en France, de la terre à la mer
 
-La France n'a pas tout perdu. Il lui reste des systèmes qui mêlent les espèces, et une partie d'entre eux relient
-précisément la terre et l'eau, jusqu'à la mer : c'est le lien entre ce projet et le précédent.
+La France conserve néanmoins des systèmes qui associent plusieurs espèces, et une partie d'entre eux relient précisément la
+terre à l'eau, jusqu'à la mer, ce qui fait le lien entre ce projet et le précédent.
 
 ### À terre : l'arbre et la culture
 
-**La joualle du Sud-Ouest : trois étages sur la même parcelle.** La joualle associe sur la même parcelle « de la vigne
-poussant sur des arbres fruitiers et plusieurs autres cultures intercalaires ». Ses trois étages :
-- **les arbres**, choisis selon le sol et le climat et renouvelés rang par rang : pêchers de vigne dans les Charentes,
-  cerisiers en Gironde, pruniers d'Ente en Lot-et-Garonne et en Périgord, abricotiers sur les coteaux du Lot et de la
-  Garonne ;
-- **la vigne**, qui grimpe dans ces arbres utilisés comme « tuteurs vivants » ;
-- **entre les rangs**, des bandes larges au moins du passage d'un attelage de bœufs, et parfois de 15 mètres, semées de
-  légumes, de céréales (avoine, blé, orge, sarrasin), de fourrage, de betteraves, puis de pommes de terre ou de tabac.
+La joualle du Sud-Ouest associait sur la même parcelle « de la vigne poussant sur des arbres fruitiers et plusieurs autres
+cultures intercalaires », réparties en trois étages :
+- **les arbres**, choisis selon le sol et le climat et renouvelés rang par rang, comme les pêchers de vigne dans les
+  Charentes, les cerisiers en Gironde, les pruniers d'Ente en Lot-et-Garonne et en Périgord, ou les abricotiers sur les
+  coteaux du Lot et de la Garonne ;
+- **la vigne**, qui grimpait dans ces arbres utilisés comme « tuteurs vivants » ;
+- **entre les rangs**, des bandes au moins aussi larges que le passage d'un attelage de bœufs, parfois jusqu'à 15 mètres,
+  semées de légumes, de céréales (avoine, blé, orge, sarrasin), de fourrage, de betteraves, puis de pommes de terre ou de
+  tabac.
 
-Le même hectare donnait du vin, des fruits, du grain et du fourrage pour les bêtes de trait. La joualle était conçue pour
-l'outil de son temps, l'attelage, comme l'agroforesterie de l'INRAE l'est pour le tracteur.
+Le même hectare fournissait ainsi du vin, des fruits, du grain et du fourrage pour les bêtes de trait. La joualle était en
+somme conçue pour l'outil de son temps, l'attelage, de la même manière que l'agroforesterie de l'INRAE l'est pour le tracteur.
 
-**Un système de deux mille ans.** Virgile, dans les *Géorgiques*, conseille déjà de « marier la vigne à l'ormeau ». La
-joualle était si répandue que la « joualée de vigne » devient une mesure de surface dès 1340. Elle a reculé en trois
-temps. Au XVIIIe siècle, l'abbé Rozier, agronome, la condamne : « Tout arbre nuit à la vigne, autant par son ombrage que
-par ses racines. » En 1851, l'oïdium, apparu à Cartelègue dans le Blayais, « sonne le glas » des joualles du Bordelais ;
-elles se maintiennent plus au nord, dans les Charentes. Au XXe siècle, la joualle se réduit à une alternance de rangs de
-vigne et de bandes de blé jusqu'aux années 1960, puis le remembrement fait disparaître « la quasi-totalité des dernières
-joualles ». Elle survit hors de France, en Galice et surtout dans le Minho portugais, la région du *vinho verde*.
+Ce système est très ancien, puisque Virgile, dans les *Géorgiques*, conseille déjà de « marier la vigne à l'ormeau ». Il
+était d'ailleurs si répandu que la « joualée de vigne » devient une mesure de surface dès 1340. Son recul s'est fait en
+trois temps. Au XVIIIe siècle, l'agronome abbé Rozier le condamne en affirmant que « tout arbre nuit à la vigne, autant par
+son ombrage que par ses racines ». En 1851, l'oïdium, apparu à Cartelègue dans le Blayais, « sonne le glas » des joualles du
+Bordelais, qui se maintiennent toutefois plus au nord, dans les Charentes. Au XXe siècle enfin, la joualle se réduit à une
+alternance de rangs de vigne et de bandes de blé jusqu'aux années 1960, avant que le remembrement ne fasse disparaître « la
+quasi-totalité des dernières joualles ». Elle survit en revanche hors de France, en Galice et surtout dans le Minho
+portugais, la région du *vinho verde*.
 
-Ce déclin résume tout le projet : une condamnation savante (l'arbre « nuit »), un choc sanitaire, puis la machine et la
-réglementation. Les mesures de l'INRAE donnent aujourd'hui tort à l'abbé Rozier : quand la densité est réglée, l'arbre ne
-retire pas à la culture plus qu'il n'ajoute par sa propre production.
+Ce déclin illustre bien l'ensemble du projet, puisqu'il enchaîne une condamnation savante, un choc sanitaire, puis les
+effets conjugués de la machine et de la réglementation. Les mesures de l'INRAE donnent pourtant aujourd'hui tort à l'abbé
+Rozier, car lorsque la densité est bien réglée, l'arbre ne retire pas à la culture davantage qu'il n'apporte par sa propre
+production.
 
-Plus haut, dans le Comminges et le Béarn, les **hautains** faisaient monter la vigne sur des arbres vivants, au-dessus des
-cultures : c'est la même famille que la *vite maritata* italienne décrite plus loin.
+Plus haut, dans le Comminges et le Béarn, les **hautains** faisaient de même monter la vigne sur des arbres vivants,
+au-dessus des cultures, selon un principe proche de la *vite maritata* italienne décrite plus loin.
 
-**Les prés-vergers.** En Normandie, le même pré donne des pommes à cidre, de l'herbe et du lait : les vaches pâturent sous
-des pommiers haute-tige plantés à moins de 100 arbres par hectare, contre jusqu'à 3 000 dans un verger moderne (GRAB). Ce
-système a reculé de 500 000 à environ 100 000 hectares en moins d'un siècle. L'Allemagne en a conservé davantage : ses
-*Streuobstwiesen* couvrent encore 300 000 à 400 000 hectares selon les estimations.
+En Normandie, les **prés-vergers** associent quant à eux pommes à cidre, herbe et lait, puisque les vaches pâturent sous des
+pommiers haute-tige plantés à moins de 100 arbres par hectare, alors qu'un verger moderne peut en compter jusqu'à 3 000
+(GRAB). Ce système est passé de 500 000 à environ 100 000 hectares en moins d'un siècle. L'Allemagne en a mieux conservé,
+puisque ses *Streuobstwiesen* couvrent encore 300 000 à 400 000 hectares selon les estimations.
 
 ### Au bord de l'eau douce : le champ et l'étang
 
-**Les étangs de la Dombes (Ain) : la rizière à poissons française.** Depuis le Moyen Âge, les étangs de la Dombes alternent
-deux années d'« évolage », en eau, où l'on élève carpes, tanches et brochets, et une année d'« assec », vidés et semés
-d'avoine ou de maïs. Le poisson fertilise le fond de l'étang, la céréale en profite, puis l'eau revient sur un sol nettoyé.
-C'est l'équivalent exact de la rizière à poissons chinoise, en rotation plutôt qu'en même temps. Il reste environ 1 100 à
-1 200 étangs sur 11 200 hectares, contre près de 20 000 hectares au milieu du XIXe siècle (APPED ; ministère de la Culture).
+Depuis le Moyen Âge, les **étangs de la Dombes** (Ain) alternent deux années d'« évolage », pendant lesquelles ils restent en
+eau pour l'élevage des carpes, des tanches et des brochets, et une année d'« assec », où ils sont vidés et semés d'avoine ou
+de maïs. Le poisson fertilise le fond de l'étang, la céréale en tire parti, puis l'eau revient sur un sol nettoyé. Ce
+système rejoint donc celui de la rizière à poissons chinoise, à ceci près qu'il procède par rotation plutôt que par
+association simultanée. Il reste aujourd'hui environ 1 100 à 1 200 étangs sur 11 200 hectares, contre près de 20 000 hectares
+au milieu du XIXe siècle (APPED ; ministère de la Culture).
 
-**La Camargue : le riz qui dessale la terre.** Dans le delta du Rhône, le riz n'est pas qu'une culture : l'eau douce qui
-l'inonde lessive le sel qui remonte de la mer et rend la terre cultivable pour les années suivantes. Il tourne avec le blé
-dur et la luzerne, et les fermes y associent souvent un élevage de taureaux ou de moutons dont le fumier revient aux
-champs ; en agriculture biologique, une année de riz alterne avec au moins quatre de cultures sèches (INRAE). La surface en
-riz est passée d'environ 32 000 hectares en 1962 à moins de 5 000 en 1981, remontée à 21 000 en 2012, puis retombée à
-environ 11 500 (FranceAgriMer, 2024).
+En **Camargue**, le riz joue un rôle qui dépasse la simple production, car l'eau douce qui l'inonde lessive le sel remontant
+de la mer et rend ainsi la terre cultivable les années suivantes. Il alterne avec le blé dur et la luzerne, et les fermes y
+associent souvent un élevage de taureaux ou de moutons dont le fumier retourne aux champs ; en agriculture biologique, une
+année de riz alterne d'ailleurs avec au moins quatre années de cultures sèches (INRAE). La surface en riz est passée
+d'environ 32 000 hectares en 1962 à moins de 5 000 en 1981, avant de remonter à 21 000 en 2012 puis de retomber à environ
+11 500 (FranceAgriMer, 2024).
 
-**Le Marais poitevin : la prairie sous les arbres têtards.** Entre Niort et la mer, le « marais mouillé » est un bocage
-d'eau : prairies pâturées ou fauchées, bordées de canaux et de frênes taillés en têtard, dont on récoltait les branches pour
-le bois et le fourrage. Il en reste près de 400 000. L'inventaire de 2001 estimait qu'il manquait déjà près des trois quarts
-des arbres plantés à l'origine ; la chalarose, une maladie du frêne, les décime aujourd'hui, et 17 000 arbres ont été
-replantés depuis 2017 (parc naturel régional ; Natura 2000).
+Entre Niort et la mer, le « marais mouillé » du **Marais poitevin** forme une sorte de bocage d'eau, où les prairies,
+pâturées ou fauchées, sont bordées de canaux et de frênes taillés en têtard, dont on récoltait les branches pour le bois et
+le fourrage. Il en reste près de 400 000. L'inventaire de 2001 estimait toutefois qu'il manquait déjà près des trois quarts
+des arbres plantés à l'origine, et la chalarose, une maladie du frêne, les décime aujourd'hui, si bien que 17 000 arbres ont
+dû être replantés depuis 2017 (parc naturel régional ; Natura 2000).
 
 ### Au contact de la mer : ce que la mer donne à la terre
 
-**Les prés-salés.** Dans la baie du Mont-Saint-Michel et celle de la Somme, des moutons pâturent les herbus que la marée
-recouvre : l'herbe salée, nourrie par les sédiments de la mer, devient de la viande, sans engrais ni culture. Les deux baies
-ont chacune leur appellation d'origine protégée. La baie du Mont-Saint-Michel produit 8 000 à 10 000 agneaux par an, dont
-environ 1 500 sous appellation (*Réussir*, 2024).
+Dans les baies du Mont-Saint-Michel et de la Somme, des moutons pâturent les herbus que la marée recouvre régulièrement.
+L'herbe salée, nourrie par les sédiments marins, y est ainsi transformée en viande sans engrais ni culture, et chacune des
+deux baies dispose de sa propre appellation d'origine protégée. La baie du Mont-Saint-Michel produit 8 000 à 10 000 agneaux
+de **prés-salés** par an, dont environ 1 500 sous appellation (*Réussir*, 2024).
 
-**Le goémon et la ceinture dorée.** Sur la côte du Léon, autour de Roscoff et de Saint-Pol-de-Léon, les paysans ont
-fertilisé pendant des siècles leurs champs avec le goémon ramassé sur les grèves et avec le maërl, un sable calcaire
-d'algues. Ce sont ces terres, enrichies par la mer, qui ont fait vers 1880 la « ceinture dorée » des légumes bretons
-(artichauts, choux-fleurs, oignons). L'épandage d'algues y est devenu minoritaire, mais la ressource reste : Lanildut, premier
-port goémonier d'Europe, débarque environ 35 000 tonnes d'algues par an, aujourd'hui surtout pour l'industrie.
+Sur la côte du Léon, autour de Roscoff et de Saint-Pol-de-Léon, les paysans ont longtemps fertilisé leurs champs avec le
+**goémon** ramassé sur les grèves et avec le maërl, un sable calcaire formé d'algues. Ce sont précisément ces terres,
+enrichies par la mer, qui ont donné naissance vers 1880 à la « ceinture dorée » des légumes bretons (artichauts,
+choux-fleurs, oignons). L'épandage d'algues y est certes devenu minoritaire, mais la ressource demeure, puisque Lanildut,
+premier port goémonier d'Europe, débarque environ 35 000 tonnes d'algues par an, aujourd'hui destinées surtout à
+l'industrie.
 
-**Les claires de Marennes-Oléron : la saline devenue parc à huîtres.** Quand le sel de l'Atlantique a cessé de payer, les
-ostréiculteurs charentais ont repris les marais salants abandonnés et en ont fait des « claires », bassins d'argile où les
-huîtres sont affinées. Environ 3 000 hectares de claires produisent une huître sous indication géographique protégée,
-environ 17 000 tonnes par an. C'est un recyclage d'infrastructure : un ouvrage de la terre conçu pour la mer, réemployé
-pour un autre usage de la mer.
+À **Marennes-Oléron**, enfin, lorsque le sel de l'Atlantique a cessé d'être rentable, les ostréiculteurs charentais ont
+repris les marais salants abandonnés pour en faire des « claires », c'est-à-dire des bassins d'argile où les huîtres sont
+affinées. Environ 3 000 hectares de claires produisent aujourd'hui une huître sous indication géographique protégée, à
+hauteur d'environ 17 000 tonnes par an. On a donc réemployé un ouvrage aménagé sur la terre pour exploiter le sel marin au
+profit d'un autre usage de la mer.
 
 | Système | Région | Ce qui est mêlé | Surface ou volume | Tendance |
 |---|---|---|---|---|
@@ -194,59 +208,61 @@ pour un autre usage de la mer.
 
 ## 6. Ailleurs : onze systèmes qui mêlent
 
-L'agriculture 2.0 n'invente rien : elle redécouvre des systèmes qui ont fait leurs preuves, et les mesure. En voici onze,
-classés par continent.
+L'agriculture 2.0 n'invente donc rien ; elle redécouvre des systèmes qui ont fait leurs preuves et s'attache à les mesurer.
+Les onze exemples suivants sont classés par continent.
 
 **En Europe.**
 - **L'alberata aversana (Campanie).** Entre Naples et Caserte, la vigne d'asprinio est « mariée » à des peupliers et monte
-  à 7 à 15 mètres ; on la vendange sur de hautes échelles, et le sol reste libre pour d'autres cultures. C'est la *vite
-  maritata* des Étrusques. Elle couvrait plus de 16 000 hectares en 1960 ; il en reste quelques centaines (Italia Nostra),
-  aujourd'hui protégées par un présidium Slow Food.
-- **La dehesa et le montado (Espagne, Portugal).** Environ 3,5 millions d'hectares de prairies plantées de chênes donnent
-  sur le même sol de l'herbe, du liège, du bois et des glands, que les porcs ibériques viennent manger à l'automne ; leurs
-  déjections fertilisent la prairie. Le décret de 2014 sur le porc « de bellota » impose au moins 46 kg pris à la glandée, en
-  plus de 60 jours, et 0,25 à 1,25 porc par hectare au plus selon la couverture des arbres. Environ 700 000 porcs étaient
-  certifiés par saison au milieu des années 2010.
+  jusqu'à 7 à 15 mètres, si bien qu'on la vendange sur de hautes échelles, tandis que le sol reste libre pour d'autres
+  cultures. Héritière de la *vite maritata* des Étrusques, elle couvrait plus de 16 000 hectares en 1960 ; il n'en reste
+  que quelques centaines (Italia Nostra), aujourd'hui protégées par un présidium Slow Food.
+- **La dehesa et le montado (Espagne, Portugal).** Environ 3,5 millions d'hectares de prairies plantées de chênes
+  fournissent sur le même sol de l'herbe, du liège, du bois et des glands, que les porcs ibériques viennent consommer à
+  l'automne, et dont les déjections fertilisent en retour la prairie. Le décret de 2014 sur le porc « de bellota » impose
+  d'ailleurs au moins 46 kg pris à la glandée en plus de 60 jours, et limite la charge à 0,25 à 1,25 porc par hectare selon
+  la couverture des arbres. Environ 700 000 porcs étaient certifiés par saison au milieu des années 2010.
 
 **En Afrique.**
-- **L'arbre qui perd ses feuilles à la saison des pluies (Malawi, Zambie).** *Faidherbia albida* fait l'inverse des autres
-  arbres : il perd ses feuilles quand commence la saison des pluies et ne fait donc pas d'ombre au maïs pendant sa
-  croissance, puis il enrichit le sol en azote et en matière organique par ses feuilles tombées. En Zambie, la FAO relève
-  4,7 t/ha de maïs sous les arbres contre 1,9 t/ha hors de leur couvert. Les services agricoles du Malawi et de la Zambie
-  recommandent une centaine d'arbres par hectare.
-- **La régénération naturelle au Niger.** Plutôt que de planter, les paysans du sud du Niger laissent repousser et taillent
-  les souches d'arbres qui subsistent dans leurs champs. La pratique s'est étendue à environ 5 millions d'hectares et
-  quelque 200 millions d'arbres (partenariat des Nations unies). Les mesures locales montrent des rendements de mil plus
-  élevés près des arbres.
-- **L'oasis à trois étages (Maghreb).** En haut le palmier dattier, qui fait de l'ombre et coupe le vent ; au milieu les
-  fruitiers (abricotier, grenadier, figuier, olivier) ; au sol le fourrage, les légumes et les céréales. Les oasis de palmiers
-  couvrent environ 500 000 hectares dans la région et font vivre plus de cinq millions de personnes (CIRAD). Leur menace est
-  précisément la conversion en monoculture de palmiers.
+- **L'arbre qui perd ses feuilles à la saison des pluies (Malawi, Zambie).** Contrairement aux autres arbres, *Faidherbia
+  albida* perd ses feuilles au début de la saison des pluies ; il ne fait donc pas d'ombre au maïs pendant sa croissance,
+  puis enrichit le sol en azote et en matière organique grâce à ses feuilles tombées. En Zambie, la FAO relève ainsi
+  4,7 t/ha de maïs sous les arbres, contre 1,9 t/ha hors de leur couvert, et les services agricoles du Malawi et de la
+  Zambie recommandent une centaine d'arbres par hectare.
+- **La régénération naturelle au Niger.** Plutôt que de planter, les paysans du sud du Niger laissent repousser, puis
+  taillent, les souches d'arbres qui subsistent dans leurs champs. Cette pratique s'est étendue à environ 5 millions
+  d'hectares et quelque 200 millions d'arbres (partenariat des Nations unies), et les mesures locales relèvent des
+  rendements de mil plus élevés à proximité des arbres.
+- **L'oasis à trois étages (Maghreb).** Le palmier dattier occupe l'étage supérieur, où il fait de l'ombre et coupe le
+  vent ; les fruitiers (abricotier, grenadier, figuier, olivier) occupent l'étage intermédiaire, tandis que le fourrage, les
+  légumes et les céréales poussent au sol. Les oasis de palmiers couvrent environ 500 000 hectares dans la région et font
+  vivre plus de cinq millions de personnes (CIRAD) ; leur principale menace est d'ailleurs leur conversion en monoculture
+  de palmiers.
 
 **En Asie.**
-- **La rizière à poissons (Qingtian, Chine).** On y élève des carpes dans les rizières depuis plus de mille ans : les
-  poissons mangent les insectes et les mauvaises herbes, et fertilisent l'eau. C'est l'un des premiers systèmes reconnus en
-  2005 par la FAO comme « patrimoine agricole mondial », qui souligne la baisse des pesticides et des engrais.
-- **La rizière à canards (Japon).** La méthode *aigamo*, popularisée par Takao Furuno : des canetons de sept jours sont lâchés
-  dans la rizière, à raison de 15 à 30 pour 1 000 m², et retirés au bout de huit semaines. Ils mangent les mauvaises herbes
-  et les insectes, et leurs fientes fertilisent. Environ 10 000 agriculteurs japonais l'appliquent ; Furuno vend riz, canards,
-  œufs et légumes sur 3,2 hectares.
-- **Le blé sous les paulownias (Chine).** Cité plus haut : un système répandu sur la plaine du fleuve Jaune, qui montre que
-  le gain dépend de la densité des arbres.
-- **Le jardin-forêt kandyen (Sri Lanka).** Sur des parcelles de 0,4 hectare en moyenne, plusieurs étages se superposent :
-  arbres à bois, fruitiers (jacquier, manguier), plantes d'exportation (poivre, girofle, café), plantes médicinales. Une
-  étude y compte, par hectare, 73 arbres à bois, 193 fruitiers, 300 plantes médicinales et 147 plantes d'exportation.
-  Le système est pratiqué depuis plusieurs siècles.
+- **La rizière à poissons (Qingtian, Chine).** On y élève des carpes dans les rizières depuis plus de mille ans ; les
+  poissons consomment les insectes et les mauvaises herbes tout en fertilisant l'eau. Ce système figure parmi les premiers
+  reconnus en 2005 par la FAO comme « patrimoine agricole mondial », notamment en raison de la baisse des pesticides et des
+  engrais qu'il permet.
+- **La rizière à canards (Japon).** La méthode *aigamo*, popularisée par Takao Furuno, consiste à lâcher dans la rizière
+  des canetons de sept jours, à raison de 15 à 30 pour 1 000 m², puis à les retirer au bout de huit semaines. Ils mangent
+  les mauvaises herbes et les insectes, et leurs fientes fertilisent la parcelle. Environ 10 000 agriculteurs japonais
+  l'appliquent, et Furuno lui-même vend riz, canards, œufs et légumes produits sur 3,2 hectares.
+- **Le blé sous les paulownias (Chine).** Ce système, déjà évoqué plus haut, est répandu dans la plaine du fleuve Jaune et
+  montre que le gain dépend étroitement de la densité des arbres.
+- **Le jardin-forêt kandyen (Sri Lanka).** Sur des parcelles de 0,4 hectare en moyenne se superposent plusieurs étages
+  d'arbres à bois, de fruitiers (jacquier, manguier), de plantes d'exportation (poivre, girofle, café) et de plantes
+  médicinales. Une étude y dénombre, par hectare, 73 arbres à bois, 193 fruitiers, 300 plantes médicinales et 147 plantes
+  d'exportation, dans un système pratiqué depuis plusieurs siècles.
 
 **En Amérique.**
-- **La cabruca (Bahia, Brésil).** Le cacao pousse sous les grands arbres de la forêt atlantique, dont on n'a éclairci que
-  le sous-bois : 35 à 355 arbres d'ombrage par hectare selon les parcelles. Environ 70 % des quelque 650 000 hectares de
-  cacao de Bahia seraient conduits ainsi, et la loi de l'État impose depuis 2014 d'y garder au moins 20 arbres natifs par
-  hectare.
-- **Le pâturage arboré intensif (Colombie, Mexique).** Les vaches pâturent entre des rangs serrés de *Leucaena*, un arbuste
-  fourrager qui fixe l'azote de l'air, planté à plus de 10 000 pieds par hectare sous des arbres à bois. Les comparaisons
-  publiées trouvent 1,5 à 5 fois plus de lait par hectare et par jour que dans les prairies classiques (Murgueitio et al.,
-  2011).
+- **La cabruca (Bahia, Brésil).** Le cacao y pousse sous les grands arbres de la forêt atlantique, dont on n'a éclairci que
+  le sous-bois, avec 35 à 355 arbres d'ombrage par hectare selon les parcelles. Environ 70 % des quelque 650 000 hectares de
+  cacao de Bahia seraient conduits de cette manière, et la loi de l'État impose depuis 2014 d'y conserver au moins
+  20 arbres natifs par hectare.
+- **Le pâturage arboré intensif (Colombie, Mexique).** Les vaches y pâturent entre des rangs serrés de *Leucaena*, un
+  arbuste fourrager qui fixe l'azote de l'air, planté à plus de 10 000 pieds par hectare sous des arbres à bois. Les
+  comparaisons publiées font état de 1,5 à 5 fois plus de lait par hectare et par jour que dans les prairies classiques
+  (Murgueitio et al., 2011).
 
 | Système | Pays | Ce qui est mêlé | Surface | Gain ou fait chiffré |
 |---|---|---|---|---|
@@ -266,30 +282,34 @@ classés par continent.
 
 ## 7. Ce que ces systèmes enseignent
 
-**Ils produisent plusieurs choses sur le même hectare** (grain, bois, fruits, lait, viande), et c'est ce total, non le
-rendement d'une seule culture, qui compte. **Ils recyclent sur place ce que la monoculture achète** : l'azote (fientes,
-déjections, arbres et arbustes fixateurs), le désherbage (canards, poissons, porcs), la protection contre le vent et la
-chaleur (palmier, paulownia). **Ils se règlent** : densité d'arbres, nombre de porcs ou de canetons par hectare ; trop
-d'arbres, et le blé baisse. **Ils ont reculé pour des raisons qui ne tiennent pas à leur productivité** : ils se prêtaient
-mal à la machine, et la politique agricole payait l'hectare d'une seule culture.
+Ces systèmes ont d'abord en commun de produire plusieurs choses sur le même hectare (grain, bois, fruits, lait, viande), et
+c'est bien ce total, plutôt que le rendement d'une seule culture, qu'il convient de comparer. Ils recyclent en outre sur
+place ce que la monoculture doit acheter, qu'il s'agisse de l'azote (apporté par les fientes, les déjections ou les arbres
+fixateurs), du désherbage (assuré par les canards, les poissons ou les porcs) ou de la protection contre le vent et la
+chaleur (offerte par le palmier ou le paulownia). Ils supposent par ailleurs un réglage précis de la densité d'arbres ou du
+nombre d'animaux par hectare, faute de quoi le rendement de la culture baisse. Enfin, leur recul tient moins à leur
+productivité qu'à deux facteurs extérieurs, à savoir leur difficile adaptation à la machine et une politique agricole qui
+rémunérait l'hectare d'une seule culture.
 
-Ce que la recherche apporte, c'est de les rendre compatibles avec la machine : des rangées d'arbres espacées pour le passage
-des engins, des essences choisies pour la valeur de leur bois, des densités mesurées. Ce qui manque en France, c'est
-l'échelle : 10 000 à 15 000 hectares pour 11 millions d'hectares de grandes cultures.
+L'apport de la recherche consiste précisément à les rendre compatibles avec la machine, en espaçant les rangées d'arbres
+pour le passage des engins, en choisissant des essences pour la valeur de leur bois et en mesurant les densités. Ce qui fait
+défaut en France, c'est donc avant tout l'échelle, puisque l'agroforesterie moderne n'y couvre que 10 000 à 15 000 hectares
+pour 11 millions d'hectares de grandes cultures.
 
-**Le lien avec la mer.** Les systèmes français qui ont le mieux résisté sont ceux qui vivent au contact de l'eau : la
-Dombes, la Camargue, le Marais poitevin, les prés-salés, les claires. Là, l'eau imposait de mêler, et la machine ne pouvait
-pas tout séparer. Ils montrent ce que le projet précédent sur la mer laissait entrevoir : la terre et la mer ne sont pas
-deux économies distinctes. La mer nourrit l'herbe des prés-salés et les champs du Léon ; la terre, par ses fleuves, nourrit
-les huîtres des claires. Les séparer, c'est perdre dans les deux sens.
+On remarque en outre que les systèmes français qui ont le mieux résisté sont ceux qui vivent au contact de l'eau, comme la
+Dombes, la Camargue, le Marais poitevin, les prés-salés ou les claires. L'eau y imposait en effet d'associer les usages, et
+la machine ne pouvait pas tout dissocier. Ces exemples confirment ce que le projet précédent sur la mer laissait entrevoir,
+à savoir que la terre et la mer forment une seule et même économie : la mer nourrit l'herbe des prés-salés et les champs du
+Léon, tandis que la terre, par ses fleuves, nourrit les huîtres des claires. Les séparer revient donc à perdre de part et
+d'autre.
 
 ## 8. Est-ce finançable ? Un hectare de blé contre un hectare de blé et de noyers
 
-L'agroforesterie produit davantage par hectare. Mais un agriculteur, et la banque qui lui prête, ne raisonnent pas en
-production : ils raisonnent en trésorerie. Le modèle compare, année par année sur 45 ans, un hectare de blé seul et un
-hectare de blé planté de 50 noyers, avec et sans aides publiques, en année normale et en année de crise.
+Si l'agroforesterie produit davantage par hectare, un agriculteur, comme la banque qui lui prête, raisonne d'abord en
+trésorerie. Le modèle compare donc, année par année sur 45 ans, un hectare de blé seul et un hectare de blé planté de
+50 noyers, avec et sans aides publiques, en année normale et en année de crise.
 
-**Les hypothèses**, toutes sourcées et modifiables en tête de la section 14 d'`analyse.R` :
+Les hypothèses, toutes sourcées, peuvent être modifiées en tête de la section 14 d'`analyse.R` :
 
 | Paramètre | Valeur | Source |
 |---|---|---|
@@ -303,11 +323,12 @@ hectare de blé planté de 50 noyers, avec et sans aides publiques, en année no
 | Prix du bois de noyer | 300 (prudent), 600 (central), 1 000 €/m3 (optimiste) | *Terre-net*, 2012 (1 000 € « optimiste ») |
 | Taux d'actualisation | 4 % (sensibilité 2 % et 6 %) | hypothèse |
 
-**Premier constat : le blé seul ne vit plus sans aides.** Avec 1 500 € de produit et 1 600 € de charges, un hectare de blé
-perd 100 € par an sans aides ; en année de crise, il perd 120 € même avec les aides. C'est le diagnostic d'Arvalis pour 2025.
+Le modèle montre d'abord que le blé seul n'est plus viable sans aides. Avec 1 500 € de produit pour 1 600 € de charges, un
+hectare de blé perd en effet 100 € par an sans aides, et 120 € en année de crise même lorsque les aides sont versées, ce qui
+rejoint le diagnostic d'Arvalis pour 2025.
 
-**Deuxième constat : l'arbre est rentable, et davantage en temps de crise.** Au prix central du bois, l'hectare
-agroforestier rapporte, en valeur actualisée sur 45 ans, de 1 000 à 2 800 € de plus que l'hectare de blé seul :
+L'arbre, en revanche, se révèle rentable, et davantage encore en période de crise. Au prix central du bois, l'hectare
+agroforestier rapporte en effet, en valeur actualisée sur 45 ans, de 1 000 à 2 800 € de plus que l'hectare de blé seul.
 
 | Gain actualisé à 4 % (€/ha) | Bois à 300 €/m3 | Bois à 600 €/m3 | Bois à 1 000 €/m3 |
 |---|---|---|---|
@@ -316,64 +337,71 @@ agroforestier rapporte, en valeur actualisée sur 45 ans, de 1 000 à 2 800 € 
 | Blé en crise, avec aides | +720 | **+2 770** | +5 510 |
 | Blé en crise, sans aides | −510 | **+1 540** | +4 280 |
 
-Le rendement interne de l'écart va de 4,8 à 7,0 % au prix central. La crise du blé *améliore* l'agroforesterie : le blé
-perdu sous les arbres vaut moins, alors que le bois ne dépend pas du marché des céréales. L'arbre est une diversification,
-comme un actif peu corrélé dans un portefeuille.
+Le taux de rendement interne de l'écart s'établit entre 4,8 et 7,0 % au prix central. La crise du blé améliore donc
+paradoxalement la position de l'agroforesterie, car le blé perdu sous les arbres vaut alors moins, tandis que le prix du bois
+ne dépend pas du marché des céréales. L'arbre joue ainsi le rôle d'une diversification, à la manière d'un actif peu corrélé
+au reste d'un portefeuille.
 
-**Troisième constat : les aides PAC à l'hectare ne changent presque rien à l'écart ; la subvention de plantation, si.**
-Sous 100 arbres par hectare, la parcelle touche la même aide qu'un champ nu : les supprimer appauvrit les deux hectares
-autant. Ce qui pèse, c'est l'aide à la plantation : sans elle, le gain baisse d'environ 1 200 €/ha, et le prix du bois
-nécessaire pour rentrer dans ses frais passe de 275 à 454 €/m3 (de 196 à 375 €/m3 en crise). C'est aussi ce qui explique le
-passé : si la parcelle plantée perdait toute son aide, comme les terres boisées exclues des paiements de 1992, la perte
-atteindrait environ 5 800 €/ha en valeur actualisée (280 € par an pendant 45 ans), bien plus que le gain de l'arbre.
+Les aides PAC à l'hectare, quant à elles, ne modifient presque pas l'écart. En dessous de 100 arbres par hectare, la parcelle
+plantée touche en effet la même aide qu'un champ nu, de sorte que leur suppression appauvrit les deux hectares dans la même
+mesure. La subvention de plantation pèse en revanche nettement plus lourd, puisque sans elle le gain diminue d'environ
+1 200 €/ha et le prix du bois nécessaire pour rentrer dans ses frais passe de 275 à 454 €/m3 (de 196 à 375 €/m3 en crise).
+Ce calcul éclaire également le passé : si la parcelle plantée perdait toute son aide, comme les terres boisées exclues des
+paiements de 1992, la perte atteindrait environ 5 800 €/ha en valeur actualisée (280 € par an pendant 45 ans), soit bien
+davantage que le gain apporté par l'arbre.
 
 ![Trésorerie](sorties/14_tresorerie_agroforesterie.png)
 
-**Quatrième constat, le vrai frein : la rentabilité arrive trop tard pour être financée.** L'écart de trésorerie reste
-négatif pendant 44 ans et atteint un creux de 2 300 à 5 000 €/ha ; tout se rembourse à la coupe. Aucun prêt agricole
-classique ne court sur 45 ans, et l'agriculteur qui plante à 40 ans ne vendra probablement pas le bois lui-même. Le projet
-est rentable, mais il n'est pas finançable par le crédit ordinaire : c'est un actif de long terme, comme une forêt ou une
-infrastructure, porté par un acteur qui raisonne à court terme.
+Le principal frein tient toutefois au calendrier, car la rentabilité arrive trop tard pour être financée par les moyens
+habituels. L'écart de trésorerie reste en effet négatif pendant 44 ans et atteint un creux de 2 300 à 5 000 €/ha, l'ensemble
+n'étant remboursé qu'au moment de la coupe. Or aucun prêt agricole classique ne court sur 45 ans, et l'agriculteur qui plante
+à 40 ans ne vendra probablement pas le bois lui-même. Le projet est donc rentable, mais difficilement finançable par le
+crédit ordinaire, puisqu'il s'agit d'un actif de long terme, comparable à une forêt ou à une infrastructure, porté par un
+acteur qui raisonne le plus souvent à court terme.
 
 ![Gain selon le prix du bois](sorties/15_gain_prix_bois.png)
 
-**Cinquième constat : le taux d'actualisation décide.** Au prix central, le gain vaut 7 400 €/ha à 2 %, 2 230 € à 4 % et
-190 € à 6 %. Pour un actif qui paie dans 45 ans, le coût de l'argent pèse plus que le prix du bois.
+Le taux d'actualisation pèse lui aussi fortement sur le résultat. Au prix central, le gain atteint 7 400 €/ha à 2 %, contre
+2 230 € à 4 % et seulement 190 € à 6 %. Pour un actif qui ne paie qu'au bout de 45 ans, le coût de l'argent compte donc
+davantage que le prix du bois lui-même.
 
-**Ce qu'il faudrait financer, donc.** Pas une aide de plus à l'hectare, mais le creux de trésorerie : un prêt de très long
-terme adossé à la valeur du bois sur pied, une avance remboursable à la coupe, ou une valeur de l'arbre reconnue dans la
-valeur de la terre lors d'une vente ou d'une transmission. C'est un problème de banquier, pas d'agronome.
+On voit bien ici que l'enjeu porte moins sur une aide supplémentaire à l'hectare que sur le financement du creux de
+trésorerie. Plusieurs instruments pourraient y répondre, comme un prêt de très long terme adossé à la valeur du bois sur
+pied, une avance remboursable à la coupe, ou encore la prise en compte de la valeur des arbres dans le prix de la terre lors
+d'une vente ou d'une transmission. La question relève par conséquent autant du banquier que de l'agronome.
 
 ## 9. En complément : ne plus perdre l'azote que l'on épand
 
-L'agriculture 2.0 réduit le besoin d'engrais ; elle ne le supprime pas. L'autre moitié du sujet est de ne plus perdre ce que
-l'on épand.
+Si l'agriculture 2.0 réduit le besoin d'engrais, elle ne le supprime pas pour autant ; l'autre volet du sujet consiste donc
+à ne plus perdre ce que l'on épand.
 
-**L'excès est mesuré.** En 2020, 4,2 millions de tonnes d'azote ont été apportées aux terres agricoles françaises : pour
-moitié des engrais minéraux, pour 40 % des déjections animales, le reste venant des légumineuses et de l'air. Les cultures
-et les prairies n'en ont prélevé que 2,7 millions, soit 64 %. 540 000 tonnes se sont volatilisées, surtout sous forme
-d'ammoniac, et 970 000 tonnes sont restées en excédent dans les sols (INSEE, 2024). L'azote n'est pas nocif pour les
-cultures, c'est l'élément dont elles ont le plus besoin ; ce qui coûte, c'est l'excès, que la plante ne prend pas et qui part
-vers les nappes, les fleuves et l'air.
+Cet excès est d'ailleurs bien mesuré. En 2020, 4,2 millions de tonnes d'azote ont été apportées aux terres agricoles
+françaises, pour moitié sous forme d'engrais minéraux et pour 40 % sous forme de déjections animales, le reste provenant des
+légumineuses et de l'air. Les cultures et les prairies n'en ont toutefois prélevé que 2,7 millions, soit 64 %, tandis que
+540 000 tonnes se sont volatilisées, principalement sous forme d'ammoniac, et que 970 000 tonnes sont restées en excédent dans
+les sols (INSEE, 2024). L'azote n'est évidemment pas nocif pour les cultures, puisque c'est l'élément dont elles ont le plus
+besoin ; le coût provient de l'excès que la plante ne prélève pas et qui rejoint les nappes, les fleuves et l'air.
 
 ![Bilan azoté](sorties/12_bilan_azote.png)
 
-**Les leviers, du plus gros au plus petit.**
-- **Les pertes d'ammoniac des élevages** : environ 360 000 tonnes d'azote par an, les deux tiers des pertes dans l'air
-  (INSEE). Injecter le lisier dans le sol ou l'enfouir vite réduit ces pertes de 70 à 90 % (chambres d'agriculture, d'après
-  l'ADEME). C'est aussi une question d'agriculture mêlée : entre 2010 et 2020, la France a perdu 30 % de ses fermes de
-  polyculture-élevage, celles qui épandaient sur leurs champs le fumier de leurs bêtes.
-- **Les légumineuses** (pois, féverole, luzerne, trèfle) fixent l'azote de l'air : un blé semé après un pois demande 20 à
-  60 kg d'azote de moins par hectare (DRAAF Grand Est, d'après Terres Inovia).
-- **L'urine** : 85 % de l'azote de nos excréments s'y trouve, et les stations d'épuration le renvoient dans l'air. Sur environ
-  300 000 tonnes excrétées, 10 % seulement reviennent aux cultures (Starck, Fardet et Esculier, LEESU, 2023). Collectée à
-  part, elle remplacerait environ 15 % des engrais azotés de synthèse. Victor Hugo l'écrivait en 1862 : « Si notre or est
-  fumier, en revanche, notre fumier est or. »
-- **Le pilotage de la dose** : dans neuf essais en Centre-Val de Loire, la méthode APPI-N de l'INRAE et d'Arvalis a réduit
-  la dose de 33 kg d'azote par hectare sans perte significative de rendement.
-- **Les cultures intermédiaires** entre deux récoltes réduisent de plus de moitié le nitrate des eaux de drainage (INRA, 2012).
-- **La mer cultivée** (algues, moules) rend un peu d'azote aux champs, mais elle en retire environ 1 000 tonnes, contre
-  607 000 tonnes apportées chaque année par les fleuves (SDES) : un complément, pas une solution.
+Les leviers disponibles sont présentés ci-dessous, du plus important au plus modeste.
+- **Les pertes d'ammoniac des élevages** représentent environ 360 000 tonnes d'azote par an, soit les deux tiers des pertes
+  dans l'air (INSEE). Injecter le lisier dans le sol ou l'enfouir rapidement permet de les réduire de 70 à 90 % (chambres
+  d'agriculture, d'après l'ADEME). Ce levier rejoint d'ailleurs la question de l'agriculture mêlée, puisque la France a perdu
+  entre 2010 et 2020 30 % de ses fermes de polyculture-élevage, qui épandaient sur leurs champs le fumier de leurs propres
+  bêtes.
+- **Les légumineuses** (pois, féverole, luzerne, trèfle) fixent l'azote de l'air, si bien qu'un blé semé après un pois
+  demande 20 à 60 kg d'azote de moins par hectare (DRAAF Grand Est, d'après Terres Inovia).
+- **L'urine** contient 85 % de l'azote de nos excréments, que les stations d'épuration renvoient pour l'essentiel dans
+  l'air. Sur environ 300 000 tonnes excrétées, 10 % seulement reviennent ainsi aux cultures (Starck, Fardet et Esculier,
+  LEESU, 2023), alors qu'une collecte séparée permettrait de remplacer environ 15 % des engrais azotés de synthèse. Victor
+  Hugo l'écrivait déjà en 1862 : « Si notre or est fumier, en revanche, notre fumier est or. »
+- **Le pilotage de la dose** a permis, dans neuf essais conduits en Centre-Val de Loire avec la méthode APPI-N de l'INRAE et
+  d'Arvalis, de réduire la dose de 33 kg d'azote par hectare sans perte significative de rendement.
+- **Les cultures intermédiaires** semées entre deux récoltes réduisent de plus de moitié le nitrate des eaux de drainage
+  (INRA, 2012).
+- **La mer cultivée** (algues, moules) peut rendre un peu d'azote aux champs, mais elle n'en retire qu'environ 1 000 tonnes,
+  alors que les fleuves y en apportent 607 000 chaque année (SDES) ; elle reste donc un complément plutôt qu'une solution.
 
 Le détail de ces chiffres (boues d'épuration par pays, devenir de l'azote des excréments, ordres de grandeur marins) figure en
 annexe.
@@ -389,36 +417,37 @@ annexe.
 | Légumineuses | 20 à 60 kg d'azote en moins par hectare sur le blé suivant | une rotation | débouchés et rendements à sécuriser |
 | Séparation de l'urine | jusqu'à 15 % des engrais azotés de synthèse | dès les constructions neuves | réseaux à créer, collecte |
 
-La mer, le fleuve, puis la terre : dans chaque domaine, le savoir existe et il est souvent français, qu'il s'agisse de GTT
-pour les cuves des méthaniers ou de l'INRAE pour l'agroforesterie. Ce qui manque n'est pas la technique, mais sa mise en
-œuvre. Ce sera l'objet du projet suivant.
+Qu'il s'agisse de la mer, du fleuve ou de la terre, le savoir-faire existe donc, et il est souvent français, comme le
+montrent GTT pour les cuves des méthaniers ou l'INRAE pour l'agroforesterie. La difficulté réside davantage dans sa mise en
+œuvre, qui fera l'objet du projet suivant.
 
 ## Simulateur Power BI
 
-Le simulateur porte sur le complément de la section 9, le seul volet du projet qui se prête à une addition de tonnes.
-Le dossier `powerbi/` contient un simulateur interactif (format PBIP, à ouvrir avec Power BI Desktop) qui pose une seule
-question : **combien d'engrais azotés importés pourrait-on remplacer ?** Une grande jauge représente les 2 millions de tonnes
-d'azote de synthèse consommées chaque année, remplies levier par levier ; trois chiffres donnent l'azote apporté, la part des
-engrais remplacée et la comparaison avec la production française (800 000 t).
+Le simulateur porte sur le complément présenté en section 9, seul volet du projet qui se prête à une addition de tonnes.
+Le dossier `powerbi/` contient en effet un simulateur interactif (format PBIP, à ouvrir avec Power BI Desktop) construit
+autour d'une seule question : **combien d'engrais azotés importés pourrait-on remplacer ?** Une grande jauge représente les
+2 millions de tonnes d'azote de synthèse consommées chaque année, que l'on remplit levier par levier, et trois indicateurs
+donnent l'azote apporté, la part des engrais remplacée et la comparaison avec la production française (800 000 t).
 
 ![Simulateur : maximum théorique](powerbi/simulateur_maximum.png)
 
-Deux scénarios. **« Maximum théorique »** : toute l'urine collectée (255 000 t d'azote) et toutes les pertes d'ammoniac des
-élevages évitées (360 000 t), soit 615 000 t, 31 % des engrais azotés consommés et 77 % de la production française. C'est un
-plafond, pas une promesse. **« Personnalisé »** : quatre curseurs règlent la part de l'urine collectée, la part des pertes
-d'ammoniac évitées, les hectares de légumineuses en plus et les tonnes d'algues cultivées. Les légumineuses et les algues
-n'entrent pas dans le maximum, faute de plafond sourcé. Une page compare les pays européens sur leurs boues d'épuration, une
-autre liste chaque coefficient avec sa source. Exemple de scénario personnalisé ci-dessous : 40 % de l'urine collectée,
-45 % des pertes d'ammoniac évitées, un million d'hectares de légumineuses en plus et 300 000 tonnes d'algues apportent
-305 350 tonnes d'azote, soit 15 % des engrais azotés consommés.
+Deux scénarios sont proposés. Le premier, intitulé **« Maximum théorique »**, suppose que toute l'urine est collectée
+(255 000 t d'azote) et que toutes les pertes d'ammoniac des élevages sont évitées (360 000 t), ce qui représente 615 000 t,
+soit 31 % des engrais azotés consommés et 77 % de la production française ; il s'agit bien sûr d'un plafond plutôt que d'un
+objectif. Le second, **« Personnalisé »**, permet de régler par quatre curseurs la part de l'urine collectée, la part des
+pertes d'ammoniac évitées, les hectares de légumineuses supplémentaires et les tonnes d'algues cultivées. Les légumineuses
+et les algues n'entrent pas dans le maximum, faute de plafond sourcé. Une page compare par ailleurs les pays européens sur
+leurs boues d'épuration, et une autre liste chaque coefficient avec sa source. Dans l'exemple ci-dessous, 40 % de l'urine
+collectée, 45 % des pertes d'ammoniac évitées, un million d'hectares de légumineuses supplémentaires et 300 000 tonnes
+d'algues apportent 305 350 tonnes d'azote, soit 15 % des engrais azotés consommés.
 
 ![Simulateur : scénario personnalisé](powerbi/simulateur_personnalise.png)
 
-Côté technique : chaque curseur est un paramètre de simulation (`GENERATESERIES`, `SELECTEDVALUE` avec valeur par défaut) ;
-les coefficients sont des mesures constantes regroupées dans un dossier « Hypothèses », si bien qu'une hypothèse se change à
-un seul endroit ; les pourcentages sont stockés en entiers (0 à 100) pour que le filtre d'un curseur retrouve toujours sa
-valeur exacte ; les cartes affichent un texte déjà formaté (« 615 000 t ») plutôt que les abréviations par défaut. Les
-calculs sont vérifiés par requêtes DAX sur le modèle.
+Sur le plan technique, chaque curseur est un paramètre de simulation (`GENERATESERIES`, `SELECTEDVALUE` avec valeur par
+défaut), et les coefficients sont des mesures constantes regroupées dans un dossier « Hypothèses », de sorte qu'une
+hypothèse ne se modifie qu'à un seul endroit. Les pourcentages sont stockés en entiers (de 0 à 100) afin que le filtre d'un
+curseur retrouve toujours sa valeur exacte, et les cartes affichent un texte déjà formaté (« 615 000 t ») plutôt que les
+abréviations par défaut. Les calculs ont enfin été vérifiés par des requêtes DAX sur le modèle.
 
 ## Limites
 
